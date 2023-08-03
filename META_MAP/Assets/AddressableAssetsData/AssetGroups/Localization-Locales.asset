@@ -17,16 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 1e59412daae207b44ad0621b89fd8ba4
   m_SerializeEntries:
-  - m_GUID: a56364cc109ad8a4aa5888ef03ff825c
-    m_Address: English (en)
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale
-  - m_GUID: 7d97f20a7e1a3f14b9a30157302f9384
-    m_Address: Korean (ko)
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale
   - m_GUID: 510452728bb83584bb959d0e78143a65
     m_Address: English (en)
     m_ReadOnly: 1

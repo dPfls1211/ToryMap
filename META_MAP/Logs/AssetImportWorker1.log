@@ -15,7 +15,7 @@ C:/Users/Yerin/Desktop/gitlabUnity/metamap.v.5/metamap.v.5/META_MAP
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-57471
+57916
 Successfully changed project path to: C:/Users/Yerin/Desktop/gitlabUnity/metamap.v.5/metamap.v.5/META_MAP
 C:/Users/Yerin/Desktop/gitlabUnity/metamap.v.5/metamap.v.5/META_MAP
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/Yerin/Desktop/gitlabUnity/metamap.v.5/metamap.v.5/META_MAP
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4092] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 1794474682 [EditorId] 1794474682 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HS1RBE5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20784] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 3669046172 [EditorId] 3669046172 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HS1RBE5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [4092] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 1794474682 [EditorId] 1794474682 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HS1RBE5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [20784] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 3669046172 [EditorId] 3669046172 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HS1RBE5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 52.64 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 56.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -67,52 +67,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56284
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56872
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.003799 seconds.
+Registered in 0.003612 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 199 ms
+Android Extension - Scanning For ADB Devices 188 ms
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 54.27 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 53.81 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.624 seconds
+- Completed reload, in  0.618 seconds
 Domain Reload Profiling:
-	ReloadAssembly (625ms)
-		BeginReloadAssembly (55ms)
+	ReloadAssembly (619ms)
+		BeginReloadAssembly (54ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (507ms)
-			LoadAssemblies (55ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (499ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (70ms)
+			SetupTypeCache (71ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (18ms)
-			SetupLoadedEditorAssemblies (385ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (378ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (245ms)
+				InitializePlatformSupportModulesInManaged (237ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (54ms)
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (57ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003411 seconds.
+Registered in 0.003018 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -120,282 +120,46 @@ Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.823 seconds
+- Completed reload, in  0.872 seconds
 Domain Reload Profiling:
-	ReloadAssembly (823ms)
-		BeginReloadAssembly (77ms)
+	ReloadAssembly (873ms)
+		BeginReloadAssembly (72ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (677ms)
-			LoadAssemblies (60ms)
+		EndReloadAssembly (733ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (193ms)
+			SetupTypeCache (197ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (371ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (418ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (56ms)
-				ProcessInitializeOnLoadAttributes (254ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (322ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
 Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4128 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 26 unused Assets / (56.2 KB). Loaded Objects now: 4590.
-Memory consumption went from 148.5 MB to 148.5 MB.
-Total: 3.260100 ms (FindLiveObjects: 0.224400 ms CreateObjectMapping: 0.112900 ms MarkObjects: 2.855500 ms  DeleteObjects: 0.066500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003025 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.908 seconds
-Domain Reload Profiling:
-	ReloadAssembly (909ms)
-		BeginReloadAssembly (111ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (732ms)
-			LoadAssemblies (66ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (203ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (377ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (54ms)
-				ProcessInitializeOnLoadAttributes (274ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (26ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4084 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (24.6 KB). Loaded Objects now: 4593.
-Memory consumption went from 146.0 MB to 146.0 MB.
-Total: 3.231200 ms (FindLiveObjects: 0.248200 ms CreateObjectMapping: 0.107800 ms MarkObjects: 2.857900 ms  DeleteObjects: 0.016100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003455 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.887 seconds
-Domain Reload Profiling:
-	ReloadAssembly (887ms)
-		BeginReloadAssembly (100ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (724ms)
-			LoadAssemblies (58ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (192ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (377ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (49ms)
-				ProcessInitializeOnLoadAttributes (276ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4084 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (24.6 KB). Loaded Objects now: 4596.
-Memory consumption went from 146.0 MB to 146.0 MB.
-Total: 2.733400 ms (FindLiveObjects: 0.228700 ms CreateObjectMapping: 0.107200 ms MarkObjects: 2.375400 ms  DeleteObjects: 0.020300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004810 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.051 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1051ms)
-		BeginReloadAssembly (111ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (867ms)
-			LoadAssemblies (68ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (240ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (408ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (27ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (69ms)
-				ProcessInitializeOnLoadAttributes (280ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4084 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (24.6 KB). Loaded Objects now: 4599.
-Memory consumption went from 146.1 MB to 146.0 MB.
-Total: 3.258700 ms (FindLiveObjects: 0.244900 ms CreateObjectMapping: 0.111300 ms MarkObjects: 2.790000 ms  DeleteObjects: 0.111300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003059 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.078 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1079ms)
-		BeginReloadAssembly (107ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (897ms)
-			LoadAssemblies (68ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (230ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (463ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (346ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (29ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4084 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (24.6 KB). Loaded Objects now: 4602.
-Memory consumption went from 146.1 MB to 146.0 MB.
-Total: 3.456700 ms (FindLiveObjects: 0.222400 ms CreateObjectMapping: 0.115100 ms MarkObjects: 3.097100 ms  DeleteObjects: 0.020300 ms)
+Unloading 4125 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (56.1 KB). Loaded Objects now: 4590.
+Memory consumption went from 149.0 MB to 149.0 MB.
+Total: 2.910900 ms (FindLiveObjects: 0.291500 ms CreateObjectMapping: 0.127900 ms MarkObjects: 2.415500 ms  DeleteObjects: 0.075100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -409,146 +173,316 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1914487.053496 seconds.
-  path: Assets/Resources/Prefab/UI/Info_Canvas.prefab
-  artifactKey: Guid(4bc44dabae786594795aef440da9877d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefab/UI/Info_Canvas.prefab using Guid(4bc44dabae786594795aef440da9877d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18690e93f487193da26db2c00e4090e6') in 0.776921 seconds 
+  Time since last request: 1915578.774334 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/00#GLB.jpg
+  artifactKey: Guid(01994f8a91bbe6e4b9c5acf71c436f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/00#GLB.jpg using Guid(01994f8a91bbe6e4b9c5acf71c436f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f72a7604f2e4e64142585b86fc9aae8') in 0.069045 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Resources/Prefab/UI/UI_Name_line.prefab
-  artifactKey: Guid(c39c59a097630dc429310c891d0be6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefab/UI/UI_Name_line.prefab using Guid(c39c59a097630dc429310c891d0be6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6679267226cd4c6b8be5985553b7cbc6') in 0.339516 seconds 
+  Time since last request: 0.000030 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/05#GLB.jpg
+  artifactKey: Guid(cdfb97ef7c27c1e4185c10f835bbea9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/05#GLB.jpg using Guid(cdfb97ef7c27c1e4185c10f835bbea9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a42739776fc962545a53f980fc57c4') in 0.034518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/01#GLB.png
+  artifactKey: Guid(fdd59fec9ee4ee74ea4858891776915c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/01#GLB.png using Guid(fdd59fec9ee4ee74ea4858891776915c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c879c61d07837f50a8051f504372a422') in 0.022061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/01#GLB.mat
+  artifactKey: Guid(5d21d95e3256b894bba1ff3ae11a19ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/01#GLB.mat using Guid(5d21d95e3256b894bba1ff3ae11a19ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c047bcf1d9c9dcd5094726ac9ed94a09') in 0.061659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/03#GLB.mat
+  artifactKey: Guid(a9a902b65de61504193eb03970afef60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/03#GLB.mat using Guid(a9a902b65de61504193eb03970afef60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0056cec4e7f5bc25640492ff3c06be9') in 0.014942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/05#GLB.mat
+  artifactKey: Guid(efa2cdfa595b12f4a9d4fc48a8f13f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/05#GLB.mat using Guid(efa2cdfa595b12f4a9d4fc48a8f13f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc96122e05fb14e1605720ed7948f37') in 0.018949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/Materials/00#GLB.mat
+  artifactKey: Guid(75642c1092d35564eba3955b3cb9dc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/Materials/00#GLB.mat using Guid(75642c1092d35564eba3955b3cb9dc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce99effe111b353556cddcf92d1b7ef1') in 0.015090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/08#GLB.jpg
+  artifactKey: Guid(7098b444ef999924c9ee689e959987b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/08#GLB.jpg using Guid(7098b444ef999924c9ee689e959987b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fcc4c52e8dadfef271183b98c7ba5ad') in 0.014289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/07#GLB.png
+  artifactKey: Guid(4c9b0bb46e243fd4392ad6a4f1faa92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/07#GLB.png using Guid(4c9b0bb46e243fd4392ad6a4f1faa92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d88951092e218d23cdfdbde43ca9f26') in 0.016055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/Materials/00#GLB.mat
+  artifactKey: Guid(378bd85cd66efe24d96fef1487d1bbfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/Materials/00#GLB.mat using Guid(378bd85cd66efe24d96fef1487d1bbfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e161ba90e85f4e6b0e30552af035834') in 0.016892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/07#GLB.png
+  artifactKey: Guid(0ab39391648923740a37182eabb47221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/07#GLB.png using Guid(0ab39391648923740a37182eabb47221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34be7bb8402ab627c8b4e29a90b1b61') in 0.015377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/04#GLB.jpg
+  artifactKey: Guid(66a2d507a0c022748acfc73d82d7de6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/04#GLB.jpg using Guid(66a2d507a0c022748acfc73d82d7de6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '009d25d1fcc965916c6069642d8cb32f') in 0.015961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/08#GLB.jpg
+  artifactKey: Guid(1d51b1dbffce9de42a20cc4c3e7737f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/08#GLB.jpg using Guid(1d51b1dbffce9de42a20cc4c3e7737f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7da32a9fc59b28006af3938f0239bb7') in 0.015499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/07#GLB.mat
+  artifactKey: Guid(e060e2d8009dfd64eb1df6a5717f4e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/07#GLB.mat using Guid(e060e2d8009dfd64eb1df6a5717f4e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f53a52f94c12e7acc0e883ee4be6b5a') in 0.016392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/05#GLB.jpg
+  artifactKey: Guid(5b5403a40761ec948b942ae508502b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/05#GLB.jpg using Guid(5b5403a40761ec948b942ae508502b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1cc1ee21c625c7294a4d77fc7ce2c2f') in 0.014959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/07#GLB.png
+  artifactKey: Guid(7ce52185556bf904c9ef04eff75c7270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/07#GLB.png using Guid(7ce52185556bf904c9ef04eff75c7270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37d7d5c59317f88cab056b8bd24a4c06') in 0.017720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/02#GLB.mat
+  artifactKey: Guid(ba7b81205a0e3be40b5d44034bbf39ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/02#GLB.mat using Guid(ba7b81205a0e3be40b5d44034bbf39ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59dcb7427735b484b0e2c410da7ecb4c') in 0.015011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/01#GLB.png
+  artifactKey: Guid(47b5dae694be21d45a4b2745a6518c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/01#GLB.png using Guid(47b5dae694be21d45a4b2745a6518c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92065403efc511a5f2149226b969a574') in 0.016281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/Materials/03#GLB.mat
+  artifactKey: Guid(2fda5d960d2e0694cbfbbfee8a0f2b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/Materials/03#GLB.mat using Guid(2fda5d960d2e0694cbfbbfee8a0f2b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52a01d05083bf85f30cae194071fe53') in 0.015747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Coex.Textures/Materials/06#GLB.mat
+  artifactKey: Guid(e0398fb8bd75df54e9756eff08d15634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Coex.Textures/Materials/06#GLB.mat using Guid(e0398fb8bd75df54e9756eff08d15634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31da5ec395561f58fdbb5e14d0886166') in 0.015364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/06#GLB.mat
+  artifactKey: Guid(35e11f787b803a14b92645ac8e82ec5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/06#GLB.mat using Guid(35e11f787b803a14b92645ac8e82ec5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e810f1af8decbde3fc50dc431b38fd0') in 0.016492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/00#GLB.jpg
+  artifactKey: Guid(d78f233d05f16714aa4b48e4090b7f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/00#GLB.jpg using Guid(d78f233d05f16714aa4b48e4090b7f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afaf0168a7ceba106fc31fa019b9e17f') in 0.015397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Coex.Textures/05#GLB.jpg
+  artifactKey: Guid(834186996ac051249af33dcfc83d5415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Coex.Textures/05#GLB.jpg using Guid(834186996ac051249af33dcfc83d5415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99b40376b8585d374f4cef6d348a6607') in 0.014827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/08#GLB.jpg
+  artifactKey: Guid(9e0a1c4405bbf4a409eaa517cc4259de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/08#GLB.jpg using Guid(9e0a1c4405bbf4a409eaa517cc4259de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26e2dd5526fa3a81b6a3e9d167d316e') in 0.016879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/00#GLB.mat
+  artifactKey: Guid(e4c843a71e7ed8344b78a400ed75d940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/00#GLB.mat using Guid(e4c843a71e7ed8344b78a400ed75d940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c07ff931193233e4b9557518b61f3de') in 0.015250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/05#GLB.mat
+  artifactKey: Guid(7a08c4dc6d2702741a1971ccfbc32862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/05#GLB.mat using Guid(7a08c4dc6d2702741a1971ccfbc32862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3d78e601d1a4491aa4d78906bfac302') in 0.015438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/05#GLB.png
+  artifactKey: Guid(f5ce18ad366424b4d9c7af0fc24a8d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/05#GLB.png using Guid(f5ce18ad366424b4d9c7af0fc24a8d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53da23963300bfadf3ad5910663afeb8') in 0.006826 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000051 seconds.
-  path: Assets/Resources/Prefab/UI/UI_ExplainCanvas.prefab
-  artifactKey: Guid(05a1bb5e7bc2b3840a96687c684275a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefab/UI/UI_ExplainCanvas.prefab using Guid(05a1bb5e7bc2b3840a96687c684275a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c8ccc52fb6b1d41aa248711b56aa4ec') in 0.338245 seconds 
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/05#GLB.mat
+  artifactKey: Guid(d8eba3412e64fd74f8cd6c6b3faa6550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/05#GLB.mat using Guid(d8eba3412e64fd74f8cd6c6b3faa6550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9af28d36bb723aa5f133ffed485acbf') in 0.014506 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 23.100521 seconds.
-  path: Assets/Resources/VirtualSeoulScene/coex.fbx
-  artifactKey: Guid(fc82ecbe24c569f4388cf8860e88d2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/coex.fbx using Guid(fc82ecbe24c569f4388cf8860e88d2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '340f40bbe7eccd63d7d121403b3eebba') in 0.733882 seconds 
+  Time since last request: 0.000031 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/Materials/07#GLB.mat
+  artifactKey: Guid(d5307c749903140459c33936fbc06ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/Materials/07#GLB.mat using Guid(d5307c749903140459c33936fbc06ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de1905f57aa03357b1b83f7a33bb9c34') in 0.017140 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003685 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.191 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1192ms)
-		BeginReloadAssembly (124ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (989ms)
-			LoadAssemblies (76ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (255ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (534ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (23ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (386ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (32ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4084 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (24.8 KB). Loaded Objects now: 4617.
-Memory consumption went from 163.4 MB to 163.4 MB.
-Total: 5.644300 ms (FindLiveObjects: 0.325100 ms CreateObjectMapping: 0.454900 ms MarkObjects: 4.825600 ms  DeleteObjects: 0.036800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/01#GLB.png
+  artifactKey: Guid(5d4ae606eda4d4b499509f3e46e1ad31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/01#GLB.png using Guid(5d4ae606eda4d4b499509f3e46e1ad31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9188abbed9be6ac60e6d0c536c765700') in 0.015005 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003618 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.192 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1193ms)
-		BeginReloadAssembly (128ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (987ms)
-			LoadAssemblies (79ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (249ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (522ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (23ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (386ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (32ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.29 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4084 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (24.7 KB). Loaded Objects now: 4620.
-Memory consumption went from 163.4 MB to 163.4 MB.
-Total: 5.022800 ms (FindLiveObjects: 0.447000 ms CreateObjectMapping: 0.323000 ms MarkObjects: 4.217100 ms  DeleteObjects: 0.033600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/00#GLB.jpg
+  artifactKey: Guid(e088ba06636f9b34c9cf1e75d7df5168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/00#GLB.jpg using Guid(e088ba06636f9b34c9cf1e75d7df5168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b82dbe78e8251904279c6a2b4afc6417') in 0.016086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/03#GLB.png
+  artifactKey: Guid(6f6a890874ce86b4088b8fb3f5a3dd08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/03#GLB.png using Guid(6f6a890874ce86b4088b8fb3f5a3dd08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5784065e07615e25c18799df8480b85') in 0.006257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Business_Room.Textures/05#GLB.jpg
+  artifactKey: Guid(73e8e6faf6e371c4690647b6fc98ac3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Business_Room.Textures/05#GLB.jpg using Guid(73e8e6faf6e371c4690647b6fc98ac3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6248a93f8a1d4d283da96331f775f08d') in 0.016642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/03#GLB.png
+  artifactKey: Guid(f648955a250e8ff49b8ad0b2493f68fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/03#GLB.png using Guid(f648955a250e8ff49b8ad0b2493f68fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0be0c6cb47a48c5d2b697db99eb3fdbb') in 0.006076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Business_Room.Textures/04#GLB.png
+  artifactKey: Guid(4c1188f3c3f447540bb2851b2a8a8361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Business_Room.Textures/04#GLB.png using Guid(4c1188f3c3f447540bb2851b2a8a8361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a753c949d3bd8e078c9b7b556808a3d') in 0.017212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/06#GLB.jpg
+  artifactKey: Guid(ebcd7c9bb7484ab4e94fab123b793c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/06#GLB.jpg using Guid(ebcd7c9bb7484ab4e94fab123b793c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617668194e064717ff6bd4102e269e95') in 0.015838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/02#GLB.mat
+  artifactKey: Guid(3121fa4585126d142a26c16b5ad62d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/02#GLB.mat using Guid(3121fa4585126d142a26c16b5ad62d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54beed27ddf579222e8bf51542ed9a8') in 0.012911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/03#GLB.mat
+  artifactKey: Guid(ded0457fc1cad7d4792beb814303f3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/03#GLB.mat using Guid(ded0457fc1cad7d4792beb814303f3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b0bb8bc85700dbae4f6d31f0e72329') in 0.015880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/04#GLB.mat
+  artifactKey: Guid(db427f2cb21516245b86e05847813e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/04#GLB.mat using Guid(db427f2cb21516245b86e05847813e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c675e9c1bb3621d6083d4671bb0af399') in 0.016437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/Materials/07#GLB.mat
+  artifactKey: Guid(e39c60577c29eef489c43a0f134899ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/Materials/07#GLB.mat using Guid(e39c60577c29eef489c43a0f134899ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f54427f9b211e1f8746b1b392e3ca3') in 0.012899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/01#GLB.jpg
+  artifactKey: Guid(0b4285af9b0cb924386b530f3e18b84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/01#GLB.jpg using Guid(0b4285af9b0cb924386b530f3e18b84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57c3251faf5e6d66eefdb7fec52ca0b9') in 0.014004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/03#GLB.mat
+  artifactKey: Guid(422833c521724c846a04bbc148060034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/03#GLB.mat using Guid(422833c521724c846a04bbc148060034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce8e419274395795c6768f28235ff08') in 0.015922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Coex.Textures/Materials/03#GLB.mat
+  artifactKey: Guid(a91a909caa9641d499d4d98a8cc73592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Coex.Textures/Materials/03#GLB.mat using Guid(a91a909caa9641d499d4d98a8cc73592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f27cfba3d862f8091c681c21c563ca') in 0.016813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Coex.Textures/01#GLB.jpg
+  artifactKey: Guid(52f0d30d507ea5645ab32ef20adf0bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Coex.Textures/01#GLB.jpg using Guid(52f0d30d507ea5645ab32ef20adf0bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c3bfd61a46821ad11a3300e8630625') in 0.015852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Coex.Textures/Materials/02#GLB.mat
+  artifactKey: Guid(c1afe7c45d157e34d855541e26660fe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Coex.Textures/Materials/02#GLB.mat using Guid(c1afe7c45d157e34d855541e26660fe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da334b01192752897769c8ac26c4b7c') in 0.016537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/01#GLB.jpg
+  artifactKey: Guid(d81317a2a9ca54f41ab9e6f5989592b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/01#GLB.jpg using Guid(d81317a2a9ca54f41ab9e6f5989592b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1080e46eae374537517f5c24cd972163') in 0.015541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/00#GLB.png
+  artifactKey: Guid(388cddd1c99b3d44fbff540dd8d5929c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/00#GLB.png using Guid(388cddd1c99b3d44fbff540dd8d5929c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d99cd6a2380f081f437628b9e97377') in 0.017402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/07#GLB.mat
+  artifactKey: Guid(ac721e3812dec2146850e621024aeebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/07#GLB.mat using Guid(ac721e3812dec2146850e621024aeebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199a07926645639702f24f25899bab9f') in 0.014918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/Materials/08#GLB.mat
+  artifactKey: Guid(d35f676b8e6bf8f429b1fc09eaeb7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/Materials/08#GLB.mat using Guid(d35f676b8e6bf8f429b1fc09eaeb7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21345711c7c96387783e7444ebfe73e1') in 0.014868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/02#GLB.jpg
+  artifactKey: Guid(f60a33ebdf5f93f4f8fad54fc8b285a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/02#GLB.jpg using Guid(f60a33ebdf5f93f4f8fad54fc8b285a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b62199167a6f2403878ac29183c3e5') in 0.016963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/01#GLB.mat
+  artifactKey: Guid(d5a84680ddfa86c428911ed9f6391abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/01#GLB.mat using Guid(d5a84680ddfa86c428911ed9f6391abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1686f3788634c33f5200034de7915954') in 0.016262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/Materials/05#GLB.mat
+  artifactKey: Guid(b007dc4920a0e534886a7d4d4a6344ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/Materials/05#GLB.mat using Guid(b007dc4920a0e534886a7d4d4a6344ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc3d6dcff0afcc1e5d697f896b195242') in 0.012549 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
