@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/metamap0803.unity
     guid: 6784f328e4732794ab6168ef2c2ca2a2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LoadingScene.unity
     guid: f3b21069b28227a4cb00178294114891
   - enabled: 1

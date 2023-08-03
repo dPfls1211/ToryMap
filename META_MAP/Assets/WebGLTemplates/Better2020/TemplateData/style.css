@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+canvas {
+    display: block;
+}
+
+body {
+    background: black;
+    margin: 0;
+}
+
+#unity-container {
+    width: 100%;
+    height: 100%;
+}
+
+#unity-canvas {
+    width: 100%;
+    height: 100%;
+    background: #231F20;
+}
+
+#loading-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#unity-logo {
+    display: flex;
+    width:  230px;
+    height: 88px;
+    margin: 18px 10px;
+}
+
+#unity-text {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+#unity-loading-bar {
+    flex: 1 1 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#unity-video {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#unity-video video {
+    width: 100%;
+    display: flex;
+}
+
+#progress-div {
+    width: 100%;
+}
+
+#unity-progress-bar-empty {
+    margin: 0 auto;
+    width: 96%;
+    height: 4px;
+    text-align: left;
+    background: #D9D9D9;
+    opacity: 60%;
+}
+
+#unity-progress-bar-full {
+    width: 0%;
+    height: 100%;
+    background: #FFE81E;
+}
+
+.light #unity-progress-bar-empty {
+    border-color: #D9D9D9;
+    opacity: 60%;
+}
+
+.light #unity-progress-bar-full {
+    background: black;
+}
+

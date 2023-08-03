@@ -7,6 +7,7 @@ public class SetUIZoomObj : MonoBehaviour
     public static GameObject zoomInTargetObj = null;
     public GameObject testObvJ;
     public GameObject canvas_ObjZoomInView;
+    public GameObject canvasInfoBox;
     public GameObject zoomInUIname;
 
     private void Awake()
@@ -19,10 +20,16 @@ public class SetUIZoomObj : MonoBehaviour
     public void viewTargetObj()
     {
         canvas_ObjZoomInView.SetActive(true);
+        canvasInfoBox.SetActive(true);
         GameObject TargetModel = Instantiate(zoomInTargetObj, new Vector3(0, 0, 0), Quaternion.identity);
 
         TargetModel.transform.SetParent(gameObject.transform, false);
-        TargetModel.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+        TargetModel.transform.localScale = new Vector3(100f, 100f, 100f);
+        //자식객체에도 layer추가해주기
+        for (int i = 0; i < TargetModel.transform.childCount; i++)
+        {
+            TargetModel.transform.GetChild(i).gameObject.layer = 11;
+        }
         TargetModel.layer = 11;
         TargetModel.AddComponent<zoomObjRotation>();
 
@@ -38,5 +45,9 @@ public class SetUIZoomObj : MonoBehaviour
         }
         gameObject.transform.DetachChildren();
     }
+    public void hiddenOBJView()
+    {
+        canvas_ObjZoomInView.SetActive(false);
 
+    }
 }
