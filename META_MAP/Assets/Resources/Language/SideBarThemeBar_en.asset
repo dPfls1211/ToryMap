@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SideBarThemeBar_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 9f344d2c64c98d641a617f7fb32abdb3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20205862912
+    m_Localized: main lobby
+    m_Metadata:
+      m_Items: []
+  - m_Id: 112098869248
+    m_Localized: network square
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212346929152
+    m_Localized: conference hall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 617843851264
+    m_Localized: Business Room/Boardroom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10841245941760
+    m_Localized: Seminar Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10845851287552
+    m_Localized: Open Exhibition Space
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11274421075968
+    m_Localized: Exhibition hall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11386031505408
+    m_Localized: Promotion lounge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16653167165440
+    m_Localized: guide pamphlet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17201241063424
+    m_Localized: noti board
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17249790132224
+    m_Localized: site tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17331495174144
+    m_Localized: site inquiry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 478439840407552
+    m_Localized: site technical support
+    m_Metadata:
+      m_Items: []
+  - m_Id: 478450305196032
+    m_Localized: space & menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607385210028032
+    m_Localized: data archive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607409889312768
+    m_Localized: calendar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7664064970686464
+    m_Localized: loading page
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

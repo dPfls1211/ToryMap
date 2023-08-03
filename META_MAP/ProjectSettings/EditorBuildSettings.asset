@@ -4,5 +4,37 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/metamap0803.unity
+    guid: 6784f328e4732794ab6168ef2c2ca2a2
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: f3b21069b28227a4cb00178294114891
+  - enabled: 1
+    path: Assets/Scenes/virtualSeoulScene/botanicpark.unity
+    guid: 4686f6f4b2af1d1458bb20a0828d61b1
+  - enabled: 1
+    path: Assets/Scenes/virtualSeoulScene/business_Room.unity
+    guid: 53017e2a9cead9e42bae79954468bdcc
+  - enabled: 1
+    path: Assets/Scenes/virtualSeoulScene/coex.unity
+    guid: 1e81d033f3fa0a749a6abec4d00342d2
+  - enabled: 1
+    path: Assets/Scenes/virtualSeoulScene/Conference_Room.unity
+    guid: 378fd71b499fda844914338414d80c72
+  - enabled: 1
+    path: Assets/Scenes/virtualSeoulScene/nodleisland.unity
+    guid: 860c269dfd5e1b043871601bd62d53c4
+  - enabled: 1
+    path: Assets/Scenes/virtualSeoulScene/NTower.unity
+    guid: d644e2396a47b5e4fb379950fbf6d5e5
+  - enabled: 1
+    path: Assets/Scenes/virtualSeoulScene/Seoul_Theater.unity
+    guid: 3f5e7420be8bf8a42884b886e3b77524
+  - enabled: 1
+    path: Assets/Scenes/virtualSeoulScene/workshop_room.unity
+    guid: 9b6e04af802ed5447ad7c26430f5ccf5
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: f641de312a23133408c26a4de0d71722, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 1a8f8dc4a77add7468df06a58b6729fc, type: 2}

@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: 532b85c4fdcf17841aedbc0cb79804e7
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Center
+    second: {fileID: 2100000, guid: 798b098dc45157c4b8400d17462f46d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Floor
+    second: {fileID: 2100000, guid: ac5ecb42419f7ef499b7318c2450c847, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_FlowerBed
+    second: {fileID: 2100000, guid: e4b9c37db29ffa84190ce7591764abcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Guardrail
+    second: {fileID: 2100000, guid: 416b5911a6a5e0042ac1e3ddf27a8495, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Kiosk01
+    second: {fileID: 2100000, guid: 35e11f787b803a14b92645ac8e82ec5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Kiosk01.001
+    second: {fileID: 2100000, guid: 6243f562ed4db9e42afb3b3146b4bd0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Kiosk02
+    second: {fileID: 2100000, guid: c097575e0d85c314482212a8131d4892, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Kiosk02.001
+    second: {fileID: 2100000, guid: 7a08c4dc6d2702741a1971ccfbc32862, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Kiosk03
+    second: {fileID: 2100000, guid: 092220b56029e004c8ea363484da70e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Kiosk03.001
+    second: {fileID: 2100000, guid: a9a902b65de61504193eb03970afef60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Plant1
+    second: {fileID: 2100000, guid: 6333d607faf98bb4fbae9d1537d2c99e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Plant2
+    second: {fileID: 2100000, guid: 5eeafd1f356c4aa40b83593ef4c3f8a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Screen
+    second: {fileID: 2100000, guid: 226a23b1f96ca334db610a21612d4ea5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Screen.001
+    second: {fileID: 2100000, guid: 827a0ac68f4266941a70e70abd515e02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Sky
+    second: {fileID: 2100000, guid: 4876625338c489b4fa194e03a1a208d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Tree_Main
+    second: {fileID: 2100000, guid: 1bc673835eb90a44ba3808b94e844b29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Tree_Sub
+    second: {fileID: 2100000, guid: 655b300a93ee80c4b9b975f1f5631403, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Wall
+    second: {fileID: 2100000, guid: c160714fcecb3134cb45bf2e6362e3f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seoul_Botanic_Park_Water
+    second: {fileID: 2100000, guid: f14b580ca695c1541bf557fa79fc3cf6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sit_chair1
+    second: {fileID: 2100000, guid: 1c60bbcec387e594b9b1f5d5657f2a53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stand1
+    second: {fileID: 2100000, guid: 39e176a7ce8b3b74c8f8e95d1ae4373e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stand2
+    second: {fileID: 2100000, guid: 93f5c0bb6026e66418bd8f436bba0058, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stand3
+    second: {fileID: 2100000, guid: 8d82a9a049dcbc34ab8a25e6e600f9e4, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

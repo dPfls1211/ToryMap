@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class setViewTarget : MonoBehaviour
 {
     Vector3 objBasicTransform;
-    //cameraMove targetViewSC;
+    cameraMove targetViewSC;
     //mousewheelView targetWheelViewSC;
 
     MainCamera_Action targetMainCameraActionSC;
@@ -26,7 +26,7 @@ public class setViewTarget : MonoBehaviour
     void Start()
     {
         //targetViewSC = GameObject.Find("Main Camera").GetComponent<cameraRotation>();
-        //targetViewSC = GameObject.Find("Main Camera").GetComponent<cameraMove>();
+        targetViewSC = GameObject.Find("Main Camera").GetComponent<cameraMove>();
         setUIcontents = gameObject.GetComponent<ObjSetUi>();
         objBasicTransform = gameObject.transform.localScale;
         targetMainCameraActionSC = GameObject.Find("Main Camera").GetComponent<MainCamera_Action>();
@@ -143,7 +143,6 @@ public class setViewTarget : MonoBehaviour
     }
 
 
-
     public void ShowExplaneUI()
     {
         GameObject uiExplaneCanvas = GameObject.Find("ExplaneUICanvas").GetComponent<childcheck>().ExplaneUICanvas;
@@ -163,6 +162,22 @@ public class setViewTarget : MonoBehaviour
         uiExplaneCanvas.GetComponent<UIVisible>().SetUICan();
     }
 
+    IEnumerator zoomInView()
+    {
+
+        // Debug.Log(targetViewSC.distance);
+        if (targetViewSC.distance < 20)
+        {
+            ShowExplaneUI();
+            targetViewSC.zoomin = true;
+            yield break;
+        }
+        yield return new WaitForSeconds(0.01f);
+
+        targetViewSC.distance *= 0.83f;
+        // Debug.Log(targetViewSC.distance);
+        StartCoroutine(zoomInView());
+    }
     IEnumerator zoomInViewOBJ()
     {
         yield return new WaitForSeconds(1);
