@@ -15,7 +15,7 @@ C:/Users/Yerin/Desktop/gitlabUnity/metamap.v.5/metamap.v.5/META_MAP
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57916
+59648
 Successfully changed project path to: C:/Users/Yerin/Desktop/gitlabUnity/metamap.v.5/metamap.v.5/META_MAP
 C:/Users/Yerin/Desktop/gitlabUnity/metamap.v.5/metamap.v.5/META_MAP
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/Yerin/Desktop/gitlabUnity/metamap.v.5/metamap.v.5/META_MAP
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9220] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 3040309292 [EditorId] 3040309292 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HS1RBE5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25896] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 1469685715 [EditorId] 1469685715 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HS1RBE5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9220] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 3040309292 [EditorId] 3040309292 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HS1RBE5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25896] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 1469685715 [EditorId] 1469685715 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HS1RBE5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 56.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 54.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -67,52 +67,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.003352 seconds.
+Registered in 0.003675 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 194 ms
+Android Extension - Scanning For ADB Devices 182 ms
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 56.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 53.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.628 seconds
 Domain Reload Profiling:
-	ReloadAssembly (628ms)
-		BeginReloadAssembly (56ms)
+	ReloadAssembly (629ms)
+		BeginReloadAssembly (58ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (506ms)
-			LoadAssemblies (55ms)
+		EndReloadAssembly (510ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (74ms)
+			SetupTypeCache (76ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (19ms)
-			SetupLoadedEditorAssemblies (381ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (373ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (239ms)
+				InitializePlatformSupportModulesInManaged (236ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (57ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (57ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
+				RefreshPlugins (53ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (55ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002952 seconds.
+Registered in 0.003075 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Yerin\Desktop\gitlabUnity\metamap.v.5\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -120,46 +120,46 @@ Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.872 seconds
+- Completed reload, in  0.817 seconds
 Domain Reload Profiling:
-	ReloadAssembly (872ms)
-		BeginReloadAssembly (71ms)
+	ReloadAssembly (818ms)
+		BeginReloadAssembly (75ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (734ms)
-			LoadAssemblies (58ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (674ms)
+			LoadAssemblies (62ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (195ms)
+			SetupTypeCache (187ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (420ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (371ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (18ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (57ms)
-				ProcessInitializeOnLoadAttributes (325ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (282ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4125 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 26 unused Assets / (56.1 KB). Loaded Objects now: 4590.
-Memory consumption went from 149.0 MB to 149.0 MB.
-Total: 2.853000 ms (FindLiveObjects: 0.233400 ms CreateObjectMapping: 0.107700 ms MarkObjects: 2.447500 ms  DeleteObjects: 0.063500 ms)
+Unloading 26 unused Assets / (56.1 KB). Loaded Objects now: 4589.
+Memory consumption went from 148.9 MB to 148.8 MB.
+Total: 2.904200 ms (FindLiveObjects: 0.235900 ms CreateObjectMapping: 0.122600 ms MarkObjects: 2.483700 ms  DeleteObjects: 0.060800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -173,323 +173,55 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1915532.788394 seconds.
-  path: Assets/Scenes/LoadingScene.unity
-  artifactKey: Guid(992caacad50bd304e919ede94e214559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/LoadingScene.unity using Guid(992caacad50bd304e919ede94e214559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aa8c2151f7320906e2a09d132c527f6') in 0.007003 seconds 
+  Time since last request: 1977022.706249 seconds.
+  path: Assets/UI Toolkit/CMS_contentsBox 1.uxml
+  artifactKey: Guid(007a224a4df8c9048b8c25abd296dee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Toolkit/CMS_contentsBox 1.uxml using Guid(007a224a4df8c9048b8c25abd296dee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '296553163f3e1fb2e60443529235c75e') in 0.067833 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 45.974621 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Business_Room.Textures/00#GLB.jpg
-  artifactKey: Guid(d7d7d30e860c4ec41b91a34008729544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Business_Room.Textures/00#GLB.jpg using Guid(d7d7d30e860c4ec41b91a34008729544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b85d2ad2808ca90256fc4a910930ad99') in 0.067430 seconds 
+  Time since last request: 15.145581 seconds.
+  path: Assets/UI Toolkit/tableRowContents.uxml
+  artifactKey: Guid(007a224a4df8c9048b8c25abd296dee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Toolkit/tableRowContents.uxml using Guid(007a224a4df8c9048b8c25abd296dee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ab33a7627396c545815350ccb6ebb6') in 0.025807 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/07#GLB.png
-  artifactKey: Guid(129ef24e3acdc164aa5f13e0f64187e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/07#GLB.png using Guid(129ef24e3acdc164aa5f13e0f64187e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '648a8f66e07b49e605e8be1ae856a76b') in 0.020530 seconds 
+  Time since last request: 68.085314 seconds.
+  path: Assets/UI Toolkit/tableRowContents.uxml
+  artifactKey: Guid(007a224a4df8c9048b8c25abd296dee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Toolkit/tableRowContents.uxml using Guid(007a224a4df8c9048b8c25abd296dee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b85f194110aa320dad476aa11880e9') in 0.003156 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/06#GLB.jpg
-  artifactKey: Guid(3abf0188a9e1a5b4da99b4fb19bdb57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/06#GLB.jpg using Guid(3abf0188a9e1a5b4da99b4fb19bdb57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '011b3dd60c8bf5ef725df16f30124068') in 0.024131 seconds 
+  Time since last request: 4.159473 seconds.
+  path: Assets/UI Toolkit/tableRowContents 1.uxml
+  artifactKey: Guid(a1980b7f36d333e42843b2491e27e72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Toolkit/tableRowContents 1.uxml using Guid(a1980b7f36d333e42843b2491e27e72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7220bda96a80b69468ffdfd1f8810557') in 0.021926 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Coex.Textures/02#GLB.jpg
-  artifactKey: Guid(8cac25dd5992fcf43b0d7c3e5e959754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Coex.Textures/02#GLB.jpg using Guid(8cac25dd5992fcf43b0d7c3e5e959754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3ae2812e486435ab55bebcdb5c28e3f') in 0.022990 seconds 
+  Time since last request: 5.198244 seconds.
+  path: Assets/UI Toolkit/tableRowContents_order.uxml
+  artifactKey: Guid(a1980b7f36d333e42843b2491e27e72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Toolkit/tableRowContents_order.uxml using Guid(a1980b7f36d333e42843b2491e27e72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '734683a440091506dcfeb5d47115a03c') in 0.017993 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/Materials/01#GLB.mat
-  artifactKey: Guid(0eed242389544ca41b16a4b2d58a3b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/Materials/01#GLB.mat using Guid(0eed242389544ca41b16a4b2d58a3b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef7c655c9815bc2e04d87337a4b742d4') in 0.062400 seconds 
+  Time since last request: 19.463406 seconds.
+  path: Assets/UI Toolkit/tableRowContents_order.uxml
+  artifactKey: Guid(a1980b7f36d333e42843b2491e27e72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Toolkit/tableRowContents_order.uxml using Guid(a1980b7f36d333e42843b2491e27e72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59307d86270f50902a027271214a5c77') in 0.002846 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/00#GLB.jpg
-  artifactKey: Guid(e63b3e3c313e86246833b399c20a70b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/00#GLB.jpg using Guid(e63b3e3c313e86246833b399c20a70b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32a5dd8c0770b5828bb8fc61429629e') in 0.020026 seconds 
+  Time since last request: 6.247976 seconds.
+  path: Assets/UI Toolkit/tableRowContents.uxml
+  artifactKey: Guid(007a224a4df8c9048b8c25abd296dee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Toolkit/tableRowContents.uxml using Guid(007a224a4df8c9048b8c25abd296dee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11383282f8038e86554a0c2e69147309') in 0.002487 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/05#GLB.png
-  artifactKey: Guid(9ffee3b2a8d5e174fa7d147179c0b802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/05#GLB.png using Guid(9ffee3b2a8d5e174fa7d147179c0b802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d219965cd7dcaa6e0abb769dbcc486') in 0.015796 seconds 
+  Time since last request: 19.221386 seconds.
+  path: Assets/UI Toolkit/tableRowContents.uxml
+  artifactKey: Guid(007a224a4df8c9048b8c25abd296dee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Toolkit/tableRowContents.uxml using Guid(007a224a4df8c9048b8c25abd296dee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b06e9fe51cc80fa9564d874f0c4eff2b') in 0.002303 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Coex.Textures/Materials/05#GLB.mat
-  artifactKey: Guid(5fef393661a3ba440ae0cc4f895b6b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Coex.Textures/Materials/05#GLB.mat using Guid(5fef393661a3ba440ae0cc4f895b6b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e8626c1245be918958f1349322eb51a') in 0.014895 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Business_Room.Textures/08#GLB.png
-  artifactKey: Guid(0dfbae83750276249880b42a71978dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Business_Room.Textures/08#GLB.png using Guid(0dfbae83750276249880b42a71978dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313cc788d7bcd0081daa434c21dd3aa9') in 0.012669 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/00#GLB.mat
-  artifactKey: Guid(226a23b1f96ca334db610a21612d4ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/00#GLB.mat using Guid(226a23b1f96ca334db610a21612d4ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a75fdc8807848d6622ff790d124fce2') in 0.015510 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/04#GLB.mat
-  artifactKey: Guid(6109ac14d009ea74a8f14a61e284e405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/04#GLB.mat using Guid(6109ac14d009ea74a8f14a61e284e405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '018acb196878bb97bce14b2a196e87a8') in 0.015137 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/Materials/02#GLB.mat
-  artifactKey: Guid(2f31e612f3fdeac44bdbd396f834a509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/Materials/02#GLB.mat using Guid(2f31e612f3fdeac44bdbd396f834a509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '560665dbd37b3b77452f95354ed5b056') in 0.014814 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/07#GLB.png
-  artifactKey: Guid(c56f386a6627c014e81aa617e20f26df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/07#GLB.png using Guid(c56f386a6627c014e81aa617e20f26df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8739e5d5f7bb014178ed1363e7465d30') in 0.013481 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/01#GLB.mat
-  artifactKey: Guid(827a0ac68f4266941a70e70abd515e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/01#GLB.mat using Guid(827a0ac68f4266941a70e70abd515e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e40fafa4a836162efebe1f0737c24de5') in 0.015894 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/Materials/07#GLB.mat
-  artifactKey: Guid(726dd79e4f995ad48b1008b2ec801482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/Materials/07#GLB.mat using Guid(726dd79e4f995ad48b1008b2ec801482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c949b4d93deb458c3f4f14726d92b3') in 0.017424 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/00#GLB.png
-  artifactKey: Guid(afeba406ed41fb04ca5310e4c62199f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/00#GLB.png using Guid(afeba406ed41fb04ca5310e4c62199f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '702b3966558509cf81e14d96078b4ebb') in 0.013500 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/Materials/03#GLB.mat
-  artifactKey: Guid(d958d03c5ceab1d4c80a784b635337b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/Materials/03#GLB.mat using Guid(d958d03c5ceab1d4c80a784b635337b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05fdb3f535ffca0bbb3ab3544c886a21') in 0.017711 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/05#GLB.png
-  artifactKey: Guid(393056638101f214e9478cd6fd20c436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/05#GLB.png using Guid(393056638101f214e9478cd6fd20c436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '468e24abb5c6e98605f1f24ecdea97f4') in 0.016258 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/06#GLB.mat
-  artifactKey: Guid(d2b6ed2f95313f042836986fa58c3ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/Materials/06#GLB.mat using Guid(d2b6ed2f95313f042836986fa58c3ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f163bb735500ecabd8094aff5e7a84') in 0.016793 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/03#GLB.png
-  artifactKey: Guid(69ac13a13a6583444bd1b01554c67267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/03#GLB.png using Guid(69ac13a13a6583444bd1b01554c67267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ec04b90a849655216d1b326a46feba') in 0.017106 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/02#GLB.jpg
-  artifactKey: Guid(19c714398544d41408664b70832fb279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/NodeulIsland.Textures/02#GLB.jpg using Guid(19c714398544d41408664b70832fb279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3150430d2a034ff2e0ba10e5d72d7ff0') in 0.012743 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Business_Room.Textures/03#GLB.png
-  artifactKey: Guid(e98b17fd24833804e841549d1962ad9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Business_Room.Textures/03#GLB.png using Guid(e98b17fd24833804e841549d1962ad9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c2fa4d1323bae9df2b9f3992b0c83bf') in 0.014942 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Business_Room.Textures/06#GLB.jpg
-  artifactKey: Guid(4f53e13e7e4bc34478b3ec32e668b1b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Business_Room.Textures/06#GLB.jpg using Guid(4f53e13e7e4bc34478b3ec32e668b1b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f701124b462a4c06ee836f663a20741') in 0.016282 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/04#GLB.png
-  artifactKey: Guid(8363438c2615fe24e8aac85c4abcdc26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/04#GLB.png using Guid(8363438c2615fe24e8aac85c4abcdc26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41b32b203df1af610116fd67bd9ce3a3') in 0.006155 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/07#GLB.jpg
-  artifactKey: Guid(79c3990b21a28014184b7f7d81783c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/07#GLB.jpg using Guid(79c3990b21a28014184b7f7d81783c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7937f9a06eaec1789f163b0b4419b56') in 0.016935 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Coex.Textures/Materials/01#GLB.mat
-  artifactKey: Guid(bfe8d1f1491a73043a6b84547d896f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Coex.Textures/Materials/01#GLB.mat using Guid(bfe8d1f1491a73043a6b84547d896f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c6f0f0377098dd8ff773d417cf5a88') in 0.015377 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/01#GLB.png
-  artifactKey: Guid(b6ff2be68abbf184495ea63bf31700a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/01#GLB.png using Guid(b6ff2be68abbf184495ea63bf31700a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f69ac50d1e3cb1c9273a0b780894847') in 0.015731 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Business_Room.Textures/07#GLB.jpg
-  artifactKey: Guid(2cadcad9a71f5064faffe9fd658118bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Business_Room.Textures/07#GLB.jpg using Guid(2cadcad9a71f5064faffe9fd658118bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de92a9f2b6d300377b2b04217a470a5') in 0.014361 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/07#GLB.mat
-  artifactKey: Guid(6243f562ed4db9e42afb3b3146b4bd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/07#GLB.mat using Guid(6243f562ed4db9e42afb3b3146b4bd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce69665c5b20d3fb1164873fed9660a3') in 0.018070 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/Materials/00#GLB.mat
-  artifactKey: Guid(7d138fc0783b4b04185a2529080813a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/Materials/00#GLB.mat using Guid(7d138fc0783b4b04185a2529080813a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9aa02c21d8df2cb6265ff6214c54de7') in 0.018666 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Coex.Textures/06#GLB.png
-  artifactKey: Guid(00491eb26ccf57b478a91e856525d191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Coex.Textures/06#GLB.png using Guid(00491eb26ccf57b478a91e856525d191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7e026df368d5282b905f45768146f80') in 0.013443 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Business_Room.Textures/01#GLB.jpg
-  artifactKey: Guid(abd3a1d7f81c39e46a6709fda466b849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Business_Room.Textures/01#GLB.jpg using Guid(abd3a1d7f81c39e46a6709fda466b849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f28c87df0c0f9f6384689b4533222ef') in 0.017248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Coex.Textures/03#GLB.jpg
-  artifactKey: Guid(e8c978ca709b068488abe204133f8841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Coex.Textures/03#GLB.jpg using Guid(e8c978ca709b068488abe204133f8841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbcf967b19cf12040686e67f2a0d4e8b') in 0.016880 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/02#GLB.mat
-  artifactKey: Guid(092220b56029e004c8ea363484da70e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/02#GLB.mat using Guid(092220b56029e004c8ea363484da70e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda9ea85096a517420e73b7eccdb6d63') in 0.015255 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Coex.Textures/04#GLB.jpg
-  artifactKey: Guid(c5487c43e04fba9458d8e754be01d564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Coex.Textures/04#GLB.jpg using Guid(c5487c43e04fba9458d8e754be01d564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5964fea18af5a32a589c833478ad2002') in 0.014946 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/08#GLB.jpg
-  artifactKey: Guid(eea7b9e5c10d08e44a224a388faa4d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/08#GLB.jpg using Guid(eea7b9e5c10d08e44a224a388faa4d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e3b465e6f1bee10ee419db2b35122fb') in 0.014792 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Business_Room.Textures/02#GLB.png
-  artifactKey: Guid(4d29373ec4929b74e90b4127473f5d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Business_Room.Textures/02#GLB.png using Guid(4d29373ec4929b74e90b4127473f5d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b56134ead1f8ac75af0f8e7c21da5c') in 0.016953 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/06#GLB.jpg
-  artifactKey: Guid(e1c3e5a637edf544782dfde7c3d3801c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/06#GLB.jpg using Guid(e1c3e5a637edf544782dfde7c3d3801c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5838f8510de18c107fef32dcf4ae8695') in 0.017143 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/Materials/01#GLB.mat
-  artifactKey: Guid(363121bcfb73c494fa6db6dd46e7b6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/Materials/01#GLB.mat using Guid(363121bcfb73c494fa6db6dd46e7b6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3986a0429ceefb2eafa54093ea0a11a8') in 0.015598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Coex.Textures/Materials/04#GLB.mat
-  artifactKey: Guid(cdf345232d9b064458b561dc56cbfb5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Coex.Textures/Materials/04#GLB.mat using Guid(cdf345232d9b064458b561dc56cbfb5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd91738c6e384207a584965ecd82225') in 0.015731 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/04#GLB.jpg
-  artifactKey: Guid(13a0bfe09aa96534b80d000ff119902a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/04#GLB.jpg using Guid(13a0bfe09aa96534b80d000ff119902a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8a0a4cf99e13246651470ea1d59bd3') in 0.015337 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/Materials/05#GLB.mat
-  artifactKey: Guid(029ccd0003cf8c14aa71231beee222c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/N_Seoul_Tower.Textures/Materials/05#GLB.mat using Guid(029ccd0003cf8c14aa71231beee222c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b84c145e678e5cdd1693450c52e31ca') in 0.017179 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/00#GLB.mat
-  artifactKey: Guid(1ea5586693ff0e64b9a493ca32d03323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/00#GLB.mat using Guid(1ea5586693ff0e64b9a493ca32d03323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b7366ffb07a80da1c50a0ca9fe33281') in 0.014558 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/Materials/01#GLB.mat
-  artifactKey: Guid(f4e9185395c9a5d47a2dc8261d5fe2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/Materials/01#GLB.mat using Guid(f4e9185395c9a5d47a2dc8261d5fe2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '134569c9104e43b16ccc4e17eb5fe391') in 0.007127 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/06#GLB.mat
-  artifactKey: Guid(b7d485878e4704646bff2d410a725e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/Materials/06#GLB.mat using Guid(b7d485878e4704646bff2d410a725e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7058cebabf86d50e812f4885c820af63') in 0.016287 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/04#GLB.mat
-  artifactKey: Guid(c097575e0d85c314482212a8131d4892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Botanic_Park.Textures/Materials/04#GLB.mat using Guid(c097575e0d85c314482212a8131d4892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd0d10eb3d97786b209f5ab037f4e7c6') in 0.013317 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/03#GLB.jpg
-  artifactKey: Guid(ac7264f4271e0364db6d87a45873aa4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/03#GLB.jpg using Guid(ac7264f4271e0364db6d87a45873aa4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43cc13ee256548242174d202bb6ca86e') in 0.014327 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/03#GLB.png
-  artifactKey: Guid(d0d2589704b4d89448d8ea2fc335c17f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/03#GLB.png using Guid(d0d2589704b4d89448d8ea2fc335c17f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6669dad3e1f72feb2cfcfba71baada7b') in 0.015584 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/Materials/03#GLB.mat
-  artifactKey: Guid(3c47481755f62a042a391ae7b46a4b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Seoul_Theater.Textures/Materials/03#GLB.mat using Guid(3c47481755f62a042a391ae7b46a4b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5128c839bf6073805db83610e5665752') in 0.013344 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/02#GLB.jpg
-  artifactKey: Guid(e117fb31bc062824dafa1ea57eacef67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/WorkShop_Room.Textures/02#GLB.jpg using Guid(e117fb31bc062824dafa1ea57eacef67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c60c557156aac6b26518d5715db5cbde') in 0.017249 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/02#GLB.png
-  artifactKey: Guid(51e757d33eeeed448b52033696388224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/02#GLB.png using Guid(51e757d33eeeed448b52033696388224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec82d71cd01ad26cb49d8ee17c85b1c') in 0.014881 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/03#GLB.png
-  artifactKey: Guid(14f3c7c2dc8af3f429d1851be45d103a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VirtualSeoulScene/Conference_Room.Textures/03#GLB.png using Guid(14f3c7c2dc8af3f429d1851be45d103a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50262bdfcd565a3196f84a5be2606dc1') in 0.012628 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 8.743892 seconds.
+  path: Assets/UI Toolkit/tableRowContents_order.uxml
+  artifactKey: Guid(a1980b7f36d333e42843b2491e27e72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Toolkit/tableRowContents_order.uxml using Guid(a1980b7f36d333e42843b2491e27e72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55469678113388fd0ec2f84d6cbd8145') in 0.002974 seconds 
