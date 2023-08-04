@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/CMS_css.uss?fileID=7433441132597879392&amp;guid=f743704ed5f4e9845ab0c3b9809db29f&amp;type=3#CMS_css" />
+    <ui:VisualElement name="tableRowContents" style="height: 45px; flex-direction: row; margin-left: 0; background-color: rgb(255, 255, 255);">
+        <ui:VisualElement name="table" style="width: 78.3%; margin-left: 140px; flex-direction: row; border-top-width: 0; border-bottom-width: 1px; border-bottom-color: rgb(211, 211, 211); border-top-color: rgb(211, 211, 211);">
+            <ui:VisualElement name="Checkbox" style="width: 7.9%; -unity-text-align: middle-center; justify-content: center; align-items: center;">
+                <ui:VisualElement name="checkboxChecked" style="background-image: resource(&apos;Icon/CMS_contents/check box_active 1&apos;); width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                    <ui:VisualElement style="background-image: resource(&apos;Icon/CMS_contents/Vector 780&apos;); width: 46%; height: 36%;" />
+                </ui:VisualElement>
+                <ui:Label text="선택" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/PretendardFont/Pretendard-Medium.ttf?fileID=12800000&amp;guid=cf1bfc210ff1f974d9600cd25fcf118f&amp;type=3#Pretendard-Medium&apos;); font-size: 20px; color: rgb(56, 56, 56); display: none;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="itemBox" style="width: 12.9%; -unity-text-align: middle-center; align-items: center; justify-content: center;">
+                <ui:Label text="상단 로고" display-tooltip-when-elided="true" name="itemBoxName" style="color: rgb(56, 56, 56); -unity-font: resource(&apos;Font/Pretendard-Regular&apos;); font-size: 18px; -unity-font-definition: resource(&apos;Font/Pretendard-Regular SDF 1&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="fileBoxTitle" style="width: 69.1%; -unity-text-align: middle-center; align-items: flex-start; justify-content: center;">
+                <ui:Label text="의정부 리버사이드.png" display-tooltip-when-elided="true" name="fileBoxTitleName" style="color: rgb(56, 56, 56); -unity-font: resource(&apos;Font/Pretendard-Regular&apos;); font-size: 18px; -unity-font-definition: resource(&apos;Font/Pretendard-Regular SDF 1&apos;); align-items: flex-start; justify-content: flex-start; margin-left: 55px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="changeBox" style="width: auto; -unity-text-align: middle-center; justify-content: center; align-items: center; flex-basis: 9.9%;">
+                <ui:VisualElement name="changeBoxImg" style="background-color: rgb(41, 70, 114); border-top-left-radius: 4px; border-bottom-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px;">
+                    <ui:Label text="변경" display-tooltip-when-elided="true" style="font-size: 18px; color: rgb(255, 255, 255); padding-left: 15px; padding-right: 15px; padding-top: 4px; padding-bottom: 4px; -unity-font: resource(&apos;Font/Pretendard-SemiBold&apos;); -unity-font-definition: resource(&apos;Font/Pretendard-SemiBold SDF 1&apos;);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

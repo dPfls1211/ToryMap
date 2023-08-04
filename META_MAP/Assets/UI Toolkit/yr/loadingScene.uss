@@ -1,0 +1,11 @@
+.unity-video {
+    height : 100vw; 
+    margin-top:15%;
+}
+
+.unity-video-panel {
+    display: block;
+    position: absolute;
+    height : 83%;
+    overflow: hidden;
+}

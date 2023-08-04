@@ -1,0 +1,30 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/CMS_css.uss?fileID=7433441132597879392&amp;guid=f743704ed5f4e9845ab0c3b9809db29f&amp;type=3#CMS_css" />
+    <ui:VisualElement name="tableRowContents_order" style="height: 45px; flex-direction: row; margin-left: 0; background-color: rgb(255, 255, 255);">
+        <ui:VisualElement name="table" style="width: 78.3%; margin-left: 140px; flex-direction: row; border-top-width: 0; border-bottom-width: 1px; border-bottom-color: rgb(211, 211, 211); border-top-color: rgb(211, 211, 211); align-items: center;">
+            <ui:VisualElement name="orderbox" style="width: 7.9%; -unity-text-align: middle-center; justify-content: center; align-items: center;">
+                <ui:VisualElement name="orderboxImg" style="background-image: resource(&apos;Icon/CMS_contents/order change&apos;); width: 30px; height: 30px; display: flex;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="AssetNameBox_KOR" style="width: 12.9%; -unity-text-align: middle-center; align-items: center; justify-content: center; height: 100%;">
+                <ui:TextField picking-mode="Ignore" value="교육/세미나 홀" text="교육/세미나 홀" name="InputitemBoxName_kor" password="false" readonly="false" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; font-size: 18px; -unity-font: resource(&apos;Font/Pretendard-Regular&apos;); -unity-font-definition: resource(&apos;Font/Pretendard-Regular SDF 1&apos;); color: rgb(56, 56, 56); background-color: rgb(255, 255, 255); -unity-text-outline-color: rgb(255, 255, 255); background-image: none;" />
+                <ui:Label text="교육/세미나 홀" display-tooltip-when-elided="true" name="itemBoxName_kor" style="color: rgb(56, 56, 56); -unity-font: url(&apos;project://database/Assets/PretendardFont/Pretendard-Regular.ttf?fileID=12800000&amp;guid=b23a233b97d5f70448f01919740d7f91&amp;type=3#Pretendard-Regular&apos;); font-size: 18px; -unity-font-definition: url(&apos;project://database/Assets/PretendardFont/Text/re/Pretendard-Regular%20SDF.asset?fileID=11400000&amp;guid=937c8112680c7a44f8080ff823b2f4e0&amp;type=2#Pretendard-Regular SDF&apos;); display: none;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="AssetNameBox_Eng" style="width: 12.9%; -unity-text-align: middle-center; align-items: center; justify-content: center; height: 100%;">
+                <ui:TextField picking-mode="Ignore" value="Semina hall" text="Semina hall" name="InputitemBoxName_eng" password="false" readonly="false" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; font-size: 18px; -unity-font: resource(&apos;Font/Pretendard-Regular&apos;); -unity-font-definition: resource(&apos;Font/Pretendard-Regular SDF 1&apos;); color: rgb(56, 56, 56); background-color: rgb(255, 255, 255); -unity-text-outline-color: rgb(255, 255, 255); background-image: none;" />
+                <ui:Label text="항목" display-tooltip-when-elided="true" name="itemBoxName_eng" style="color: rgb(56, 56, 56); -unity-font: url(&apos;project://database/Assets/PretendardFont/Pretendard-Regular.ttf?fileID=12800000&amp;guid=b23a233b97d5f70448f01919740d7f91&amp;type=3#Pretendard-Regular&apos;); font-size: 18px; -unity-font-definition: url(&apos;project://database/Assets/PretendardFont/Text/re/Pretendard-Regular%20SDF.asset?fileID=11400000&amp;guid=937c8112680c7a44f8080ff823b2f4e0&amp;type=2#Pretendard-Regular SDF&apos;); display: none;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="AssetnameBox" style="width: 9.87%; -unity-text-align: middle-center; align-items: center; justify-content: center;">
+                <ui:Label text="공간명" display-tooltip-when-elided="true" name="AssetName" style="color: rgb(56, 56, 56); -unity-font: resource(&apos;Font/Pretendard-Regular&apos;); font-size: 18px; -unity-font-definition: resource(&apos;Font/Pretendard-Regular SDF 1&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement style="width: 1px; height: 35px; background-color: rgb(234, 234, 234);" />
+            <ui:VisualElement name="AssetInfoBox" style="width: 46.35%; -unity-text-align: middle-center; align-items: flex-start; justify-content: center;">
+                <ui:Label text="기능 상세" display-tooltip-when-elided="true" name="AssetInfoContents" style="color: rgb(56, 56, 56); -unity-font: resource(&apos;Font/Pretendard-Regular&apos;); font-size: 18px; -unity-font-definition: resource(&apos;Font/Pretendard-Regular SDF 1&apos;); -unity-text-align: middle-center; margin-left: 30px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="changeBox" style="width: auto; -unity-text-align: middle-center; justify-content: center; align-items: center; flex-basis: 9.9%;">
+                <ui:VisualElement name="changeBoxImg" style="background-color: rgb(41, 70, 114); border-top-left-radius: 4px; border-bottom-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px;">
+                    <ui:Label text="변경" display-tooltip-when-elided="true" style="font-size: 18px; color: rgb(255, 255, 255); padding-left: 15px; padding-right: 15px; padding-top: 4px; padding-bottom: 4px; -unity-font: resource(&apos;Font/Pretendard-SemiBold&apos;); -unity-font-definition: resource(&apos;Font/Pretendard-SemiBold SDF 1&apos;);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
