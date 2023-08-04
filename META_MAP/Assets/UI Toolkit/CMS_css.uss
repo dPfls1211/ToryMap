@@ -1,8 +1,0 @@
-.unity-base-text-field__input {
-    --unity-sync-text-editor-engine: true;
-    -unity-overflow-clip-box: content-box;
-    flex: 100%;
-    border-width: none;
-    background-color: none;
-    color: var(--color-txt-mid);
-}

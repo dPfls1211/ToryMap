@@ -853,6 +853,7 @@ MonoBehaviour:
   Obj_List_child_transform: []
   UI_child_list: []
   objlen: 0
+  localizeStringEvent: {fileID: 0}
 --- !u!4 &1116283481
 Transform:
   m_ObjectHideFlags: 0
@@ -2197,6 +2198,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 113483594435456450, guid: 2a0b6b18aac842e4c95361eb101dd4c7, type: 3}
+      propertyPath: m_Name
+      value: "\uC758\uC815\uBD80\uC2DC\uCCAD"
+      objectReference: {fileID: 0}
+    - target: {fileID: 263537735254167598, guid: 2a0b6b18aac842e4c95361eb101dd4c7, type: 3}
+      propertyPath: m_Name
+      value: "\uAD50\uC721\uAD00"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514603130061852187, guid: 2a0b6b18aac842e4c95361eb101dd4c7, type: 3}
+      propertyPath: m_Name
+      value: "\uC758\uC815\uBD80\uC5ED"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4172921826699798077, guid: 2a0b6b18aac842e4c95361eb101dd4c7, type: 3}
+      propertyPath: m_Name
+      value: "\uC0AC\uCC30"
+      objectReference: {fileID: 0}
     - target: {fileID: 5163479546262574611, guid: 2a0b6b18aac842e4c95361eb101dd4c7, type: 3}
       propertyPath: m_Name
       value: MAP
@@ -2245,9 +2262,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.934
       objectReference: {fileID: 0}
+    - target: {fileID: 7148446763088396954, guid: 2a0b6b18aac842e4c95361eb101dd4c7, type: 3}
+      propertyPath: m_Name
+      value: "\uBBF8\uD305\uC2E4"
+      objectReference: {fileID: 0}
     - target: {fileID: 7671974186016654295, guid: 2a0b6b18aac842e4c95361eb101dd4c7, type: 3}
       propertyPath: m_Intensity
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805036572273352958, guid: 2a0b6b18aac842e4c95361eb101dd4c7, type: 3}
+      propertyPath: m_Name
+      value: "\uC81C\uC77C\uC2DC\uC7A5"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a0b6b18aac842e4c95361eb101dd4c7, type: 3}

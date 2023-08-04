@@ -14,6 +14,10 @@ public class set_UI_background : MonoBehaviour
     }
     void Start()
     {
+        resizeUI();
+    }
+    public void resizeUI()
+    {
         if (thistype == UI_Type.type.name)
         {
             name();

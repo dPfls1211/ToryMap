@@ -17,11 +17,6 @@ public class ObjSetUi : MonoBehaviour
 
     public string nextScene;
     // Start is called before the first frame update
-    // private void Awake() {
-    //     expalneUICanvase = GameObject.Find("explaneUI");
-
-
-    // }
 
 
     // private void OnMouseDown() {
@@ -30,4 +25,6 @@ public class ObjSetUi : MonoBehaviour
     //     GameObject.Find("ObjExplane").GetComponent<TextMeshProUGUI>().text = objExplane;
     //     UIVisible.explaneUrl = _explaneUrl;// "http://unity.com/";
     // }
+
+
 }
