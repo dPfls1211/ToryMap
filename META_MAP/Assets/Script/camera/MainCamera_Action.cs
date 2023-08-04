@@ -19,7 +19,6 @@ public class MainCamera_Action : MonoBehaviour
     public float speed = 20.0f;
     Vector3 worldDefalutForward;
 
-    GameObject explaneui_basic;
 
     private Camera thisCamera;
     private Vector3 offsetVector;
@@ -59,7 +58,6 @@ public class MainCamera_Action : MonoBehaviour
         checkedCamReset = true;
         thisCamera = gameObject.GetComponent<Camera>();
         worldDefalutForward = transform.forward;
-        explaneui_basic = GameObject.Find("ExplaneUICanvas");
 
         distanceRidance = distanceRidancesValue;
 
@@ -218,7 +216,6 @@ public class MainCamera_Action : MonoBehaviour
         offsetZ = offsetVector.z;
 
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(worldDefalutForward), 0.015f);
-        explaneui_basic.GetComponent<childcheck>().ExplaneUICanvas.SetActive(false);
         checkedCamReset = true;
         distanceRidance = distanceRidancesValue;
 

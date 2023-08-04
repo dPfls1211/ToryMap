@@ -18,7 +18,6 @@ public class SideBarBtn : MonoBehaviour
     public string mainSceneName = "0707test";
     public string ClickedSceneName = "0718TestScene";
 
-    public sidebar_Type.sideType sidetype;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,24 +33,13 @@ public class SideBarBtn : MonoBehaviour
         {
             BtnIcon.texture = iconImage;
             BtnIcon.SetNativeSize();
-            if (sidetype == sidebar_Type.sideType.CMSbar)
-            {
-                BtnIcon.rectTransform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
-            }
-            else if (sidetype == sidebar_Type.sideType.siderbar)
-            {
-                BtnIcon.rectTransform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
-            }
+            BtnIcon.rectTransform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+
 
 
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void onClickToURL()
     {
