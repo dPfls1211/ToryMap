@@ -1,9 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/CMS_css.uss?fileID=7433441132597879392&amp;guid=f743704ed5f4e9845ab0c3b9809db29f&amp;type=3#CMS_css" />
-    <ui:VisualElement name="tableRowContents" style="height: 45px; flex-direction: row; margin-left: 0; background-color: rgba(255, 255, 255, 255);">
-        <ui:VisualElement name="table" style="width: 78.3%; margin-left: 140px; flex-direction: row; border-top-width: 1px; border-bottom-width: 1px; border-bottom-color: rgb(211, 211, 211); border-top-color: rgb(211, 211, 211);">
+    <ui:VisualElement name="tableRowContents" style="height: 45px; flex-direction: row; margin-left: 0; background-color: rgb(255, 255, 255);">
+        <ui:VisualElement name="table" style="width: 78.3%; margin-left: 140px; flex-direction: row; border-top-width: 0; border-bottom-width: 1px; border-bottom-color: rgb(211, 211, 211); border-top-color: rgb(211, 211, 211);">
             <ui:VisualElement name="Checkbox" style="width: 7.9%; -unity-text-align: middle-center; justify-content: center; align-items: center;">
-                <ui:VisualElement name="checkboxChecked" style="background-image: resource(&apos;Icon/CMS_contents/check box_active&apos;); width: 30px; height: 30px; display: flex;" />
+                <ui:VisualElement name="checkboxChecked" style="background-image: resource(&apos;Icon/CMS_contents/check box_active 1&apos;); width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                    <ui:VisualElement style="background-image: resource(&apos;Icon/CMS_contents/Vector 780&apos;); width: 46%; height: 36%;" />
+                </ui:VisualElement>
                 <ui:Label text="선택" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/PretendardFont/Pretendard-Medium.ttf?fileID=12800000&amp;guid=cf1bfc210ff1f974d9600cd25fcf118f&amp;type=3#Pretendard-Medium&apos;); font-size: 20px; color: rgb(56, 56, 56); display: none;" />
             </ui:VisualElement>
             <ui:VisualElement name="itemBox" style="width: 12.9%; -unity-text-align: middle-center; align-items: center; justify-content: center;">
