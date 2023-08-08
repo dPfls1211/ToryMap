@@ -9,6 +9,7 @@ public class ObjSetUi : MonoBehaviour
     GameObject expalneUICanvase;
 
     public string objName;
+    public string objEngName;
     public string objExplane;
     public string _explaneUrl = "http://unity.com/";
 

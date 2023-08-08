@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 112098869248
-    m_Localized: network square
+    m_Localized: market place
     m_Metadata:
       m_Items: []
   - m_Id: 212346929152
@@ -31,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 617843851264
-    m_Localized: Business Room/Boardroom
+    m_Localized: underground mall info
     m_Metadata:
       m_Items: []
   - m_Id: 10841245941760
@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10845851287552
-    m_Localized: Open Exhibition Space
+    m_Localized: Group meeting room
     m_Metadata:
       m_Items: []
   - m_Id: 11274421075968
@@ -59,7 +59,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17249790132224
-    m_Localized: site tutorial
+    m_Localized: satisfaction survey
     m_Metadata:
       m_Items: []
   - m_Id: 17331495174144
@@ -87,29 +87,33 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7664152451284992
-    m_Localized: 'uijeongbu cityHall
+    m_Localized: Promotion lounge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8355359389188096
+    m_Localized: 'Meeting Room
 
 '
     m_Metadata:
       m_Items: []
-  - m_Id: 8355359389188096
-    m_Localized: meeting room
-    m_Metadata:
-      m_Items: []
   - m_Id: 8355623248658432
-    m_Localized: education Hall
+    m_Localized: Exhibition hall
     m_Metadata:
       m_Items: []
   - m_Id: 8355711291293696
-    m_Localized: uijeongbu station
+    m_Localized: underground mall info
     m_Metadata:
       m_Items: []
   - m_Id: 8355861589983232
-    m_Localized: jeil market
+    m_Localized: market place
     m_Metadata:
       m_Items: []
   - m_Id: 8356069229002752
-    m_Localized: temple
+    m_Localized: conference hall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9842840831852544
+    m_Localized: sensor management
     m_Metadata:
       m_Items: []
   references:

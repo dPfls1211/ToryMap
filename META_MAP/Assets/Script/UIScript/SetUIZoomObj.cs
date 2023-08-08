@@ -21,6 +21,7 @@ public class SetUIZoomObj : MonoBehaviour
     {
         canvas_ObjZoomInView.SetActive(true);
         canvasInfoBox.SetActive(true);
+        Debug.Log(zoomInTargetObj);
         GameObject TargetModel = Instantiate(zoomInTargetObj, new Vector3(0, 0, 0), Quaternion.identity);
 
         TargetModel.transform.SetParent(gameObject.transform, false);
@@ -39,7 +40,6 @@ public class SetUIZoomObj : MonoBehaviour
 
     public void DestroyTargetObj()
     {
-
         for (int i = 0; i < gameObject.transform.childCount; i++)
         {
             Destroy(gameObject.transform.GetChild(i).gameObject);

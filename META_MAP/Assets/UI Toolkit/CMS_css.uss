@@ -3,6 +3,6 @@
     -unity-overflow-clip-box: content-box;
     flex: 100%;
     border-width: none;
-    background-color: none;
+    background-color: transparent;
     color: var(--color-txt-mid);
 }

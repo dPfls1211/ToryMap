@@ -31,7 +31,7 @@ public class setViewTarget : MonoBehaviour
         objBasicTransform = gameObject.transform.localScale;
         targetMainCameraActionSC = GameObject.Find("Main Camera").GetComponent<MainCamera_Action>();
         localUIControlCs = GameObject.Find("UI_NAME_Canvas").GetComponent<UIexplain>();
-        explain3 = GameObject.Find("Info_Canvas").GetComponent<UIExplain_ver3>();
+        explain3 = GameObject.Find("info_toolkit").GetComponent<UIExplain_ver3>();
 
 
     }
@@ -107,7 +107,6 @@ public class setViewTarget : MonoBehaviour
                 myOBJ = gameObject;
                 // localUIControlCs.clickObj(myOBJ);
                 // localUIControlCs.followOn = true;
-
                 explain3.click(myOBJ);
 
             }

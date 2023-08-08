@@ -18,16 +18,19 @@ public class UIExplain_ver3 : MonoBehaviour
     string clickedUIColor = "#283968";
     string UnClickedUIColor = "#000000";
 
+    GameObject Ui_info_toolkit;
+
     void Awake()
     {
-
+        Ui_info_toolkit = GameObject.Find("info_toolkit").transform.GetChild(0).transform.gameObject;
         uiname = GameObject.Find("GameObject").GetComponent<UIName>();
         main = GameObject.Find("Main Camera").GetComponent<MainCamera_Action>();
     }
 
     public void click(GameObject obj)
     {
-        UIExplain3.SetActive(true);
+        // UIExplain3.SetActive(true);
+        //Ui_info_toolkit.SetActive(true);
         clickobj = obj;
 
         findNameui();
@@ -35,7 +38,8 @@ public class UIExplain_ver3 : MonoBehaviour
 
     public void infoOff()
     {
-        UIExplain3.SetActive(false);
+        //UIExplain3.SetActive(false);
+        Ui_info_toolkit.SetActive(false);
         Color color;
         ColorUtility.TryParseHtmlString(UnClickedUIColor, out color);
         color.a = 0.4f;
@@ -49,7 +53,6 @@ public class UIExplain_ver3 : MonoBehaviour
     }
     void findNameui()
     {
-        Debug.Log(uiname.objlen);
         for (int i = 0; i < uiname.objlen; i++)
         {
             if (uiname.UI_child_list[i].name == clickobj.name)
