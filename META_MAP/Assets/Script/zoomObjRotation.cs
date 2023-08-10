@@ -6,13 +6,18 @@ public class zoomObjRotation : MonoBehaviour
 {
     int rotationOne = 0;
 
+    RenderTexture ren;
     float xmove = 0;
     float ymove = 0;
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.transform.localEulerAngles = new Vector3(270, 90, 0);
+        //gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
         //코루틴 한바퀴 돌려주기
         StartCoroutine(OneRotation());
+        RenderTexture aa = Instantiate(ren);
+        aa.name = "qwresdfresdf";
     }
 
 
@@ -28,17 +33,27 @@ public class zoomObjRotation : MonoBehaviour
             if (ymove > 10)
                 ymove = 10;
 
-            transform.eulerAngles = new Vector3(-ymove, -xmove, 0);
+            // 수정 피벗
+            transform.localEulerAngles = new Vector3(-90 - ymove, -xmove, -90);
 
         }
     }
 
     IEnumerator OneRotation()
     {
-        gameObject.transform.Rotate(Vector3.up * 1);
-        yield return new WaitForSeconds(0.0005f);
-        if (rotationOne++ > 358)
+
+
+        //gameObject.transform.Rotate(gameObject.transform.rotation.x, gameObject.transform.rotation.y * 1, gameObject.transform.rotation.z);
+
+        gameObject.transform.Rotate(Vector3.forward * 1);
+        //yield return new WaitForSeconds(0.0001f);
+        yield return new WaitForSecondsRealtime(0.0000001f);
+
+        if (rotationOne++ > 178)
             yield break;
+
+
+
         yield return OneRotation();
 
     }

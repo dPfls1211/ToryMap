@@ -5,8 +5,8 @@ using UnityEngine;
 public class mapRotate : MonoBehaviour
 {
 
-    public float speed = 0.5f;  // 속도
-    public float limitY = 10.0f;
+    public float speed = 0.4f;  // 속도
+    public float limitY = 4.0f;
     float overy = 0;
     float downy = 0;
     float calY = 0;

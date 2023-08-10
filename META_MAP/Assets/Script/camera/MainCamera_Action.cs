@@ -149,8 +149,10 @@ public class MainCamera_Action : MonoBehaviour
         if (zoominCheckboolean)
             ymove = 5;
         //회전 함수
+
         this.transform.rotation = Quaternion.LookRotation(dir);
-        //this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * CameraSpeed * 2);
+        //this.transform.rotation = Quaternion.Lerp(Quaternion.LookRotation(this.transform.rotation.eulerAngles), Quaternion.LookRotation(dir), Time.deltaTime * CameraSpeed * 2);
+        // this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * CameraSpeed * 2);
 
         var rad = Mathf.Deg2Rad * xmove;
         var x = distanceRidance * Mathf.Sin(rad);
@@ -160,9 +162,10 @@ public class MainCamera_Action : MonoBehaviour
         // 타겟의 x, y, z 좌표에 카메라의 좌표를 더하여 카메라의 위치를 결정
         TargetPos = new Vector3(
             Target.transform.position.x + x,
-            Target.transform.position.y + offsetY + ymove,
+            Target.transform.position.y + offsetY,
             Target.transform.position.z + z
             );
+
         Vector3 reverseDistance = new Vector3(0.0f, 0.0f, distanceRidance);
 
         // Vector3 postionCamTarget = TargetPos - transform.rotation ; 
@@ -197,16 +200,19 @@ public class MainCamera_Action : MonoBehaviour
         //줌인 아웃 하기
 
         if (checkedCamReset)
+        {
             thisCamera.fieldOfView += scroll;
+        }
 
 
     }
     public void resetZoom()
     {
+        Debug.Log("zoomout");
         //setViewTarget.localUIControlCs.objON = false;
         //setViewTarget.localUIControlCs.canvasOff();
         firstObj = null;
-        thisCamera.fieldOfView = zoomMax;
+        thisCamera.fieldOfView = 27;
         //zoomMax = 85f;
         //GameObject.Find("Main Camera").GetComponent<cameraRotation>().TargetViewAsset = GameObject.Find("plane");
         //GameObject.Find("Main Camera").GetComponent<cameraRotation>().ResetView();

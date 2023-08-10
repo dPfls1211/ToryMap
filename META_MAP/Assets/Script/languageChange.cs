@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
+using System;
 
 public class languageChange : MonoBehaviour
 {
@@ -10,7 +11,16 @@ public class languageChange : MonoBehaviour
     UIName uIName;
     private void Awake()
     {
-        uIName = GameObject.Find("GameObject").GetComponent<UIName>();
+
+        try
+        {
+            uIName = GameObject.Find("GameObject").GetComponent<UIName>();
+        }
+        catch
+        {
+
+        }
+
     }
 
 

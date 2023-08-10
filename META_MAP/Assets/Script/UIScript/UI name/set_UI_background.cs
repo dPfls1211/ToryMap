@@ -30,7 +30,7 @@ public class set_UI_background : MonoBehaviour
     public void name()
     {
         RectTransform rect = gameObject.GetComponent<RectTransform>();
-        rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, text.preferredWidth * 1f);
+        rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, text.preferredWidth * 1.2f);
 
         //ui name line생성시
         //        GameObject round = transform.GetChild(0).gameObject;
