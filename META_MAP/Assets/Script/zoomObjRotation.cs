@@ -6,9 +6,10 @@ public class zoomObjRotation : MonoBehaviour
 {
     int rotationOne = 0;
 
-    RenderTexture ren;
     float xmove = 0;
     float ymove = 0;
+
+    bool isturnok = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +17,7 @@ public class zoomObjRotation : MonoBehaviour
         //gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
         //코루틴 한바퀴 돌려주기
         StartCoroutine(OneRotation());
-        RenderTexture aa = Instantiate(ren);
-        aa.name = "qwresdfresdf";
+
     }
 
 
@@ -37,8 +37,15 @@ public class zoomObjRotation : MonoBehaviour
             transform.localEulerAngles = new Vector3(-90 - ymove, -xmove, -90);
 
         }
-    }
 
+    }
+    void FixedUpdate()
+    {
+        if (isturnok)
+        {
+            BuildingRoatation();
+        }
+    }
     IEnumerator OneRotation()
     {
 
@@ -46,7 +53,6 @@ public class zoomObjRotation : MonoBehaviour
         //gameObject.transform.Rotate(gameObject.transform.rotation.x, gameObject.transform.rotation.y * 1, gameObject.transform.rotation.z);
 
         gameObject.transform.Rotate(Vector3.forward * 1);
-        //yield return new WaitForSeconds(0.0001f);
         yield return new WaitForSecondsRealtime(0.0000001f);
 
         if (rotationOne++ > 178)
@@ -56,6 +62,12 @@ public class zoomObjRotation : MonoBehaviour
 
         yield return OneRotation();
 
+    }
+    void BuildingRoatation()
+    {
+        gameObject.transform.Rotate(Vector3.forward * 1);
+        if (rotationOne++ > 178)
+            isturnok = false;
     }
 
 }
