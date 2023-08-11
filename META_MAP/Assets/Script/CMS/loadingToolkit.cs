@@ -7,12 +7,6 @@ using UnityEngine.UIElements;
 public class loadingToolkit : MonoBehaviour
 {
 
-    enum LoadingType
-    {
-        logo,
-        wording,
-        video
-    }
     /// origin setting 
     private StyleBackground logoImg;
     private string VideoUrl;
@@ -24,11 +18,12 @@ public class loadingToolkit : MonoBehaviour
     private string[] contents = { "상단 로고", "의정부 리버사이드.png", "로딩 영상", "의정부 리버사이드.mp4", "소개 문구", "의정부 리버사이드에 오신 것을 환영합니다. 저희가 제공하는 가상 스테이지에서 지역 서비스를 경험하며, 즐거운 시간 보내시길 바랍니다." };
     public Texture2D[] Toggle_img = new Texture2D[2];
 
-    //private VisualElement
-    private StyleBackground set_img;
-    private string set_text;
-    private string set_url;
+    //change setting
+    public StyleBackground set_img;
+    public string set_text;
+    public string set_url;
 
+    //private VisualElement 
     private VisualElement Loading_logo;
     private Label Loading_infotxt;
     private VideoPlayer Loading_videoUrl;
@@ -84,9 +79,10 @@ public class loadingToolkit : MonoBehaviour
 
 
         contents_.Q<Toggle>("check_toggle").RegisterValueChangedCallback(OnCheckedEvent);
+        //contents_.Q<Toggle>("check_toggle").RegisterCallback<ClickEvent>(OnBtnClickedEvent);
         contents_.Q<Toggle>("check_toggle").name = name;
-        contents_.Q("changeBoxImg").RegisterCallback<ClickEvent>(OnBtnClickedEvent);
-        contents_.Q("changeBoxImg").name = "changeBoxImg_" + name.ToString();
+        contents_.Q("changeBtnName").RegisterCallback<ClickEvent>(OnBtnClickedEvent);
+        contents_.Q("changeBtnName").name = "changeBtnName-" + name.ToString();
 
     }
 
@@ -94,13 +90,8 @@ public class loadingToolkit : MonoBehaviour
     //체크버튼 클릭시
     private void OnCheckedEvent(ChangeEvent<bool> evt) //(ClickEvent evt)  //
     {
+
         var targetBox = evt.target as Toggle;
-
-        //객체 판단
-        //타입 설정
-        int typeindex = 5;
-
-
 
         //Debug.Log(targetBox.name);
 
@@ -139,14 +130,36 @@ public class loadingToolkit : MonoBehaviour
 
         }
 
-        // //targetBox.SetEnabled(!targetBox.value);
-        // targetBox.value = !targetBox.value;
-
     }
-    // 변경 버튼 클릭 시 
 
+
+    // 로딩씬의 변경 버튼 클릭 시 
     private void OnBtnClickedEvent(ClickEvent evt)
     {
-        gameObject.GetComponent<EditUITool>().createEdit(evt.target as VisualElement, 450, 300);
+
+        Label btnName = evt.target as Label;
+        string[] words = btnName.name.Split('-');
+        string assetname = ""; //words[1];
+        Debug.Log(words[0]);
+        var root = gameObject.GetComponent<UIDocument>().rootVisualElement;
+        //gameObject.GetComponent<EditUITool>().createEdit(evt.target as VisualElement, 450, 300);
+        switch (words[1])
+        {
+            case "Loading_logo":
+                gameObject.GetComponent<EditUITool>().targetUiType = CMS_TYPES.CMSUIType.Cms_img;
+                break;
+            case "Loading_video":
+                gameObject.GetComponent<EditUITool>().targetUiType = CMS_TYPES.CMSUIType.Cms_video;
+                break;
+            case "infotext":
+                gameObject.GetComponent<EditUITool>().targetUiType = CMS_TYPES.CMSUIType.Cms_txt;
+                break;
+            default:
+                Debug.Log("잘못된 접근 경로입니다.");
+                break;
+        }
+        gameObject.GetComponent<EditUITool>().createEdit(root.Q<VisualElement>("tableRowContents_" + words[1]), 450, 300);
+
     }
+
 }

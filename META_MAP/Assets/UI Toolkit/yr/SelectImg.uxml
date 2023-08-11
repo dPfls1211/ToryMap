@@ -1,9 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/CMS_css.uss?fileID=7433441132597879392&amp;guid=f743704ed5f4e9845ab0c3b9809db29f&amp;type=3#CMS_css" />
-    <ui:VisualElement style="flex-basis: 100%; background-color: rgb(255, 255, 255); border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgba(0, 0, 0, 255); border-right-color: rgba(0, 0, 0, 255); border-top-color: rgba(0, 0, 0, 255); border-bottom-color: rgba(0, 0, 0, 255);">
+    <ui:VisualElement style="flex-basis: auto; background-color: rgb(255, 255, 255); border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); position: absolute; top: 0; left: 0; height: 300px; display: flex;">
         <ui:VisualElement name="EditImgs" style="flex-basis: 50%;">
-            <ui:VisualElement name="settingImg" style="flex-basis: 50%; background-image: resource(&apos;VirtualSeoulScene/WorkShop_Room.Textures/01#GLB&apos;);" />
-            <ui:VisualElement name="settingImg" style="flex-basis: 50%; background-image: resource(&apos;VirtualSeoulScene/Seoul_Theater.Textures/00#GLB&apos;);" />
+            <ui:VisualElement name="settingImg_top" style="flex-basis: 50%; background-image: resource(&apos;VirtualSeoulScene/WorkShop_Room.Textures/01#GLB&apos;);" />
+            <ui:VisualElement name="settingImg_bot" style="flex-basis: 50%; background-image: resource(&apos;VirtualSeoulScene/Seoul_Theater.Textures/00#GLB&apos;);" />
         </ui:VisualElement>
         <ui:TextField picking-mode="Ignore" value="filler text" text="의정부 메타 사이드에 오신 것을 환영합니다. 저희가 제공하는 가상 스테이지에서 지역 서비스를 경험하며, 즐거운 시간 보내시길 바랍니다." name="settingText" style="white-space: normal;" />
         <ui:Button text="Button" display-tooltip-when-elided="true" name="closeBTN" />
