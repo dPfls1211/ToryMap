@@ -48,7 +48,7 @@ public class UIName : MonoBehaviour
             localizeStringEvent.StringReference.TableEntryReference = Obj_List_child_transform[i].name + "_key";
 
             ins.name = Obj_List_child_transform[i].name;
-            ins.transform.position = new Vector3(Obj_List_child_transform[i].position.x, Obj_List_child_transform[i].position.y + 12.0f, Obj_List_child_transform[i].position.z);
+            ins.transform.position = new Vector3(Obj_List_child_transform[i].position.x, Obj_List_child_transform[i].position.y + 2.0f, Obj_List_child_transform[i].position.z);
             UI_child_list.Add(ins);
             ins.GetComponentInChildren<TMP_Text>().text = Obj_List_child_transform[i].name;
 

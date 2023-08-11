@@ -115,12 +115,12 @@ public class setViewTarget : MonoBehaviour
             {
                 targetMainCameraActionSC.Target = gameObject;
                 targetMainCameraActionSC.offsetX = 8;
-                targetMainCameraActionSC.offsetY = 4;
-                targetMainCameraActionSC.offsetZ = 5;
+                targetMainCameraActionSC.offsetY = 0.26f;
+                targetMainCameraActionSC.offsetZ = 0.33f;
                 targetMainCameraActionSC.checkedCamReset = false;
-                targetMainCameraActionSC.distanceRidance = 37; //카메라와 객체와의 거리 조절
+                targetMainCameraActionSC.distanceRidance = 2.44f; //카메라와 객체와의 거리 조절
                 //targetMainCameraActionSC.zoomMax = 60f;
-                GameObject.Find("Main Camera").GetComponent<Camera>().fieldOfView = 50f;
+                GameObject.Find("Main Camera").GetComponent<Camera>().fieldOfView = 26f;
 
                 //Debug.Log(gameObject.name);
                 // targetViewSC.TargetViewAsset.transform.position = gameObject.transform.position;
@@ -166,7 +166,7 @@ public class setViewTarget : MonoBehaviour
     {
 
         // Debug.Log(targetViewSC.distance);
-        if (targetViewSC.distance < 20)
+        if (targetViewSC.distance < 5)
         {
             ShowExplaneUI();
             targetViewSC.zoomin = true;
@@ -182,7 +182,7 @@ public class setViewTarget : MonoBehaviour
     {
         yield return new WaitForSeconds(2.5f);
 
-        Debug.Log(gameObject);
+        //Debug.Log(gameObject);
         SetUIZoomObj.zoomInTargetObj = gameObject;
         GameObject.Find("objImage_zoomExplane").GetComponent<SetUIZoomObj>().viewTargetObj();
     }

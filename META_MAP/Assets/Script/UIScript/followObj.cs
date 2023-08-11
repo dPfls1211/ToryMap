@@ -60,11 +60,11 @@ public class followObj : MonoBehaviour
     {
         if (!namechangepos)
         {
-            nameposy = 6.0f;
+            nameposy = 0.0f;
         }
         else
         {
-            nameposy = 10.0f;
+            nameposy = 0.0f;
         }
     }
 

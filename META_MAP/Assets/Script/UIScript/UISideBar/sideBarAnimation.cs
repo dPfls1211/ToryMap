@@ -25,7 +25,7 @@ public class sideBarAnimation : MonoBehaviour, IPointerClickHandler
         rectTransform = sidebarObj.GetComponent<RectTransform>();
 
         orign_position = sidebarObj.GetComponent<RectTransform>().anchoredPosition;
-        Debug.Log(orign_position);
+        //Debug.Log(orign_position);
         Target_position = new Vector2(-orign_position.x, orign_position.y);
         if (!checkViewSideBar)
         {

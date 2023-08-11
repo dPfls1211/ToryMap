@@ -22,7 +22,7 @@ public class SetUIZoomObj : MonoBehaviour
     {
         canvas_ObjZoomInView.SetActive(true);
         canvasInfoBox.SetActive(true);
-        Debug.Log(zoomInTargetObj);
+        //        Debug.Log(zoomInTargetObj);
 
         GameObject TargetModel = Instantiate(zoomInTargetObj, new Vector3(0, -1.5f, 0), new Quaternion(-90, 0, -90, 0));
 
@@ -38,7 +38,7 @@ public class SetUIZoomObj : MonoBehaviour
         TargetModel.GetComponent<setViewTarget>().enabled = false;
 
         TargetModel.AddComponent<zoomObjRotation>();
-        Debug.Log(zoomInUIname.transform.GetChild(0).name);
+        //        Debug.Log(zoomInUIname.transform.GetChild(0).name);
         zoomInUIname.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = zoomInTargetObj.name;
         //zoomInUIname.GetComponent<set_UI_background>().text.text = zoomInTargetObj.name;
         //zoomInUIname.GetComponent<set_UI_background>().name();
