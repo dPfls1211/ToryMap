@@ -13,7 +13,7 @@ public class mapRotate : MonoBehaviour
     bool right = true;
     float startY = 0;
     public bool isTurn = true;
-    void Start()
+    void Awake()
     {
         startY = transform.rotation.eulerAngles.y;
         overy = startY + limitY;
@@ -22,11 +22,11 @@ public class mapRotate : MonoBehaviour
     void Update()
     {
         startY = transform.rotation.eulerAngles.y;
-        if (startY >= overy)
+        if (startY < 10 && startY >= overy)
         {
             right = false;
         }
-        else if (startY <= downy)
+        else if (startY > 350 && startY <= 360 + downy)
         {
             right = true;
         }

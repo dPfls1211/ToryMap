@@ -17,6 +17,15 @@ public class ObjSetUi : MonoBehaviour
     public string _phonenum;
 
     public string nextScene;
+
+    //public Vector3 cameraposition;
+    //public Vector3 camerarotation;
+    public float x;
+    public float y;
+    public float z;
+    public float disridance;
+
+
     // Start is called before the first frame update
 
 

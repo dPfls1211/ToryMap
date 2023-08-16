@@ -31,11 +31,13 @@ public class cameraMove : MonoBehaviour
     float lerpTime = 1f;
     float currentTime = 0;
     public bool zoomin = false;
-    
-    private void LateUpdate() {
-        if(zoomin){  //다른 마우스버튼이 클릭중일땐 작동안되게
-             Vector3 targetPos = new Vector3(TargetObj.position.x, TargetObj.position.y, this.transform.position.z);
-             //transform.position = Vector3.Lerp(transform.position, targetPos, smoothing);
+
+    private void LateUpdate()
+    {
+        if (zoomin)
+        {  //다른 마우스버튼이 클릭중일땐 작동안되게
+            Vector3 targetPos = new Vector3(TargetObj.position.x, TargetObj.position.y, this.transform.position.z);
+            //transform.position = Vector3.Lerp(transform.position, targetPos, smoothing);
 
         }
 
@@ -76,7 +78,7 @@ public class cameraMove : MonoBehaviour
         reverseDistance = new Vector3(0.0f, 0.0f, distance); // 카메라가 바라보는 앞방향은 Z 축입니다. 이동량에 따른 Z 축방향의 벡터를 구합니다.
         transform.position = TargetViewAsset.transform.position - transform.rotation * reverseDistance; // 플레이어의 위치에서 카메라가 바라보는 방향에 벡터값을 적용한 상대 좌표를 차감합니다.
         ZoomInOutBefore = TargetViewAsset.transform;
-        if(Input.GetMouseButtonUp(1))
+        if (Input.GetMouseButtonUp(1))
             zoomin = true;
         if (zoomin)
         {
@@ -101,7 +103,7 @@ public class cameraMove : MonoBehaviour
             thisCamera.fieldOfView = 65.0f;
             //GameObject.Find("Main Camera").GetComponent<cameraRotation>().TargetViewAsset = GameObject.Find("plane");
             ResetView();
-           // transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(worldDefalutForward), 0.015f);
+            // transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(worldDefalutForward), 0.015f);
             explaneui_basic.GetComponent<childcheck>().ExplaneUICanvas.SetActive(false);
 
             //ui 툴킷
@@ -125,7 +127,7 @@ public class cameraMove : MonoBehaviour
         }
     }
 
-    
+
     public void MoveCam()
     {
         ///distance = 10;
@@ -168,7 +170,7 @@ public class cameraMove : MonoBehaviour
     public void ResetView()
     {
         zoomin = false;
-        TargetViewAssets.GetComponent<setViewTarget>().zoomCheck = false;
+        setViewTarget.zoomCheck = false;
         StartCoroutine(ResetViewCam());
 
     }

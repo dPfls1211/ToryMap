@@ -15,7 +15,7 @@ public class setViewTarget : MonoBehaviour
     int sign = 1;
     int sizeCount = 0;
     int sizeTotalCount = 0;
-    public bool zoomCheck = false;
+    public static bool zoomCheck = false;
 
     public static UIexplain localUIControlCs;
     public static UIExplain_ver3 explain3;
@@ -113,12 +113,13 @@ public class setViewTarget : MonoBehaviour
             }
             if (!EventSystem.current.IsPointerOverGameObject())
             {
+                ObjSetUi objset = gameObject.GetComponent<ObjSetUi>();
                 targetMainCameraActionSC.Target = gameObject;
-                targetMainCameraActionSC.offsetX = 8;
-                targetMainCameraActionSC.offsetY = 0.26f;
-                targetMainCameraActionSC.offsetZ = 0.33f;
+                targetMainCameraActionSC.offsetX = objset.x;
+                targetMainCameraActionSC.offsetY = objset.y;
+                targetMainCameraActionSC.offsetZ = objset.z;
                 targetMainCameraActionSC.checkedCamReset = false;
-                targetMainCameraActionSC.distanceRidance = 2.44f; //카메라와 객체와의 거리 조절
+                targetMainCameraActionSC.distanceRidance = objset.disridance; //카메라와 객체와의 거리 조절
                 //targetMainCameraActionSC.zoomMax = 60f;
                 GameObject.Find("Main Camera").GetComponent<Camera>().fieldOfView = 26f;
 

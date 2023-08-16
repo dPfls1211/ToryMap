@@ -5,13 +5,19 @@ using UnityEngine.Video;
 
 public class setURL : MonoBehaviour
 {
-    public static string loadingSceneURL = "http://192.168.0.55:81/video/video3.mp4";
-    //public static string loadingSceneURL = "/video/video3.mp4";
+    public string loadingSceneURL;
+    public string uijeongbuVideo1 = "Assets/Resources/Video/Uijeongbu.mp4";
+
+    public VideoClip uijeongbuVideo;
     URLSave urls;
 
     private void Awake()
     {
+        loadingSceneURL = System.IO.Path.Combine(Application.streamingAssetsPath, "Uijeongbu.mp4");
+        //gameObject.GetComponent<VideoPlayer>().clip = uijeongbuVideo;
         gameObject.GetComponent<VideoPlayer>().url = loadingSceneURL;
+
+        gameObject.GetComponent<VideoPlayer>().Play();
     }
     // public GameObject urlbtn;
     // // Start is called before the first frame update

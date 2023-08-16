@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/yr/metaMapMain.unity
     guid: 49a038f64d79309468d21aac35a9e472
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/sy/meta0808.unity
     guid: 6bbb6a42842a71c448cef59d0418b4c3
   - enabled: 1

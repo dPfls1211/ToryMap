@@ -13,7 +13,7 @@ public class followObj : MonoBehaviour
 
     public int[] objlook;
 
-    float nameposy = 21.0f;
+    float nameposy = 0.7f;
     public bool namechangepos = false;
     // Start is called before the first frame update
     void Start()
