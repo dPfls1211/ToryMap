@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/CMS_css.uss?fileID=7433441132597879392&amp;guid=f743704ed5f4e9845ab0c3b9809db29f&amp;type=3#CMS_css" />
     <ui:VisualElement name="tableRowContents_order" style="height: 45px; flex-direction: row; margin-left: 0; background-color: rgb(255, 255, 255);">
-        <ui:VisualElement name="table" style="width: 78.3%; margin-left: 140px; flex-direction: row; border-top-width: 0; border-bottom-width: 1px; border-bottom-color: rgb(211, 211, 211); border-top-color: rgb(211, 211, 211); align-items: center;">
+        <ui:VisualElement name="table" style="width: 78.3%; margin-left: 9%; flex-direction: row; border-top-width: 0; border-bottom-width: 1px; border-bottom-color: rgb(211, 211, 211); border-top-color: rgb(211, 211, 211); align-items: center;">
             <ui:VisualElement name="orderbox" style="width: 7.9%; -unity-text-align: middle-center; justify-content: center; align-items: center;">
                 <ui:VisualElement name="orderboxImg" style="background-image: resource(&apos;Icon/CMS_contents/order change&apos;); width: 30px; height: 30px; display: flex;" />
             </ui:VisualElement>

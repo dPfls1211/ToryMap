@@ -1,0 +1,53 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="dropbox-contents" src="project://database/Assets/UI%20Toolkit/yr/dropbox-contents.uxml?fileID=9197481963319205126&amp;guid=ea8262dadf2660b46b794c76adabccbc&amp;type=3#dropbox-contents" />
+    <Style src="project://database/Assets/UI%20Toolkit/CMS_css.uss?fileID=7433441132597879392&amp;guid=f743704ed5f4e9845ab0c3b9809db29f&amp;type=3#CMS_css" />
+    <Style src="project://database/Assets/UI%20Toolkit/yr/dropdownBox.uss?fileID=7433441132597879392&amp;guid=8e89ad345bc83ad45980e2b861ba9c0e&amp;type=3#dropdownBox" />
+    <ui:VisualElement style="flex-basis: auto; width: 668px; background-color: rgb(255, 255, 255); -unity-font-definition: resource(&apos;Font/Pretendard-Regular SDF 1&apos;); -unity-font: resource(&apos;Font/Pretendard-Regular&apos;); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; position: absolute; left: 0; top: auto; bottom: -2px; border-left-width: 3px; border-right-width: 3px; border-top-width: 3px; border-bottom-width: 3px; border-left-color: rgba(0, 0, 0, 0.2); border-right-color: rgba(0, 0, 0, 0.2); border-top-color: rgba(0, 0, 0, 0.2); border-bottom-color: rgba(0, 0, 0, 0.2);">
+        <ui:VisualElement style="width: 100%; height: 74px; border-bottom-width: 2px; border-bottom-color: rgb(47, 85, 142); flex-direction: column-reverse; padding-bottom: 14px; padding-left: 20px;">
+            <ui:Label text="영상 편집" display-tooltip-when-elided="true" name="popup-header-title" style="font-size: 28px; -unity-font-definition: resource(&apos;Font/Pretendard-Bold SDF 1&apos;); -unity-font: resource(&apos;Font/Pretendard-Bold&apos;); color: rgb(47, 85, 142);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="text-editor" style="display: flex;">
+            <ui:VisualElement style="height: 150px; flex-basis: 150px; padding-left: 20px; padding-right: 20px; flex-direction: column-reverse;">
+                <ui:VisualElement style="flex-basis: 20px; height: 20px; flex-direction: row-reverse; margin-top: 8px; align-items: center;">
+                    <ui:Label text="전체삭제" display-tooltip-when-elided="true" name="edit-text-allDelete" style="flex-basis: 56px; -unity-text-align: middle-left; font-size: 16px; color: rgb(52, 52, 52);" />
+                    <ui:Label text="/ 220 (공백포함)" display-tooltip-when-elided="true" style="flex-basis: 128px; -unity-text-align: middle-left; font-size: 16px; color: rgb(52, 52, 52);" />
+                    <ui:Label text="71" display-tooltip-when-elided="true" name="current-text-count" style="flex-basis: 128px; -unity-text-align: middle-right; font-size: 16px; color: rgb(0, 111, 244); align-items: stretch; margin-right: 4px;" />
+                </ui:VisualElement>
+                <ui:TextField picking-mode="Ignore" text="의정부 리버사이드 메타맵에 오신 것을 환영합니다.  의정부를 꼭 담은 가상 스테이지에서 다양한 지역 서비스를 즐기시길 바랍니다." name="edit-text-input" style="font-size: 16px; padding-left: 8px; padding-right: 8px; padding-top: 10px; padding-bottom: 10px; height: 58px; flex-basis: 58px; white-space: normal; align-items: flex-start; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(217, 217, 217); border-right-color: rgb(217, 217, 217); border-top-color: rgb(217, 217, 217); border-bottom-color: rgb(217, 217, 217); margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; color: rgb(205, 205, 205); -unity-font-style: normal; -unity-font-definition: resource(&apos;Font/Pretendard-Regular SDF 1&apos;); -unity-font: resource(&apos;Font/Pretendard-Regular&apos;); -unity-background-image-tint-color: rgb(18, 18, 18); -unity-text-align: upper-left;" />
+                <ui:VisualElement name="edit-select-lang" style="flex-basis: 65px; flex-direction: row-reverse; align-items: flex-end; margin-bottom: 8px;">
+                    <ui:Instance template="dropbox-contents" name="dropbox-contents" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="img-editor" style="height: 476px; padding-left: 20px; padding-right: 20px; display: none; flex-basis: 471px; flex-direction: column-reverse;">
+            <ui:VisualElement name="contents-select" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(225, 225, 225); border-right-color: rgb(225, 225, 225); border-top-color: rgb(225, 225, 225); border-bottom-color: rgb(225, 225, 225); height: 467px; width: 100%;">
+                <ui:VisualElement name="contents-upload" style="width: 100%; height: 467px; align-items: center; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(225, 225, 225); border-right-color: rgb(225, 225, 225); border-top-color: rgb(225, 225, 225); border-bottom-color: rgb(225, 225, 225); display: none;">
+                    <ui:VisualElement style="width: 610px; height: 33px; margin-top: 10px; border-left-color: rgb(225, 225, 225); border-right-color: rgb(225, 225, 225); border-top-color: rgb(225, 225, 225); border-bottom-color: rgb(225, 225, 225); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; margin-bottom: 40px; justify-content: center;">
+                        <ui:Label text="Past in a video URL" display-tooltip-when-elided="true" style="font-size: 15px; color: rgb(175, 175, 175); margin-left: 5px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="background-image: resource(&apos;Icon/CMS_contents/drag and drop (1)&apos;); width: 315px; height: 217px;" />
+                </ui:VisualElement>
+                <ui:ScrollView horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" mouse-wheel-scroll-size="130" mode="VerticalAndHorizontal" name="contents-gallery" class="contents-gallery-view" style="flex-basis: 100%; margin-left: 8px; margin-bottom: 5px; width: 100%; display: flex; flex-wrap: wrap;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="contents-gallery-tab-menu" style="margin-top: 0; width: 100%; border-bottom-width: 0; border-bottom-color: rgba(0, 0, 0, 0); flex-direction: row; border-left-width: 0; border-right-width: 0; border-top-width: 0; height: 80px; padding-top: 0; align-items: flex-end; justify-content: space-between; flex-basis: 80px;">
+                <ui:VisualElement style="flex-direction: row; border-bottom-width: 3px; border-bottom-color: rgb(47, 85, 142); height: 40px; margin-top: 30px;">
+                    <ui:VisualElement name="contents-tab-menu-upload" style="width: 80px; height: 40px; align-items: center; justify-content: center; font-size: 23px; border-top-left-radius: 3px; border-top-right-radius: 3px;">
+                        <ui:Label text="업로드" display-tooltip-when-elided="true" name="Label" style="color: rgb(88, 88, 88); -unity-font-definition: resource(&apos;Font/Pretendard-SemiBold SDF 1&apos;); -unity-font: resource(&apos;Font/Pretendard-SemiBold&apos;);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="contents-tab-menu-gallery" style="width: 80px; height: 40px; align-items: center; justify-content: center; font-size: 23px; background-color: rgb(47, 85, 142); border-top-left-radius: 3px; border-top-right-radius: 3px;">
+                        <ui:Label text="갤러리" display-tooltip-when-elided="true" name="Label" style="color: rgb(255, 255, 255);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="select-box-empty" style="height: 30px; width: 90px; position: relative; bottom: 0; right: 0; margin-bottom: 5px;">
+                    <ui:Instance template="dropbox-contents" name="dropbox-contents" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="height: 127px; align-items: center;">
+            <ui:VisualElement style="align-items: flex-end; justify-content: space-between; flex-direction: row; height: 127px; width: 330px; padding-bottom: 35px; -unity-font: resource(&apos;Font/Pretendard-SemiBold&apos;); font-size: 24px; color: rgb(255, 255, 255); -unity-font-definition: resource(&apos;Font/Pretendard-SemiBold SDF 1&apos;);">
+                <ui:Button text="취소하기" display-tooltip-when-elided="true" name="closeBTN" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-items: center; justify-content: center; width: 155px; height: 49px; border-top-left-radius: 25px; border-bottom-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; background-color: rgb(138, 138, 138); font-size: 24px;" />
+                <ui:Button text="적용하기" display-tooltip-when-elided="true" name="SetBTN" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-items: center; justify-content: center; width: 155px; height: 49px; border-top-left-radius: 25px; border-bottom-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; background-color: rgb(47, 85, 142); font-size: 24px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

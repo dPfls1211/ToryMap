@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
@@ -19,8 +20,16 @@ public class UIInfoData : MonoBehaviour
     public string OriginfileContentsUI;     //해당 UI 소스의 파일 이름명 (기존)
     public Texture2D changeFileContentsUIImg;
 
+    public VideoClip defaultVideoClip_roadingCMS;
+    VideoPlayer v_player;
 
+    private void Start()
+    {
 
+        v_player = GameObject.Find("VideoPlayer").GetComponent<VideoPlayer>();
+        //디폴트 비디오 저장.
+        defaultVideoClip_roadingCMS = v_player.clip;
+    }
 
     //로딩씬일때, 아닐때 if문 다음. 타입별 if문
     public void setChangedUI(string _text)
@@ -42,6 +51,13 @@ public class UIInfoData : MonoBehaviour
     public void setChangedUI()
     {
     }
+    public void setChangedUI(VideoClip _video)
+    {
+        if (cmstype == CMS_TYPES.CMSType.cms_loading)
+        {
+            SetLoadingCms(_video);
+        }
+    }
 
     //로딩씬 설정
     private void SetLoadingCms(string _text_)
@@ -51,7 +67,8 @@ public class UIInfoData : MonoBehaviour
         GetComponent<loadingToolkit>().set_text = _text_;
 
         root.Q<Label>("infotext").text = _text_;
-        //Debug.Log("setLoading");
+        //if()
+        root.Q<VisualElement>("tableRowContents_infotext").Q<Label>("fileBoxTitleName").text = _text_;
     }
     private void SetLoadingCms(Sprite _img_)
     {
@@ -60,14 +77,33 @@ public class UIInfoData : MonoBehaviour
 
         GetComponent<loadingToolkit>().set_img = new StyleBackground(_img_);
         root.Q<VisualElement>("Loading_logo").style.backgroundImage = new StyleBackground(_img_);
+        //부모 객체의 ...
+        root.Q<VisualElement>("tableRowContents_Loading_logo").Q<Label>("fileBoxTitleName").text = _img_.name + ".png";
+
         //root.Q<VisualElement>("Loading_logo").style.backgroundImage = changeFileContentsUIImg;
-        Debug.Log("setLoading");
+
+    }
+    private void SetLoadingCms(VideoClip _video)
+    {
+        // 비디오 플레이어 찾아서 비디오 변경
+        v_player.clip = _video;
+        // var root = gameObject.GetComponent<UIDocument>().rootVisualElement;
+
+        // GetComponent<loadingToolkit>().set_img = new StyleBackground(Background.FromRenderTexture(_video));
+        // root.Q<VisualElement>("Loading_logo").style.backgroundImage = new StyleBackground(Background.FromRenderTexture(_video));
+        // //부모 객체의 ...
+        // root.Q<VisualElement>("tableRowContents_Loading_logo").Q<Label>("fileBoxTitleName").text = _img_.name + ".png";
+
+        //root.Q<VisualElement>("Loading_logo").style.backgroundImage = changeFileContentsUIImg;
+
     }
 
     private void setUIImgSource()  //
     {
         // gameObject.GetComponent<>()
     }
+
+
 
     ///이미지 지금 갖고있는 스크립트 따로 만들기,
 

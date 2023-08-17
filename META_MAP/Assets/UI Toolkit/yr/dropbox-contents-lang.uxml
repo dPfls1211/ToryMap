@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="border-bottom-width: 1px; border-left-color: rgba(0, 0, 0, 0.2); border-right-color: rgba(0, 0, 0, 0.2); border-top-color: rgba(0, 0, 0, 0.2); border-bottom-color: rgba(0, 0, 0, 0.2); width: 88px; height: 25px; align-items: center; justify-content: center; -unity-font-definition: resource(&apos;Font/Pretendard-Regular SDF 1&apos;); -unity-font: resource(&apos;Font/Pretendard-Regular&apos;); background-color: rgba(255, 255, 255, 255); color: rgba(63, 75, 95, 255);">
+        <ui:Label text="한국어" display-tooltip-when-elided="true" name="check-list-lang" />
+    </ui:VisualElement>
+    <ui:VisualElement name="dropbox-checked-point" style="position: absolute; height: 25px; width: 3px; left: 0; background-color: rgba(76, 124, 218, 255); display: none;" />
+</ui:UXML>

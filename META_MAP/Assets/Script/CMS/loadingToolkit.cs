@@ -15,6 +15,8 @@ public class loadingToolkit : MonoBehaviour
     public VisualTreeAsset rowContents_loading;
 
     private string[] loadingNames = { "Loading_logo", "Loading_video", "infotext" };
+
+    private string[] Sizeinfo = { "(png, jpg, jpeg 지원, 권장 사이즈 - 900*600 / 500KB)", "(mp4 및 영상 링크 지원, 권장 사이즈 - 1280*720 / 500KB)" };
     private string[] contents = { "상단 로고", "의정부 리버사이드.png", "로딩 영상", "의정부 리버사이드.mp4", "소개 문구", "의정부 리버사이드에 오신 것을 환영합니다. 저희가 제공하는 가상 스테이지에서 지역 서비스를 경험하며, 즐거운 시간 보내시길 바랍니다." };
     public Texture2D[] Toggle_img = new Texture2D[2];
 
@@ -34,7 +36,6 @@ public class loadingToolkit : MonoBehaviour
     {
         foreach (var i in loadingNames)
         {
-            Debug.Log(12);
             createloadingTableRow(i);
         }
 
@@ -76,7 +77,15 @@ public class loadingToolkit : MonoBehaviour
         contents_.Q<Label>("itemBoxName").text = contents[inputIndex++];
         contents_.Q<Label>("fileBoxTitleName").text = contents[inputIndex++];
 
-
+        if (name.Equals("infotext"))
+        {
+            contents_.Q<Label>("guideText").style.display = DisplayStyle.None;
+        }
+        else
+        {
+            contents_.Q<Label>("fileBoxTitleName").style.marginRight = 0;
+            contents_.Q<Label>("guideText").text = Sizeinfo[inputIndex / 2 - 1];
+        }
 
         contents_.Q<Toggle>("check_toggle").RegisterValueChangedCallback(OnCheckedEvent);
         //contents_.Q<Toggle>("check_toggle").RegisterCallback<ClickEvent>(OnBtnClickedEvent);
@@ -158,7 +167,7 @@ public class loadingToolkit : MonoBehaviour
                 Debug.Log("잘못된 접근 경로입니다.");
                 break;
         }
-        gameObject.GetComponent<EditUITool>().createEdit(root.Q<VisualElement>("tableRowContents_" + words[1]), 450, 300);
+        gameObject.GetComponent<EditUITool>().createEdit(root.Q<VisualElement>("cms_page"), 668, 900);
 
     }
 

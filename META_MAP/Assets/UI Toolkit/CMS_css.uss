@@ -5,4 +5,16 @@
     border-width: none;
     background-color: transparent;
     color: var(--color-txt-mid);
+    padding:0;
+    
+    
+    -unity-text-align: lower-left;
+    overflow: visible
+}
+
+.contents-gallery-view .unity-scroll-view__content-container{
+    flex-glow : 3;
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
