@@ -470,7 +470,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!1001 &6952027592810406841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -592,27 +592,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8501266858923128982, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8501266858923128982, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8501266858923128982, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 745
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8501266858923128982, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 495
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8501266858923128982, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 380.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8501266858923128982, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -250.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8501266859150199076, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchorMax.x
@@ -628,15 +628,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8501266859960551841, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_Size
-      value: 0.6101848
+      value: 0.3878537
       objectReference: {fileID: 0}
     - target: {fileID: 8501266859960551841, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_Value
-      value: -0.0000005917107
+      value: -0.32855508
       objectReference: {fileID: 0}
     - target: {fileID: 8501266860085552299, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 412.60144
+      value: 548.1635
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 435ea31d471501142abd3464db3346eb, type: 3}

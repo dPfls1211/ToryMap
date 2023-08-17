@@ -113,13 +113,12 @@ public class setViewTarget : MonoBehaviour
             }
             if (!EventSystem.current.IsPointerOverGameObject())
             {
-                ObjSetUi objset = gameObject.GetComponent<ObjSetUi>();
                 targetMainCameraActionSC.Target = gameObject;
-                targetMainCameraActionSC.offsetX = objset.x;
-                targetMainCameraActionSC.offsetY = objset.y;
-                targetMainCameraActionSC.offsetZ = objset.z;
+                targetMainCameraActionSC.offsetX = 8;
+                targetMainCameraActionSC.offsetY = 0.26f;
+                targetMainCameraActionSC.offsetZ = 0.33f;
                 targetMainCameraActionSC.checkedCamReset = false;
-                targetMainCameraActionSC.distanceRidance = objset.disridance; //카메라와 객체와의 거리 조절
+                targetMainCameraActionSC.distanceRidance = 2.44f; //카메라와 객체와의 거리 조절
                 //targetMainCameraActionSC.zoomMax = 60f;
                 GameObject.Find("Main Camera").GetComponent<Camera>().fieldOfView = 26f;
 
@@ -181,7 +180,7 @@ public class setViewTarget : MonoBehaviour
     }
     IEnumerator zoomInViewOBJ()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(2.0f);
 
         //Debug.Log(gameObject);
         SetUIZoomObj.zoomInTargetObj = gameObject;

@@ -1,14 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Numerics;
-using UnityEditor.Localization.Plugins.XLIFF.V12;
-using UnityEditor.Localization.Plugins.XLIFF.V20;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using Vector3 = UnityEngine.Vector3;
-using Quaternion = UnityEngine.Quaternion;
-using UnityEngine.UIElements;
 
 public class MainCamera_Action : MonoBehaviour
 {
@@ -25,8 +18,6 @@ public class MainCamera_Action : MonoBehaviour
 
     public float speed = 20.0f;
     Vector3 worldDefalutForward;
-
-    Vector3 camfirstpos;
 
 
     private Camera thisCamera;
@@ -51,16 +42,11 @@ public class MainCamera_Action : MonoBehaviour
 
     public float zoomMax = 65.0f;
     bool zoominCheckboolean = false;
-    bool iszoom = false;
+
     GameObject firstObj;
     UIexplain explainCanvas;
 
     Quaternion rotationQuaternion;
-    Vector3 dir;
-    Vector3 redir;
-    GameObject lookobj;
-    Vector3 velocity = Vector3.zero;
-
     void Awake()
     {
         //explainCanvas = gameObject.transform.parent.gameObject.GetComponent<UIexplain>();
@@ -72,7 +58,7 @@ public class MainCamera_Action : MonoBehaviour
         checkedCamReset = true;
         thisCamera = gameObject.GetComponent<Camera>();
         worldDefalutForward = transform.forward;
-        camfirstpos = transform.localPosition;
+
         distanceRidance = distanceRidancesValue;
 
         offsetVector = new Vector3(offsetX, offsetY, offsetZ);
@@ -82,8 +68,7 @@ public class MainCamera_Action : MonoBehaviour
     void FixedUpdate()
     {
         //보는 방향 계산
-        redir = dir;
-        dir = Target.transform.position - this.transform.position;
+        Vector3 dir = Target.transform.position - this.transform.position;
         // dir.y += offsetZ;
         //  float distanceRidance = Vector2.Distance(new Vector2(Target.transform.position.x,Target.transform.position.z),new Vector2(this.transform.position.x+offsetX,this.transform.position.z+offsetZ));
 
@@ -164,10 +149,8 @@ public class MainCamera_Action : MonoBehaviour
         if (zoominCheckboolean)
             ymove = 5;
         //회전 함수
-        //
 
-
-
+        this.transform.rotation = Quaternion.LookRotation(dir);
         //this.transform.rotation = Quaternion.Lerp(Quaternion.LookRotation(this.transform.rotation.eulerAngles), Quaternion.LookRotation(dir), Time.deltaTime * CameraSpeed * 2);
         // this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * CameraSpeed * 2);
 
@@ -178,7 +161,7 @@ public class MainCamera_Action : MonoBehaviour
         Quaternion rotationCam = Quaternion.Euler(xmove, 0, 0);
         // 타겟의 x, y, z 좌표에 카메라의 좌표를 더하여 카메라의 위치를 결정
         TargetPos = new Vector3(
-            Target.transform.position.x + offsetX,
+            Target.transform.position.x + x,
             Target.transform.position.y + offsetY,
             Target.transform.position.z + z
             );
@@ -187,28 +170,9 @@ public class MainCamera_Action : MonoBehaviour
 
         // Vector3 postionCamTarget = TargetPos - transform.rotation ; 
 
-        if (Vector3.Distance(dir, redir) < 0.0001 && setViewTarget.zoomCheck)
-        {
-            iszoom = true;
-        }
-        //Debug.Log(transform.localPosition + " " + camfirstpos + " " + Vector3.Distance(transform.localPosition, camfirstpos));
-        if (!iszoom || Vector3.Distance(transform.localPosition, camfirstpos) < 5)
-        {
-            Debug.Log("!!");
-            iszoom = false;
 
-            //this.transform.rotation = Quaternion.LookRotation(dir);
-            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * CameraSpeed * 2);
-            transform.position = Vector3.SmoothDamp(transform.position, TargetPos, ref velocity, 0.3f);
-        }
-        else if (!zoominCheckboolean)
-        {
-            dir = transform.position - camfirstpos;
-            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * CameraSpeed * 2);
-            transform.position = Vector3.SmoothDamp(transform.position, TargetPos, ref velocity, 0.3f);
-        }
         // 카메라의 움직임을 부드럽게 하는 함수(Lerp)
-
+        transform.position = Vector3.Lerp(transform.position, TargetPos, Time.deltaTime * CameraSpeed);
 
     }
 
@@ -244,7 +208,7 @@ public class MainCamera_Action : MonoBehaviour
     }
     public void resetZoom()
     {
-
+        Debug.Log("zoomout");
         //setViewTarget.localUIControlCs.objON = false;
         //setViewTarget.localUIControlCs.canvasOff();
         firstObj = null;
@@ -257,8 +221,7 @@ public class MainCamera_Action : MonoBehaviour
         offsetY = offsetVector.y;
         offsetZ = offsetVector.z;
 
-        //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(worldDefalutForward), 0.015f);
-        //transform.rotation = Quaternion.LookRotation(worldDefalutForward);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(worldDefalutForward), 0.015f);
         checkedCamReset = true;
         distanceRidance = distanceRidancesValue;
 
@@ -266,10 +229,5 @@ public class MainCamera_Action : MonoBehaviour
         //explaneUI.GetComponent<ExplaneUIController>().hiddenUI();
         //gameObject.transform.parent.gameObject.GetComponent<UIName>().UI_entericon.SetActive(false);
         zoominCheckboolean = false;
-    }
-
-    void zoomoutfinish()
-    {
-
     }
 }

@@ -22,11 +22,11 @@ public class mapRotate : MonoBehaviour
     void Update()
     {
         startY = transform.rotation.eulerAngles.y;
-        if (startY < 10 && startY >= overy)
+        if (startY >= overy)
         {
             right = false;
         }
-        else if (startY > 350 && startY <= 360 + downy)
+        else if (startY <= downy)
         {
             right = true;
         }

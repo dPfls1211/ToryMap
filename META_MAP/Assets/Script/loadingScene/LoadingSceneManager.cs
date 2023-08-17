@@ -23,7 +23,7 @@ public class LoadingSceneManager : MonoBehaviour
     public static void LoadScene(string nextSceneString)
     {
         nextScene = nextSceneString;
-        SceneManager.LoadScene("LoadingScene", LoadSceneMode.Additive);
+        SceneManager.LoadScene("LoadingScene_bound", LoadSceneMode.Additive);
     }
 
     IEnumerator LoadScene()
