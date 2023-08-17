@@ -4,20 +4,10 @@ using UnityEngine;
 
 public class exit_btn : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+
+    public void exit_btnclick()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    void exit_btnclick()
-    {
-
+        gameObject.SetActive(false);
     }
 }
