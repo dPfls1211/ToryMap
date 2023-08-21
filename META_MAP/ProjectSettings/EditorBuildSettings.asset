@@ -50,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/virtualSeoulScene/workshop_room.unity
     guid: 9b6e04af802ed5447ad7c26430f5ccf5
+  - enabled: 1
+    path: Assets/Scenes/virtualSeoulScene/market0817.unity
+    guid: f52d9f63f05f47e4586a15f03f3e17f2
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: f641de312a23133408c26a4de0d71722, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 1a8f8dc4a77add7468df06a58b6729fc, type: 2}

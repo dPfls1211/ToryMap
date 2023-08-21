@@ -27,15 +27,18 @@ public class languageChange : MonoBehaviour
 
     public void onClick_ENG()
     {
-        if (noUIName)
+        if (!noUIName)
         {
-
+            StartCoroutine("onclick_ENG");
         }
-        StartCoroutine("onclick_ENG");
     }
     public void onClick_KOR()
     {
-        StartCoroutine("onclick_KOR");
+        if (!noUIName)
+        {
+            StartCoroutine("onclick_KOR");
+        }
+
     }
     public void UserLocalization(int index)
     {
@@ -45,14 +48,14 @@ public class languageChange : MonoBehaviour
     IEnumerator onclick_ENG()
     {
         UserLocalization(0);
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.1f);
         uIName.changeUI(0);
     }
 
     IEnumerator onclick_KOR()
     {
         UserLocalization(1);
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.1f);
         uIName.changeUI(1);
     }
 }

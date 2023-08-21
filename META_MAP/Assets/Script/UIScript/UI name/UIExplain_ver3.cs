@@ -40,10 +40,10 @@ public class UIExplain_ver3 : MonoBehaviour
     {
         //UIExplain3.SetActive(false);
         Ui_info_toolkit.SetActive(false);
-        Color color;
-        ColorUtility.TryParseHtmlString(UnClickedUIColor, out color);
-        color.a = 0.4f;
-        clickChildobj.GetComponentInChildren<Image>().color = color;
+        // Color color;
+        // ColorUtility.TryParseHtmlString(UnClickedUIColor, out color);
+        // color.a = 0.4f;
+        // clickChildobj.GetComponentInChildren<Image>().color = color;
         //        clickChildobj.transform.GetChild(0).transform.GetChild(0).transform.gameObject.SetActive(false);
         //       clickChildobj.transform.GetChild(0).transform.GetChild(1).transform.gameObject.SetActive(false);
 
@@ -58,10 +58,10 @@ public class UIExplain_ver3 : MonoBehaviour
             if (uiname.UI_child_list[i].name == clickobj.name)
             {
                 clickChildobj = uiname.UI_child_list[i];
-                Color color;
-                ColorUtility.TryParseHtmlString(clickedUIColor, out color);
-                color.a = 0.9f;
-                uiname.UI_child_list[i].GetComponentInChildren<Image>().color = color;
+                // Color color;
+                // ColorUtility.TryParseHtmlString(clickedUIColor, out color);
+                // color.a = 0.9f;
+                // uiname.UI_child_list[i].GetComponentInChildren<Image>().color = color;
                 //lineWidth();
                 break;
             }

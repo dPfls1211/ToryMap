@@ -143,24 +143,24 @@ public class setViewTarget : MonoBehaviour
     }
 
 
-    public void ShowExplaneUI()
-    {
-        GameObject uiExplaneCanvas = GameObject.Find("ExplaneUICanvas").GetComponent<childcheck>().ExplaneUICanvas;
-        uiExplaneCanvas.SetActive(true);
+    // public void ShowExplaneUI()
+    // // {
+    // //     GameObject uiExplaneCanvas = GameObject.Find("ExplaneUICanvas").GetComponent<childcheck>().ExplaneUICanvas;
+    // //     uiExplaneCanvas.SetActive(true);
 
-        uiExplaneCanvas.GetComponent<UIVisible>().OBJname = setUIcontents.objName;
-        uiExplaneCanvas.GetComponent<UIVisible>().objExplane_ = setUIcontents.objExplane;
-        uiExplaneCanvas.GetComponent<UIVisible>().AssetAddress = setUIcontents._address;
-        if (setUIcontents._phonenum == null)
-            uiExplaneCanvas.GetComponent<UIVisible>().phoneNum = " ";
-        else
-        {
-            uiExplaneCanvas.GetComponent<UIVisible>().phoneNum = setUIcontents._phonenum;
+    // //     uiExplaneCanvas.GetComponent<UIVisible>().OBJname = setUIcontents.objName;
+    // //     uiExplaneCanvas.GetComponent<UIVisible>().objExplane_ = setUIcontents.objExplane;
+    // //     uiExplaneCanvas.GetComponent<UIVisible>().AssetAddress = setUIcontents._address;
+    // //     if (setUIcontents._phonenum == null)
+    // //         uiExplaneCanvas.GetComponent<UIVisible>().phoneNum = " ";
+    // //     else
+    // //     {
+    // //         uiExplaneCanvas.GetComponent<UIVisible>().phoneNum = setUIcontents._phonenum;
 
-        }
-        UIVisible.explaneUrl = setUIcontents._explaneUrl;
-        uiExplaneCanvas.GetComponent<UIVisible>().SetUICan();
-    }
+    // //     }
+    // //     UIVisible.explaneUrl = setUIcontents._explaneUrl;
+    // //     uiExplaneCanvas.GetComponent<UIVisible>().SetUICan();
+    // }
 
     IEnumerator zoomInView()
     {
@@ -168,7 +168,7 @@ public class setViewTarget : MonoBehaviour
         // Debug.Log(targetViewSC.distance);
         if (targetViewSC.distance < 5)
         {
-            ShowExplaneUI();
+            //ShowExplaneUI();
             targetViewSC.zoomin = true;
             yield break;
         }

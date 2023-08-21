@@ -311,6 +311,14 @@ MonoBehaviour:
   contentsCount: 10
   contentsBox: {fileID: 1549239825689642783}
   darkmode: 0
+  contentlist: []
+  Tex_videoPlayerlist: []
+  _video_:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &6830128844034135145
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,15 +636,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8501266859960551841, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_Size
-      value: 0.3878537
+      value: 0.37959892
       objectReference: {fileID: 0}
     - target: {fileID: 8501266859960551841, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_Value
-      value: -0.32855508
+      value: -0.49381456
       objectReference: {fileID: 0}
     - target: {fileID: 8501266860085552299, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 548.1635
+      value: 616.3498
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 435ea31d471501142abd3464db3346eb, type: 3}

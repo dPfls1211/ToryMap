@@ -104,7 +104,7 @@ public class cameraMove : MonoBehaviour
             //GameObject.Find("Main Camera").GetComponent<cameraRotation>().TargetViewAsset = GameObject.Find("plane");
             ResetView();
             // transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(worldDefalutForward), 0.015f);
-            explaneui_basic.GetComponent<childcheck>().ExplaneUICanvas.SetActive(false);
+            //explaneui_basic.GetComponent<childcheck>().ExplaneUICanvas.SetActive(false);
 
             //ui 툴킷
             //explaneUI.GetComponent<ExplaneUIController>().hiddenUI();

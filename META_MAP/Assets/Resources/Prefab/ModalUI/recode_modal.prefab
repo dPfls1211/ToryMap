@@ -197,8 +197,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5570074990860048004}
   m_HandleRect: {fileID: 7981996606783185190}
   m_Direction: 2
-  m_Value: 1.0000019
-  m_Size: 0.591888
+  m_Value: 1.0353405
+  m_Size: 0.5661033
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -929,7 +929,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.26238388}
   m_AnchorMax: {x: 1, y: 0.97093153}
-  m_AnchoredPosition: {x: 1.5, y: 19.212484}
+  m_AnchoredPosition: {x: 1.5, y: 3.1072083}
   m_SizeDelta: {x: -1.5, y: 648.3838}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &6874496028573163429
@@ -1160,6 +1160,10 @@ MonoBehaviour:
   contentsCount: 3
   contentsBox: {fileID: 0}
   darkmode: 0
+  contentlist: []
+  Tex_videoPlayerlist: []
+  _video_:
+  - {fileID: 0}
 --- !u!114 &5304384790190027053
 MonoBehaviour:
   m_ObjectHideFlags: 0
