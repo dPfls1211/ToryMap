@@ -16,7 +16,7 @@ public class zoomObjRotation : MonoBehaviour
         gameObject.transform.localEulerAngles = new Vector3(270, 90, 0);
         //gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
         //코루틴 한바퀴 돌려주기
-        StartCoroutine(OneRotation());
+        ///StartCoroutine(OneRotation());
 
     }
 
@@ -41,10 +41,10 @@ public class zoomObjRotation : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (isturnok)
-        {
-            BuildingRoatation();
-        }
+        // if (isturnok)
+        // {
+        //     BuildingRoatation();
+        // }
     }
     IEnumerator OneRotation()
     {

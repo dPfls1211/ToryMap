@@ -8,9 +8,10 @@ public class loadingToolkit : MonoBehaviour
 {
 
     /// origin setting 
-    private StyleBackground logoImg;
+    public Sprite logoImg;
     private string VideoUrl;
     private string Text;
+    private VideoClip LoadingVideoclip;
 
     public VisualTreeAsset rowContents_loading;
 
@@ -44,9 +45,12 @@ public class loadingToolkit : MonoBehaviour
         Loading_infotxt = root.Q<Label>("infotext");
         Loading_videoUrl = GameObject.Find("VideoPlayer").transform.GetComponent<VideoPlayer>();
 
-        set_img = logoImg = Loading_logo.style.backgroundImage;
+        set_img = Loading_logo.style.backgroundImage;
         set_url = VideoUrl = Loading_videoUrl.url;
         set_text = Text = Loading_infotxt.text;
+
+        root.Q<Button>("cms_reset_btn").RegisterCallback<ClickEvent>(OnBtnClickedReset);
+        LoadingVideoclip = GameObject.Find("VideoPlayer").GetComponent<VideoPlayer>().clip;
     }
 
     // Update is called once per frame
@@ -149,7 +153,7 @@ public class loadingToolkit : MonoBehaviour
         Label btnName = evt.target as Label;
         string[] words = btnName.name.Split('-');
         string assetname = ""; //words[1];
-        Debug.Log(words[0]);
+//        Debug.Log(words[0]);
         var root = gameObject.GetComponent<UIDocument>().rootVisualElement;
         //gameObject.GetComponent<EditUITool>().createEdit(evt.target as VisualElement, 450, 300);
         switch (words[1])
@@ -169,6 +173,31 @@ public class loadingToolkit : MonoBehaviour
         }
         gameObject.GetComponent<EditUITool>().createEdit(root.Q<VisualElement>("cms_page"), 668, 900);
 
+    }
+
+    //초기화
+    private void OnBtnClickedReset(ClickEvent evt)
+    {
+        // 테이블 지우고 다시.. 저쪽 editText도 바꾸고,,
+        //화면바꾸고
+        //로고, 비디오, 글
+        Loading_logo.style.backgroundImage = new StyleBackground(logoImg);
+        GameObject.Find("VideoPlayer").GetComponent<VideoPlayer>().clip = LoadingVideoclip;
+        Loading_infotxt.text = Text;
+
+
+        //테이블 바꾸고
+        // 각각의 내용. 연결해서 수정
+        var root = gameObject.GetComponent<UIDocument>().rootVisualElement;
+        int contentIndexNumber = 0;
+        foreach (var i in loadingNames)
+        {
+            VisualElement contentsRow = root.Q<VisualElement>("tableRowContents_" + i.ToString());
+
+            contentsRow.Q<Label>("fileBoxTitleName").text = contents[++contentIndexNumber];
+            contentIndexNumber++;
+            //createloadingTableRow(i);
+        }
     }
 
 }

@@ -9,7 +9,8 @@ public class setViewTarget : MonoBehaviour
     cameraMove targetViewSC;
     //mousewheelView targetWheelViewSC;
 
-    MainCamera_Action targetMainCameraActionSC;
+    //MainCamera_Action targetMainCameraActionSC;
+    camera_Event targetMainCameraActionSC;
 
     ObjSetUi setUIcontents;
     int sign = 1;
@@ -26,10 +27,11 @@ public class setViewTarget : MonoBehaviour
     void Start()
     {
         //targetViewSC = GameObject.Find("Main Camera").GetComponent<cameraRotation>();
-        targetViewSC = GameObject.Find("Main Camera").GetComponent<cameraMove>();
+        //targetViewSC = GameObject.Find("Main Camera").GetComponent<cameraMove>();
         setUIcontents = gameObject.GetComponent<ObjSetUi>();
         objBasicTransform = gameObject.transform.localScale;
-        targetMainCameraActionSC = GameObject.Find("Main Camera").GetComponent<MainCamera_Action>();
+        //targetMainCameraActionSC = GameObject.Find("Main Camera").GetComponent<MainCamera_Action>();
+        targetMainCameraActionSC = GameObject.Find("Main Camera").GetComponent<camera_Event>();
         localUIControlCs = GameObject.Find("UI_NAME_Canvas").GetComponent<UIexplain>();
         explain3 = GameObject.Find("info_toolkit").GetComponent<UIExplain_ver3>();
 
@@ -46,17 +48,10 @@ public class setViewTarget : MonoBehaviour
     //객체 마우스 오버 시 바운스 
     private void OnMouseEnter()  //
     {
-        //마우스 오버
-        //코루틴 진행
-        if (!zoomCheck)
-            StartCoroutine("ScaleControl");
     }
 
     private void OnMouseExit()
     {
-        //마우스 아웃, 
-        //코루틴 멈추고 원래 스케일로
-        StopCoroutine("ScaleControl");
         //StopAllCoroutines();
         this.transform.localScale = objBasicTransform;
         sizeCount = 0;
@@ -80,7 +75,6 @@ public class setViewTarget : MonoBehaviour
             yield break;
         }
         yield return new WaitForSeconds(0.05f);
-        StartCoroutine("ScaleControl");
     }
 
 
@@ -113,12 +107,12 @@ public class setViewTarget : MonoBehaviour
             }
             if (!EventSystem.current.IsPointerOverGameObject())
             {
-                targetMainCameraActionSC.Target = gameObject;
-                targetMainCameraActionSC.offsetX = 8;
-                targetMainCameraActionSC.offsetY = 0.26f;
-                targetMainCameraActionSC.offsetZ = 0.33f;
+                targetMainCameraActionSC.TargetObject = gameObject;
+                // targetMainCameraActionSC.offsetX = 8;
+                // targetMainCameraActionSC.offsetY = 0.26f;
+                // targetMainCameraActionSC.offsetZ = 0.33f;
                 targetMainCameraActionSC.checkedCamReset = false;
-                targetMainCameraActionSC.distanceRidance = 2.44f; //카메라와 객체와의 거리 조절
+                // targetMainCameraActionSC.distanceRidance = 2.44f; //카메라와 객체와의 거리 조절
                 //targetMainCameraActionSC.zoomMax = 60f;
                 GameObject.Find("Main Camera").GetComponent<Camera>().fieldOfView = 26f;
 
@@ -143,24 +137,24 @@ public class setViewTarget : MonoBehaviour
     }
 
 
-    // public void ShowExplaneUI()
-    // // {
-    // //     GameObject uiExplaneCanvas = GameObject.Find("ExplaneUICanvas").GetComponent<childcheck>().ExplaneUICanvas;
-    // //     uiExplaneCanvas.SetActive(true);
+    public void ShowExplaneUI()
+    {
+        // GameObject uiExplaneCanvas = GameObject.Find("ExplaneUICanvas").GetComponent<childcheck>().ExplaneUICanvas;
+        // uiExplaneCanvas.SetActive(true);
 
-    // //     uiExplaneCanvas.GetComponent<UIVisible>().OBJname = setUIcontents.objName;
-    // //     uiExplaneCanvas.GetComponent<UIVisible>().objExplane_ = setUIcontents.objExplane;
-    // //     uiExplaneCanvas.GetComponent<UIVisible>().AssetAddress = setUIcontents._address;
-    // //     if (setUIcontents._phonenum == null)
-    // //         uiExplaneCanvas.GetComponent<UIVisible>().phoneNum = " ";
-    // //     else
-    // //     {
-    // //         uiExplaneCanvas.GetComponent<UIVisible>().phoneNum = setUIcontents._phonenum;
+        // uiExplaneCanvas.GetComponent<UIVisible>().OBJname = setUIcontents.objName;
+        // uiExplaneCanvas.GetComponent<UIVisible>().objExplane_ = setUIcontents.objExplane;
+        // uiExplaneCanvas.GetComponent<UIVisible>().AssetAddress = setUIcontents._address;
+        // if (setUIcontents._phonenum == null)
+        //     uiExplaneCanvas.GetComponent<UIVisible>().phoneNum = " ";
+        // else
+        // {
+        //     uiExplaneCanvas.GetComponent<UIVisible>().phoneNum = setUIcontents._phonenum;
 
-    // //     }
-    // //     UIVisible.explaneUrl = setUIcontents._explaneUrl;
-    // //     uiExplaneCanvas.GetComponent<UIVisible>().SetUICan();
-    // }
+        // }
+        // UIVisible.explaneUrl = setUIcontents._explaneUrl;
+        // uiExplaneCanvas.GetComponent<UIVisible>().SetUICan();
+    }
 
     IEnumerator zoomInView()
     {
@@ -178,9 +172,10 @@ public class setViewTarget : MonoBehaviour
         // Debug.Log(targetViewSC.distance);
         StartCoroutine(zoomInView());
     }
+
     IEnumerator zoomInViewOBJ()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(3.0f);
 
         //Debug.Log(gameObject);
         SetUIZoomObj.zoomInTargetObj = gameObject;

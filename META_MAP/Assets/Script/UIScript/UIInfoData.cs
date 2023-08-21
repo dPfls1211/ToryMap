@@ -87,6 +87,13 @@ public class UIInfoData : MonoBehaviour
     {
         // 비디오 플레이어 찾아서 비디오 변경
         v_player.clip = _video;
+
+        // row내의 영상 이름 바꾸기
+        //        Debug.Log(_video.name);
+
+        var root = gameObject.GetComponent<UIDocument>().rootVisualElement;
+        root.Q<VisualElement>("tableRowContents_Loading_video").Q<Label>("fileBoxTitleName").text = _video.name + ".mp4";
+
         // var root = gameObject.GetComponent<UIDocument>().rootVisualElement;
 
         // GetComponent<loadingToolkit>().set_img = new StyleBackground(Background.FromRenderTexture(_video));

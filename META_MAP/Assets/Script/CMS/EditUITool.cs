@@ -15,7 +15,7 @@ public class EditUITool : MonoBehaviour
 
     private List<RenderTexture> VideoRenderTex = new List<RenderTexture>();
     public static Sprite EditImg = null;
-    public static string EditText;
+    public static string EditText = null;
     public static string EditVideoUrl;
     public static VideoClip EditVideo;
     public UIDocument EditUI;
@@ -74,7 +74,7 @@ public class EditUITool : MonoBehaviour
 
         if (EditTextField != null && EditTextField.style.display != DisplayStyle.None)
         {
-            Debug.Log(EditTextField.text.Length);
+            //Debug.Log(EditTextField.text.Length);
 
             //텍스트바꾸기
             if (EditTextField.text.Length > 220)
@@ -102,7 +102,6 @@ public class EditUITool : MonoBehaviour
         //Debug.Log("clear");
         //EditUI.enabled = false;
         EditImg = null;
-        EditText = null;
         EditVideoUrl = null;
 
         //UI ToolKit element 삭제
@@ -113,11 +112,14 @@ public class EditUITool : MonoBehaviour
     //적용하기
     private void OnSetBtnClicked(ClickEvent evt)
     {
-        Debug.Log(targetUiType);
+//        Debug.Log(targetUiType);
         try
         {
             if (targetUiType == CMS_TYPES.CMSUIType.Cms_txt)
+            {
+                EditText = EditTextField.text;
                 GetComponent<UIInfoData>().setChangedUI(EditTextField.text);
+            }
             if (targetUiType == CMS_TYPES.CMSUIType.Cms_img)
                 GetComponent<UIInfoData>().setChangedUI(EditImg);
             if (targetUiType == CMS_TYPES.CMSUIType.Cms_video)
@@ -143,7 +145,7 @@ public class EditUITool : MonoBehaviour
         var img_UI = evt.target as VisualElement;
         int orderNumber = EditImgs.IndexOf(img_UI.parent);
 
-        Debug.Log(orderNumber);
+//        Debug.Log(orderNumber);
         //EditImg = new Sprite(img_UI.style.backgroundImage);
         EditVideo = VideoList[orderNumber];
     }
@@ -163,21 +165,29 @@ public class EditUITool : MonoBehaviour
     private void OnchangeSetInputfield(ClickEvent evt)
     {
         TextField element = evt.target as TextField;
-
-        Color changedColor = new Color(18 / 255, 18 / 255, 18 / 255);
-        element.style.color = new StyleColor(changedColor);
-        element.style.unityFontDefinition = FontDefinition.FromSDFFont(semibold);
+        changeColorText(element, new Color(18 / 255, 18 / 255, 18 / 255), semibold);
+        // Color changedColor = new Color(18 / 255, 18 / 255, 18 / 255);
+        // element.style.color = new StyleColor(changedColor);
+        // element.style.unityFontDefinition = FontDefinition.FromSDFFont(semibold);
 
     }
+    private void changeColorText(TextField element, Color changeColor, FontAsset font)
+    {
+
+        element.style.color = new StyleColor(changeColor);
+        element.style.unityFontDefinition = FontDefinition.FromSDFFont(font);
+    }
+
     private void OnTextAllDelete(ClickEvent evt)
     {  //314D79
 
         Label element = evt.target as Label;
 
         EditTextField.value = "의정부 리버사이드 메타맵에 오신 것을 환영합니다.  의정부를 꼭 담은 가상 스테이지에서 다양한 지역 서비스를 즐기시길 바랍니다.";
-        Color changedColor = new Color(0.8039216f, 0.8039216f, 0.8039216f);
-        EditTextField.style.color = new StyleColor(changedColor);
-        EditTextField.style.unityFontDefinition = FontDefinition.FromSDFFont(reguler);
+        changeColorText(EditTextField, new Color(0.8039216f, 0.8039216f, 0.8039216f), reguler);
+        // Color changedColor = new Color(0.8039216f, 0.8039216f, 0.8039216f);
+        // EditTextField.style.color = new StyleColor(changedColor);
+        // EditTextField.style.unityFontDefinition = FontDefinition.FromSDFFont(reguler);
     }
 
     //편집창 생성
@@ -198,6 +208,7 @@ public class EditUITool : MonoBehaviour
     //편집창 내부 셋팅
     public void setting_start(TemplateContainer ui, float w, float h)
     {
+//        Debug.Log(EditText);
         EditImgs = ui.Q<ScrollView>("contents-gallery");
         EditTextField = ui.Q<TextField>("edit-text-input");
         _closeBtn = ui.Q<Button>("closeBTN");
@@ -215,7 +226,11 @@ public class EditUITool : MonoBehaviour
         {
             Text_Editor.style.display = DisplayStyle.Flex;
             Img_Editor.style.display = DisplayStyle.None;
-
+            if (EditText != null)
+            {
+                EditTextField.value = EditText;
+                changeColorText(EditTextField, new Color(18 / 255, 18 / 255, 18 / 255), semibold);
+            }
             EditTextField.RegisterCallback<ClickEvent>(OnchangeSetInputfield);
             Label text_delete = ui.Q<Label>("edit-text-allDelete");
             text_delete.RegisterCallback<ClickEvent>(OnTextAllDelete);

@@ -10,7 +10,7 @@ public class UIExplain_ver3 : MonoBehaviour
 
     GameObject clickobj;
     GameObject clickChildobj;
-    MainCamera_Action main;
+    camera_Event main;
 
     UIName uiname;
 
@@ -24,7 +24,7 @@ public class UIExplain_ver3 : MonoBehaviour
     {
         Ui_info_toolkit = GameObject.Find("info_toolkit").transform.GetChild(0).transform.gameObject;
         uiname = GameObject.Find("GameObject").GetComponent<UIName>();
-        main = GameObject.Find("Main Camera").GetComponent<MainCamera_Action>();
+        main = GameObject.Find("Main Camera").GetComponent<camera_Event>();
     }
 
     public void click(GameObject obj)
@@ -40,10 +40,10 @@ public class UIExplain_ver3 : MonoBehaviour
     {
         //UIExplain3.SetActive(false);
         Ui_info_toolkit.SetActive(false);
-        // Color color;
-        // ColorUtility.TryParseHtmlString(UnClickedUIColor, out color);
-        // color.a = 0.4f;
-        // clickChildobj.GetComponentInChildren<Image>().color = color;
+        Color color;
+        ColorUtility.TryParseHtmlString(UnClickedUIColor, out color);
+        color.a = 0.4f;
+        clickChildobj.GetComponentInChildren<Image>().color = color;
         //        clickChildobj.transform.GetChild(0).transform.GetChild(0).transform.gameObject.SetActive(false);
         //       clickChildobj.transform.GetChild(0).transform.GetChild(1).transform.gameObject.SetActive(false);
 
@@ -58,10 +58,10 @@ public class UIExplain_ver3 : MonoBehaviour
             if (uiname.UI_child_list[i].name == clickobj.name)
             {
                 clickChildobj = uiname.UI_child_list[i];
-                // Color color;
-                // ColorUtility.TryParseHtmlString(clickedUIColor, out color);
-                // color.a = 0.9f;
-                // uiname.UI_child_list[i].GetComponentInChildren<Image>().color = color;
+                Color color;
+                ColorUtility.TryParseHtmlString(clickedUIColor, out color);
+                color.a = 0.9f;
+                uiname.UI_child_list[i].GetComponentInChildren<Image>().color = color;
                 //lineWidth();
                 break;
             }

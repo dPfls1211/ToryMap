@@ -13,6 +13,6 @@
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement style="background-image: resource(&apos;Icon/Explane_icon/Group 7301 (1)&apos;); width: 17%; height: 25%; right: auto; left: 0.7%;" />
+        <ui:VisualElement style="background-image: resource(&apos;Icon/Explane_icon/Group 7301 (1)&apos;); width: 17%; height: 25%; right: auto; left: 0.7%; display: none;" />
     </ui:VisualElement>
 </ui:UXML>
