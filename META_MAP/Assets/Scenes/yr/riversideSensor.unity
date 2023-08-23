@@ -236,7 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.4
   limitY: 4
-  isTurn: 1
+  isTurn: 0
 --- !u!1 &1383923080
 GameObject:
   m_ObjectHideFlags: 0
