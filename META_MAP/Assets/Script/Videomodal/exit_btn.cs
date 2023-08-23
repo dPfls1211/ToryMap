@@ -5,7 +5,10 @@ using UnityEngine;
 public class exit_btn : MonoBehaviour
 {
 
-
+    public void exit_btn_click()
+    {
+        gameObject.SetActive(false);
+    }
     public void exit_btnclick()
     {
         StartCoroutine("waittwo");

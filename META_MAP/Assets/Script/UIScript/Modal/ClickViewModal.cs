@@ -10,6 +10,7 @@ public class ClickViewModal : MonoBehaviour
     void Awake()
     {
         viewModal = GameObject.Find("VideoCanvas").transform.GetChild(0).gameObject;
+
     }
 
     private void OnMouseDown()

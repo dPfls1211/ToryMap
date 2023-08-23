@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 974168965}
-  m_IndirectSpecularColor: {r: 0.13471317, g: 0.42615908, b: 0.8262813, a: 1}
+  m_IndirectSpecularColor: {r: 0.13572358, g: 0.42480022, b: 0.82579994, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -893,7 +893,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.2
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -956,7 +956,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 33.861, y: -22.722, z: -38.219}
 --- !u!1 &1106380259
 GameObject:
@@ -1392,7 +1392,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8048948490673776488, guid: ad78b159b1e29fa4888b89476598f1a8, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8048948490673776488, guid: ad78b159b1e29fa4888b89476598f1a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1478,7 +1478,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 104581831977989931, guid: 5a90e5c986bd7204aa8c630821a6f893, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 104581831977989931, guid: 5a90e5c986bd7204aa8c630821a6f893, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1885,7 +1885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4551981696226611905, guid: e41ab6d1fe2411547b34cee3790b876f, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4551981696226611905, guid: e41ab6d1fe2411547b34cee3790b876f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23912,7 +23912,7 @@ Transform:
   - {fileID: 1668153344}
   - {fileID: 823935221}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 1.676, z: 0}
 --- !u!33 &4991662516457172239
 MeshFilter:

@@ -308,10 +308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modalTitle: "\uC601\uC0C1 \uCF58\uD150\uCE20"
   contentsPrefab: {fileID: 5786690799753419999, guid: 4c778c3708944a84db38ee437e492ad9, type: 3}
-  contentsCount: 10
   contentsBox: {fileID: 1549239825689642783}
   darkmode: 0
-  contentlist: []
   Tex_videoPlayerlist: []
   _video_:
   - {fileID: 0}
@@ -478,7 +476,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!1001 &6952027592810406841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -600,27 +598,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8501266858923128982, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8501266858923128982, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8501266858923128982, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 745
       objectReference: {fileID: 0}
     - target: {fileID: 8501266858923128982, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 495
       objectReference: {fileID: 0}
     - target: {fileID: 8501266858923128982, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 380.5
       objectReference: {fileID: 0}
     - target: {fileID: 8501266858923128982, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -250.5
       objectReference: {fileID: 0}
     - target: {fileID: 8501266859150199076, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchorMax.x
@@ -636,15 +634,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8501266859960551841, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_Size
-      value: 0.37959892
+      value: 0.6029141
       objectReference: {fileID: 0}
     - target: {fileID: 8501266859960551841, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_Value
-      value: -0.49381456
+      value: -0.010440144
       objectReference: {fileID: 0}
     - target: {fileID: 8501266860085552299, guid: 435ea31d471501142abd3464db3346eb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 616.3498
+      value: 416.90887
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 435ea31d471501142abd3464db3346eb, type: 3}

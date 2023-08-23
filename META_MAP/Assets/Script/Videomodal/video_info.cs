@@ -15,9 +15,15 @@ public class video_info : MonoBehaviour
 
     public string loadingSceneURL;
 
+    private void Awake()
+    {
+        clickclip = video[0];
+    }
     void setvideo()
     {
+
         //loadingSceneURL = System.IO.Path.Combine(Application.streamingAssetsPath, "Uijeongbu.mp4");
     }
+
 
 }
