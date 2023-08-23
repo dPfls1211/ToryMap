@@ -22,6 +22,8 @@ public class languageChange : MonoBehaviour
             noUIName = true;
         }
 
+        Debug.Log(uIName);
+
     }
 
 

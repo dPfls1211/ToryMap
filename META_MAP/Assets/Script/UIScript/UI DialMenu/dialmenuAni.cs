@@ -12,6 +12,7 @@ public class dialmenuAni : MonoBehaviour
     public GameObject showDialmenuOBJ;
     public GameObject showDialmenuIcon;
     public GameObject shadowObj;
+    public GameObject donttouchOBJ;
     List<Transform> showDialmenuIcons = new List<Transform>();
 
 
@@ -46,6 +47,7 @@ public class dialmenuAni : MonoBehaviour
                 icon.GetChild(0).GetComponent<RawImage>().color = new Color(1, 1, 1, 0);
                 icon.GetChild(1).GetComponent<TMP_Text>().color = new Color(1, 1, 1, 0);
             }
+            donttouchOBJ.SetActive(true);
         }
         else
         {
@@ -58,6 +60,8 @@ public class dialmenuAni : MonoBehaviour
                 icon.GetChild(0).GetComponent<RawImage>().color = new Color(1, 1, 1, 1);
                 icon.GetChild(1).GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1);
             }
+            donttouchOBJ.SetActive(false);
+
         }
     }
 
@@ -84,6 +88,8 @@ public class dialmenuAni : MonoBehaviour
                 icon.GetChild(0).GetComponent<RawImage>().color = new Color(1, 1, 1, opacity);
                 icon.GetChild(1).GetComponent<TMP_Text>().color = new Color(1, 1, 1, opacity);
             }
+            donttouchOBJ.SetActive(true);
+
 
         }
         else
@@ -102,6 +108,8 @@ public class dialmenuAni : MonoBehaviour
                 icon.GetChild(0).GetComponent<RawImage>().color = new Color(1, 1, 1, opacity);
                 icon.GetChild(1).GetComponent<TMP_Text>().color = new Color(1, 1, 1, opacity);
             }
+            donttouchOBJ.SetActive(false);
+
         }
     }
 }
