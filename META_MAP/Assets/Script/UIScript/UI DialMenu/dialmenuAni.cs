@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class dialmenuAni : MonoBehaviour
 {
     public bool showDialmenu = false;
+    public GameObject blurBackground;
 
     public GameObject hideDialmenuOBJ;
     public GameObject showDialmenuOBJ;
@@ -20,6 +21,8 @@ public class dialmenuAni : MonoBehaviour
 
     Vector2 Target_position;
     Vector2 orign_position;
+    Vector2 blurTarget_position;
+    Vector2 blurorign_position;
 
     public float opacitySpeed = 0.01f;
     float opacity = 0;
@@ -34,10 +37,13 @@ public class dialmenuAni : MonoBehaviour
         rectTransform = gameObject.GetComponent<RectTransform>();
 
         orign_position = gameObject.GetComponent<RectTransform>().anchoredPosition;
+        blurorign_position = blurBackground.GetComponent<RectTransform>().anchoredPosition;
         Target_position = new Vector2(orign_position.x, orign_position.y - 280);
+        blurTarget_position = new Vector2(blurorign_position.x, blurorign_position.y - 280);
         if (!showDialmenu)
         {
             gameObject.GetComponent<RectTransform>().anchoredPosition = Target_position;
+            blurBackground.GetComponent<RectTransform>().anchoredPosition = blurTarget_position;
 
             showDialmenuOBJ.GetComponent<RawImage>().color = new Color(1, 1, 1, 0);
             hideDialmenuOBJ.GetComponent<RawImage>().color = new Color(1, 1, 1, 1);
@@ -78,6 +84,7 @@ public class dialmenuAni : MonoBehaviour
             if (opacity > 0)
                 opacity -= opacitySpeed;
             gameObject.GetComponent<RectTransform>().anchoredPosition = Vector2.Lerp(gameObject.GetComponent<RectTransform>().anchoredPosition, Target_position, 0.08f);
+            blurBackground.GetComponent<RectTransform>().anchoredPosition = Vector2.Lerp(blurBackground.GetComponent<RectTransform>().anchoredPosition, blurTarget_position, 0.08f);
 
             showDialmenuOBJ.GetComponent<RawImage>().color = new Color(1, 1, 1, opacity);
             hideDialmenuOBJ.GetComponent<RawImage>().color = new Color(1, 1, 1, 1 - opacity);
@@ -98,6 +105,7 @@ public class dialmenuAni : MonoBehaviour
                 opacity += opacitySpeed;
 
             gameObject.GetComponent<RectTransform>().anchoredPosition = Vector2.Lerp(gameObject.GetComponent<RectTransform>().anchoredPosition, orign_position, 0.1f);
+            blurBackground.GetComponent<RectTransform>().anchoredPosition = Vector2.Lerp(blurBackground.GetComponent<RectTransform>().anchoredPosition, blurorign_position, 0.1f);
 
             hideDialmenuOBJ.GetComponent<RawImage>().color = new Color(1, 1, 1, 0 - opacity);
             showDialmenuOBJ.GetComponent<RawImage>().color = new Color(1, 1, 1, opacity);

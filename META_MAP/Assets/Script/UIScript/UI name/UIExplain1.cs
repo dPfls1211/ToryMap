@@ -14,12 +14,13 @@ public class UIExplain1 : MonoBehaviour
 
     void OnEnable()
     {
+        Debug.Log(8);
         root = GetComponent<UIDocument>().rootVisualElement;
         enter_btn = root.Q<Button>("enter_btn");
         exit_btn = root.Q<Button>("exit_btn");
         enter_btn.clicked += enterclick;
         exit_btn.clicked += exitclick;
-
+        exit_btn.RegisterCallback<ClickEvent>(exitclick);
         text_label = root.Q<Label>("Text_label");
         setexplain();
     }
@@ -38,6 +39,13 @@ public class UIExplain1 : MonoBehaviour
 
     private void exitclick()
     {
+        Debug.Log(9);
+        GetComponentInParent<UIExplain_ver3>().infoOff();
+        GameObject.Find("objImage_zoomExplane").GetComponent<SetUIZoomObj>().hiddenOBJView();
+    }
+    public void exitclick(ClickEvent ev)
+    {
+        Debug.Log(7);
         GetComponentInParent<UIExplain_ver3>().infoOff();
         GameObject.Find("objImage_zoomExplane").GetComponent<SetUIZoomObj>().hiddenOBJView();
     }

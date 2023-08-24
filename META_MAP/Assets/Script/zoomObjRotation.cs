@@ -34,7 +34,7 @@ public class zoomObjRotation : MonoBehaviour
                 ymove = 10;
 
             // 수정 피벗
-            transform.localEulerAngles = new Vector3(-90 - ymove, -xmove, -90);
+            transform.localEulerAngles = new Vector3(-90 - ymove, -xmove, 90);
 
         }
 

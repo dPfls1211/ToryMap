@@ -7,6 +7,7 @@ public class camera_Event : MonoBehaviour
 {
     //모바일 터치 사용시, true ,, 마우스 클릭 사용시 false
     public bool TouchCheck = false;
+    public float scrollSpeed = 20;
     public GameObject TargetObject;
     public GameObject originCam;
 
@@ -17,10 +18,10 @@ public class camera_Event : MonoBehaviour
     bool zoominCheckboolean = false;
 
     // 마우스 값에 따라 카메라 회전
-    float xmove = 180;
+    float xmove = 0;
     float ymove = 0;
     float zmove = 0;
-    float cxmove = 180;
+    float cxmove = 0;
     float cymove = 0;
     float czmove = 0;
     public float CameraSpeed = 5.0f;       // 카메라의 속도
@@ -71,6 +72,13 @@ public class camera_Event : MonoBehaviour
             else
                 roationMapArround();
 
+            // #if (UNITY_ANDROID || UNITY_IPHONE) && !UNITY_EDITOR
+
+            //                 mapTouch();
+            // #else
+            //             roationMapArround();
+            // #endif
+
         }
     }
 
@@ -109,17 +117,21 @@ public class camera_Event : MonoBehaviour
 
                     if (ymove < -10)
                         ymove = -10;
-                    if (ymove > 10)
-                        ymove = 10;
+                    if (ymove > 15)
+                        ymove = 15;
+                    if (xmove < -20)
+                        xmove = -20;
+                    if (xmove > 20)
+                        xmove = 20;
 
-                    originCam.transform.parent.rotation = Quaternion.Euler(TargetObject.transform.rotation.x, TargetObject.transform.rotation.y - xmove + 180, TargetObject.transform.rotation.z - ymove);
+                    originCam.transform.parent.rotation = Quaternion.Euler(TargetObject.transform.rotation.x, TargetObject.transform.rotation.y - xmove, TargetObject.transform.rotation.z - ymove);
                     //TargetObject.transform.rotation = Quaternion.Euler(TargetObject.transform.rotation.x, TargetObject.transform.rotation.y + xmove + 180, TargetObject.transform.rotation.z - ymove);
 
 
                 }
             }
             //터치 두개
-            if (Input.touchCount == 2)
+            else if (Input.touchCount == 2)
             {
                 Touch touchZero = Input.GetTouch(0); //첫번째 손가락 터치를 저장
                 Touch touchOne = Input.GetTouch(1); //두번째 손가락 터치를 저장
@@ -146,10 +158,10 @@ public class camera_Event : MonoBehaviour
                 {
                     camera.fieldOfView += deltaMagnitudeDiff * perspectiveZoomSpeed;
                     camera.fieldOfView = Mathf.Clamp(camera.fieldOfView, 0.1f, 179.9f);
-                    if (camera.fieldOfView < 10)
-                        camera.fieldOfView = 10;
-                    if (camera.fieldOfView > 35)
-                        camera.fieldOfView = 35;
+                    if (camera.fieldOfView < 7)
+                        camera.fieldOfView = 7;
+                    if (camera.fieldOfView > 20)
+                        camera.fieldOfView = 20;
                 }
 
             }
@@ -186,12 +198,17 @@ public class camera_Event : MonoBehaviour
                     cxmove += Input.GetAxis("Mouse X"); // 마우스의 좌우 이동량을 xmove 에 누적합니다.
                     cymove -= Input.GetAxis("Mouse Y"); // 마우스의 상하 이동량을 ymove 에 누적합니다.
 
+
                     if (cymove < -10)
                         cymove = -10;
-                    if (cymove > 10)
-                        cymove = 10;
+                    if (cymove > 15)
+                        cymove = 15;
+                    if (cxmove < -20)
+                        cxmove = -20;
+                    if (cxmove > 20)
+                        cxmove = 20;
 
-                    originCam.transform.parent.rotation = Quaternion.Euler(TargetObject.transform.rotation.x, TargetObject.transform.rotation.y + cxmove + 180, TargetObject.transform.rotation.z - cymove);
+                    originCam.transform.parent.rotation = Quaternion.Euler(TargetObject.transform.rotation.x, TargetObject.transform.rotation.y + cxmove, TargetObject.transform.rotation.z - cymove);
                     //TargetObject.transform.rotation = Quaternion.Euler(TargetObject.transform.rotation.x, TargetObject.transform.rotation.y + xmove + 180, TargetObject.transform.rotation.z - ymove);
 
 
@@ -218,6 +235,17 @@ public class camera_Event : MonoBehaviour
                 transform.rotation = Quaternion.Slerp(transform.rotation, originCam.transform.rotation, CameraSpeed);
                 transform.position = Vector3.Lerp(transform.position, originCam.transform.position, CameraSpeed);
             }
+            float scroll = -Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
+
+            //UI 클릭 체크  if문 추가
+            //줌인 아웃 하기
+
+            camera.fieldOfView += scroll;
+
+            if (camera.fieldOfView < 7)
+                camera.fieldOfView = 7;
+            if (camera.fieldOfView > 20)
+                camera.fieldOfView = 20;
         }
     }
 

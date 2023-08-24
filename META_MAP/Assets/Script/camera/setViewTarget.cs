@@ -41,7 +41,6 @@ public class setViewTarget : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
 
@@ -78,14 +77,70 @@ public class setViewTarget : MonoBehaviour
     }
 
 
-
     private void OnMouseDown()
     {
         EnterBtnLoadScene.LoadScenename = gameObject.transform.GetComponent<ObjSetUi>().nextScene;
         if (!EventSystem.current.IsPointerOverGameObject())
         {
 
-            StartCoroutine(zoomInViewOBJ());
+            //StartCoroutine(zoomInViewOBJ());
+            if (myOBJ == gameObject)
+            {
+                explain3.click(myOBJ);
+            }
+            else
+            {
+                if (myOBJ != null)
+                {
+                    // localUIControlCs.objON = false;
+                    //localUIControlCs.canvasOff();
+                    explain3.infoOff();
+                }
+
+                myOBJ = gameObject;
+                // localUIControlCs.clickObj(myOBJ);
+                // localUIControlCs.followOn = true;
+                explain3.click(myOBJ);
+
+            }
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                targetMainCameraActionSC.TargetObject = gameObject;
+                // targetMainCameraActionSC.offsetX = 8;
+                // targetMainCameraActionSC.offsetY = 0.26f;
+                // targetMainCameraActionSC.offsetZ = 0.33f;
+                targetMainCameraActionSC.checkedCamReset = false;
+                // targetMainCameraActionSC.distanceRidance = 2.44f; //카메라와 객체와의 거리 조절
+                //targetMainCameraActionSC.zoomMax = 60f;
+                GameObject.Find("Main Camera").GetComponent<Camera>().fieldOfView = 26f;
+
+                //Debug.Log(gameObject.name);
+                // targetViewSC.TargetViewAsset.transform.position = gameObject.transform.position;
+                // targetViewSC.TargetViewAssets = gameObject;
+                // targetViewSC.TargetViewAsset.transform.position += new Vector3(1.5f, 0.5f, 0);
+
+                //targetWheelViewSC.cameraTarget = gameObject.transform;
+                //뷰이동 Quaternion.slerp?써서 자연스럽게 확대되도록
+
+                //targetViewSC.MoveCamlerp();
+                // ShowExplaneUI();
+
+                //StartCoroutine(zoomInView());
+                zoomCheck = true;
+            }
+        }
+
+
+
+    }
+
+    private void OnTouchFuc()
+    {
+        EnterBtnLoadScene.LoadScenename = gameObject.transform.GetComponent<ObjSetUi>().nextScene;
+        if (!EventSystem.current.IsPointerOverGameObject())
+        {
+
+            //StartCoroutine(zoomInViewOBJ());
             if (myOBJ == gameObject)
             {
                 explain3.click(myOBJ);
@@ -156,22 +211,22 @@ public class setViewTarget : MonoBehaviour
         // uiExplaneCanvas.GetComponent<UIVisible>().SetUICan();
     }
 
-    IEnumerator zoomInView()
-    {
+    // IEnumerator zoomInView()
+    // {
 
-        // Debug.Log(targetViewSC.distance);
-        if (targetViewSC.distance < 5)
-        {
-            //ShowExplaneUI();
-            targetViewSC.zoomin = true;
-            yield break;
-        }
-        yield return new WaitForSeconds(0.01f);
+    //     // Debug.Log(targetViewSC.distance);
+    //     if (targetViewSC.distance < 5)
+    //     {
+    //         //ShowExplaneUI();
+    //         targetViewSC.zoomin = true;
+    //         yield break;
+    //     }
+    //     yield return new WaitForSeconds(0.01f);
 
-        targetViewSC.distance *= 0.83f;
-        // Debug.Log(targetViewSC.distance);
-        StartCoroutine(zoomInView());
-    }
+    //     targetViewSC.distance *= 0.83f;
+    //     // Debug.Log(targetViewSC.distance);
+    //     StartCoroutine(zoomInView());
+    // }
 
     IEnumerator zoomInViewOBJ()
     {
