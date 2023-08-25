@@ -7,6 +7,7 @@ using TMPro;
 
 public class dialmenuBtn : MonoBehaviour, IPointerClickHandler
 {
+    public float rotateAngle = 0;
     public string nextSceneName;
     public string stageName;
     public Texture iconImage;
@@ -26,7 +27,9 @@ public class dialmenuBtn : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        LoadingSceneManager.LoadScene(nextSceneName);
-
+        Debug.Log(0);
+        //LoadingSceneManager.LoadScene(nextSceneName);
+        dialActiveAni.rotationAngle = rotateAngle;
+        Debug.Log("sdsfasdf" + dialActiveAni.rotationAngle);
     }
 }

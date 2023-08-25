@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/sy/meta0808.unity
     guid: 6bbb6a42842a71c448cef59d0418b4c3
   - enabled: 1
+    path: Assets/Scenes/yr/meta0825.unity
+    guid: 214895684d5926a41b3b1d9d3bbdc2b7
+  - enabled: 1
     path: Assets/Scenes/meta0822.unity
     guid: ce484d71c247a21438889bbfef02c1ce
   - enabled: 1
@@ -56,6 +59,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/virtualSeoulScene/market0817.unity
     guid: f52d9f63f05f47e4586a15f03f3e17f2
+  - enabled: 1
+    path: Assets/Scenes/nextScene/wlgktkdrk.unity
+    guid: 2b42618aa11b0f84ca05f98ab24a99ec
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: f641de312a23133408c26a4de0d71722, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 1a8f8dc4a77add7468df06a58b6729fc, type: 2}
