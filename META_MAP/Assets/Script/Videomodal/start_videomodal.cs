@@ -23,7 +23,8 @@ public class start_videomodal : MonoBehaviour
         // this.GetComponent<VideoPlayer>().targetTexture = videomodal.click;
         // this.GetComponent<VideoPlayer>().clip = videomodal.clickclip;
         // open_videomodal.videomodalon = true; GetComponent<VideoPlayer>().Play();
-        StartCoroutine("videoplay");
+        makerender();
+        //StartCoroutine("videoplay");
 
     }
 
@@ -48,7 +49,7 @@ public class start_videomodal : MonoBehaviour
         video_source_background_1.name = "rendertexture1";
         video_source_background_1.Create();
         video_source_background_1.Release();
-        Tex_videoPlayer = new GameObject();
+        //Tex_videoPlayer = new GameObject();
         this.GetComponent<VideoPlayer>().targetTexture = video_source_background_1;
         this.GetComponent<VideoPlayer>().source = VideoSource.VideoClip;
         this.GetComponent<VideoPlayer>().clip = videomodal.clickclip;

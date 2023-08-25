@@ -17,7 +17,7 @@ public class video_info : MonoBehaviour
 
     private void Awake()
     {
-        clickclip = video[0];
+        clickclip = video[1];
     }
     void setvideo()
     {

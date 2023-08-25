@@ -38,7 +38,7 @@ public class openModal : MonoBehaviour
                 recodevideomodal.SetActive(true);
                 if (one)
                 {
-                    makerender();
+                    //첫번째 설정 모달사용할시
                     //recodemodal.GetComponent<SetmodalContents>().makerender();
                     //recodevideomodal.GetComponent<SetmodalContents>().makerender();
                 }

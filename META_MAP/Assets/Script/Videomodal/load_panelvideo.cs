@@ -13,14 +13,11 @@ public class load_panelvideo : MonoBehaviour
     public GameObject videoplayer1;
     public GameObject videoplayer2;
     public GameObject videoplayer3;
-    public VideoClip video1;
-    public VideoClip video2;
-    public VideoClip video3;
     private void Awake()
     {
-        loadingSceneURL2 = System.IO.Path.Combine(Application.streamingAssetsPath, "media-file.mp4");
-        loadingSceneURL3 = System.IO.Path.Combine(Application.streamingAssetsPath, "Uijeongbu.mp4");
-        loadingSceneURL = System.IO.Path.Combine(Application.streamingAssetsPath, "video1.mp4");
+        loadingSceneURL2 = System.IO.Path.Combine(Application.streamingAssetsPath, "의정부에사는 나연이이야기.mp4");
+        loadingSceneURL3 = System.IO.Path.Combine(Application.streamingAssetsPath, "캠핑 in 의정부대찌개.mp4");
+        loadingSceneURL = System.IO.Path.Combine(Application.streamingAssetsPath, "Uijeongbu.mp4");
 
 
         videoplayer1.GetComponent<VideoPlayer>().url = loadingSceneURL;

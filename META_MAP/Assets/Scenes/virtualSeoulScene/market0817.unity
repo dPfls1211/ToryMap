@@ -196,7 +196,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5dce5a4227557794b9c473d4c8a84c63, type: 2}
+  - {fileID: 2100000, guid: 1e5629283286ba1469fb8f3617f9b0f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -689,8 +689,8 @@ MonoBehaviour:
   clickclip: {fileID: 0}
   videoinfo: {fileID: 0}
   video:
-  - {fileID: 32900000, guid: 95fb77cfc25d6d04a958b49f2f2a6460, type: 3}
-  - {fileID: 32900000, guid: 807198f4aff3e0048b9429c758a16ba1, type: 3}
+  - {fileID: 32900000, guid: 8cb01c49c05120a4598b25324008c577, type: 3}
+  - {fileID: 32900000, guid: 7f6566547ea603a45bbb52ad75c7165c, type: 3}
   - {fileID: 32900000, guid: d1a5666732d21f8429533692b10acad7, type: 3}
   - {fileID: 32900000, guid: 87fd19d566c525a40bcd03154cc64547, type: 3}
   - {fileID: 32900000, guid: b9f379252c1794942ab0124a25e6391a, type: 3}
@@ -725,7 +725,7 @@ PrefabInstance:
     - target: {fileID: 1120165036537030579, guid: 1d2871e5d6dfab04383318fafe74d030, type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 95fb77cfc25d6d04a958b49f2f2a6460, type: 3}
+      objectReference: {fileID: 32900000, guid: 8cb01c49c05120a4598b25324008c577, type: 3}
     - target: {fileID: 1120165036537030579, guid: 1d2871e5d6dfab04383318fafe74d030, type: 3}
       propertyPath: m_DataSource
       value: 0
@@ -815,7 +815,7 @@ PrefabInstance:
     - target: {fileID: 1120165036537030579, guid: 1d2871e5d6dfab04383318fafe74d030, type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 807198f4aff3e0048b9429c758a16ba1, type: 3}
+      objectReference: {fileID: 32900000, guid: 95fb77cfc25d6d04a958b49f2f2a6460, type: 3}
     - target: {fileID: 1120165036537030579, guid: 1d2871e5d6dfab04383318fafe74d030, type: 3}
       propertyPath: m_DataSource
       value: 0
@@ -905,7 +905,7 @@ PrefabInstance:
     - target: {fileID: 1120165036537030579, guid: 1d2871e5d6dfab04383318fafe74d030, type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: d1a5666732d21f8429533692b10acad7, type: 3}
+      objectReference: {fileID: 32900000, guid: 7f6566547ea603a45bbb52ad75c7165c, type: 3}
     - target: {fileID: 1120165036537030579, guid: 1d2871e5d6dfab04383318fafe74d030, type: 3}
       propertyPath: m_DataSource
       value: 0
@@ -1084,6 +1084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasClickedCheck: 0
+  touchcheck: 1
   speed: 1
 --- !u!1 &1292345274 stripped
 GameObject:
@@ -1110,9 +1111,6 @@ MonoBehaviour:
   videoplayer1: {fileID: 2057966349}
   videoplayer2: {fileID: 1935520409}
   videoplayer3: {fileID: 694786540}
-  video1: {fileID: 32900000, guid: 807198f4aff3e0048b9429c758a16ba1, type: 3}
-  video2: {fileID: 32900000, guid: d1a5666732d21f8429533692b10acad7, type: 3}
-  video3: {fileID: 32900000, guid: 95fb77cfc25d6d04a958b49f2f2a6460, type: 3}
 --- !u!1 &1378152580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,7 +1179,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f37fe0c261da56a4aab70febdd3f8920, type: 2}
+  - {fileID: 2100000, guid: 1e5629283286ba1469fb8f3617f9b0f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1373,7 +1371,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5dce5a4227557794b9c473d4c8a84c63, type: 2}
+  - {fileID: 2100000, guid: 1e5629283286ba1469fb8f3617f9b0f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1749,7 +1747,7 @@ PrefabInstance:
     - target: {fileID: 2432224432678281686, guid: f1a4d5ffa84628346baac0ee12d1c65a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4ebf5c060eba48729e051aead702c3f4, type: 2}
+      objectReference: {fileID: 2100000, guid: 968fcec20967a054686ff70bde994f21, type: 2}
     - target: {fileID: 4315222229273549854, guid: f1a4d5ffa84628346baac0ee12d1c65a, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1809,7 +1807,7 @@ PrefabInstance:
     - target: {fileID: 7741178197391989914, guid: f1a4d5ffa84628346baac0ee12d1c65a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5dce5a4227557794b9c473d4c8a84c63, type: 2}
+      objectReference: {fileID: 2100000, guid: 0621c5fe004072e438a1b1acc025bd32, type: 2}
     - target: {fileID: 8670757612108076625, guid: f1a4d5ffa84628346baac0ee12d1c65a, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
