@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Localization.Components;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 
 public class UIName : MonoBehaviour
@@ -40,6 +42,7 @@ public class UIName : MonoBehaviour
     }
     void CreateNamePanel()
     {
+        Debug.Log(languageChange.langsetting);
         for (int i = 0; i < objlen; i++)
         {
             GameObject ins = Instantiate(UI_Name);
@@ -57,9 +60,18 @@ public class UIName : MonoBehaviour
 
     public void changeUI(int num)
     {
+        Debug.Log(UI_child_list[0]);
         for (int i = 0; i < objlen; i++)
         {
             UI_child_list[i].transform.GetChild(0).GetComponent<set_UI_background>().resizeUI();
+        }
+        if (num == 0)
+        {
+            set_UI_background.oneeng = false;
+        }
+        else if (num == 1)
+        {
+            set_UI_background.onekor = false;
         }
     }
 
@@ -81,5 +93,4 @@ public class UIName : MonoBehaviour
             Obj_List_child_transform[i] = parentObject.transform.GetChild(i).transform;
         }
     }
-
 }

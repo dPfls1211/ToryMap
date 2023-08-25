@@ -101,11 +101,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8355711291293696
-    m_Localized: underground<br>mall info
+    m_Localized: Underground Mall
     m_Metadata:
       m_Items: []
   - m_Id: 8355861589983232
-    m_Localized: market place
+    m_Localized: Jeil Market
     m_Metadata:
       m_Items: []
   - m_Id: 8356069229002752
@@ -117,19 +117,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15311679258427392
-    m_Localized: tranditional<br> market
+    m_Localized: tranditional market
     m_Metadata:
       m_Items: []
   - m_Id: 15311854513225728
-    m_Localized: main stage
+    m_Localized: Main Stage
     m_Metadata:
       m_Items: []
   - m_Id: 15311917973045248
-    m_Localized: smart<br>service
+    m_Localized: Smart Service
     m_Metadata:
       m_Items: []
   - m_Id: 15311985501339648
-    m_Localized: service<br>guide
+    m_Localized: Service Info
     m_Metadata:
       m_Items: []
   references:

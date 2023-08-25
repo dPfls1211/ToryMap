@@ -7,6 +7,13 @@ public class set_UI_background : MonoBehaviour
 {
     public TMP_Text text;
     UI_Type.type thistype;
+
+    //List<float> KORtext_len;
+    //List<float> ENGtext_len;
+    float korlen = 0;
+    float englen = 0;
+    public static bool onekor = true;
+    public static bool oneeng = true;
     // Start is called before the first frame update
     void Awake()
     {
@@ -14,21 +21,69 @@ public class set_UI_background : MonoBehaviour
     }
     void Start()
     {
-        resizeUI();
+        //resizeUI();
+        firstmake();
     }
     public void resizeUI()
     {
         if (thistype == UI_Type.type.name)
         {
-            name();
+            if (languageChange.langsetting == 0 && oneeng)
+            {
+                firstmake();
+            }
+            else if (languageChange.langsetting == 1 && onekor)
+            {
+                firstmake();
+            }
+            else if (!oneeng && !onekor)
+            {
+                knowname();
+            }
+            else
+            {
+                name();
+            }
+
         }
         if (thistype == UI_Type.type.explain)
         {
             explain();
         }
     }
+
+    public void firstmake()
+    {
+        RectTransform rect = gameObject.GetComponent<RectTransform>();
+        rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, text.preferredWidth * 1.2f);
+        if (languageChange.langsetting == 0)
+        {
+            englen = text.preferredWidth;
+        }
+        if (languageChange.langsetting == 1)
+        {
+            korlen = text.preferredWidth;
+        }
+    }
+
+    public void knowname()
+    {
+        RectTransform rect = gameObject.GetComponent<RectTransform>();
+        if (languageChange.langsetting == 0)
+        {
+            rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, englen * 1.2f);
+        }
+        if (languageChange.langsetting == 1)
+        {
+            rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, korlen * 1.2f);
+        }
+
+
+    }
+
     public void name()
     {
+
         RectTransform rect = gameObject.GetComponent<RectTransform>();
         rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, text.preferredWidth * 1.2f);
 

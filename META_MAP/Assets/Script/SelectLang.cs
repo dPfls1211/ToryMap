@@ -32,4 +32,12 @@ public class SelectLang : MonoBehaviour
 
         }
     }
+    public void korclick()
+    {
+        langs[0].transform.GetChild(0).GetComponent<TMP_Text>().fontStyle = FontStyles.Normal;
+        langs[0].transform.GetChild(0).GetComponent<TMP_Text>().color = new Color32(227, 227, 227, 255);
+        // Debug.Log(EventSystem.current.currentSelectedGameObject.name);
+        langs[1].transform.GetChild(0).GetComponent<TMP_Text>().fontStyle = FontStyles.Bold;
+        langs[1].transform.GetChild(0).GetComponent<TMP_Text>().color = new Color(255, 255, 255, 255);
+    }
 }

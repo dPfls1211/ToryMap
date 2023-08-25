@@ -29,7 +29,7 @@ public class dialmenuAni : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(showDialmenuIcon.transform.childCount);
+        //Debug.Log(showDialmenuIcon.transform.childCount);
         for (int i = 0; i < showDialmenuIcon.transform.childCount; i++)
         {
             showDialmenuIcons.Add(showDialmenuIcon.transform.GetChild(i));

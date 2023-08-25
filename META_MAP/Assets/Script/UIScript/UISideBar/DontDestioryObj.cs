@@ -1,5 +1,7 @@
 
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 public class DontDestioryObj : MonoBehaviour
 {
@@ -7,6 +9,7 @@ public class DontDestioryObj : MonoBehaviour
     public static DontDestioryObj instance;
 
     public Texture image_mainBackground;
+
     private void Awake()
     {
         if (instance != null)
@@ -18,17 +21,10 @@ public class DontDestioryObj : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
     }
-    // Start is called before the first frame update
-    void Start()
+    public void UserLocalization(int index)
     {
-
-
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
 }

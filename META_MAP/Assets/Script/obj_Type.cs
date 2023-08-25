@@ -9,6 +9,7 @@ public class obj_Type : MonoBehaviour
         building,
         video,
         image,
+        animation,
         other,
     }
 
