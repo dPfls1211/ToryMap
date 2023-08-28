@@ -11,6 +11,7 @@ public class openModal : MonoBehaviour
     public static GameObject recodemodal;
     public static GameObject recodevideomodal;
     public static GameObject postermodal;
+    public GameObject posterimg;
     public bool one = true;
 
     video_info videomodal;
@@ -24,6 +25,7 @@ public class openModal : MonoBehaviour
         recodemodal = GameObject.Find("recode_modal").transform.GetChild(0).transform.gameObject;
         recodevideomodal = GameObject.Find("recodeplay_modal1").transform.GetChild(0).transform.gameObject;
         postermodal = GameObject.Find("poster_modal").transform.GetChild(0).transform.gameObject;
+
     }
 
     // Update is called once per frame
@@ -49,6 +51,7 @@ public class openModal : MonoBehaviour
                 else if (click_obj.name == "poster1" || click_obj.name == "poster2")
                 {
                     postermodal.SetActive(true);
+                    getposter(click_obj);
                 }
 
                 one = false;
@@ -75,5 +78,10 @@ public class openModal : MonoBehaviour
         newvideo.GetComponent<RawImage>().texture = video_source_background_1;
         newvideo.GetComponent<VideoPlayer>().Play();
 
+    }
+    void getposter(GameObject gam)
+    {
+        Texture tex = gam.GetComponent<RawImage>().texture;
+        posterimg.GetComponent<RawImage>().texture = tex;
     }
 }

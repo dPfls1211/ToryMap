@@ -3389,7 +3389,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6676749902038024751}
         m_TargetAssemblyTypeName: languageChange, Assembly-CSharp
         m_MethodName: onClick_ENG
         m_Mode: 1
@@ -3559,7 +3559,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6676749902038024751}
         m_TargetAssemblyTypeName: languageChange, Assembly-CSharp
         m_MethodName: onClick_KOR
         m_Mode: 1
@@ -4095,6 +4095,7 @@ GameObject:
   - component: {fileID: 4310050449923543931}
   - component: {fileID: 4310050449923543932}
   - component: {fileID: 4310050449923543922}
+  - component: {fileID: 6676749902038024751}
   m_Layer: 5
   m_Name: Langue
   m_TagString: Untagged
@@ -4179,6 +4180,18 @@ MonoBehaviour:
   langs:
   - {fileID: 4310050448322373180}
   - {fileID: 4310050448198205524}
+--- !u!114 &6676749902038024751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4310050449923543935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 607dbd93adbbcc94daf7c544bf394654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4310050449934011755
 GameObject:
   m_ObjectHideFlags: 0

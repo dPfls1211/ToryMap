@@ -23,8 +23,4 @@ public class exit_btn : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         gameObject.SetActive(false);
     }
-    public void click()
-    {
-        Debug.Log("click");
-    }
 }

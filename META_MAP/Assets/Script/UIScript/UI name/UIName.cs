@@ -58,6 +58,7 @@ public class UIName : MonoBehaviour
 
     public void changeUI(int num)
     {
+        Debug.Log("changeui");
         for (int i = 0; i < objlen; i++)
         {
 
@@ -68,7 +69,7 @@ public class UIName : MonoBehaviour
             }
             UI_child_list[i].transform.GetChild(0).GetComponent<set_UI_background>().resizeUI();
         }
-        if (num == 0)
+        if (num == 0 && !languageChange.firsttime)
         {
             set_UI_background.oneeng = false;
         }

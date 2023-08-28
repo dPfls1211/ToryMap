@@ -17,7 +17,6 @@ public class offvideomodal : MonoBehaviour
             PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
             List<RaycastResult> results = new List<RaycastResult>();
             EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
-            Debug.Log("click!");
             foreach (var i in results)
             {
                 if (i.gameObject.name == "contents_box")

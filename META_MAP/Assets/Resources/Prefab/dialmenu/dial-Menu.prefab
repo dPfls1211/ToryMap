@@ -849,6 +849,7 @@ GameObject:
   - component: {fileID: 5863281925073470282}
   - component: {fileID: 5863281925073470285}
   - component: {fileID: 5863281925073470275}
+  - component: {fileID: 811895992386616604}
   m_Layer: 5
   m_Name: Langue
   m_TagString: Untagged
@@ -933,6 +934,18 @@ MonoBehaviour:
   langs:
   - {fileID: 5863281926886471181}
   - {fileID: 5863281926761320549}
+--- !u!114 &811895992386616604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5863281925073470286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 607dbd93adbbcc94daf7c544bf394654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5863281925276949850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,7 +2275,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 811895992386616604}
         m_TargetAssemblyTypeName: languageChange, Assembly-CSharp
         m_MethodName: onClick_ENG
         m_Mode: 1
@@ -2484,7 +2497,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 811895992386616604}
         m_TargetAssemblyTypeName: languageChange, Assembly-CSharp
         m_MethodName: onClick_KOR
         m_Mode: 1
@@ -4180,6 +4193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showDialmenu: 0
   blurBackground: {fileID: 5191232035587799699}
+  toggleHandler: {fileID: 0}
   hideDialmenuOBJ: {fileID: 8047641480881809434}
   showDialmenuOBJ: {fileID: 8047641479257372126}
   showDialmenuIcon: {fileID: 8047641479382294936}
@@ -6643,6 +6657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showDialmenu: 0
   blurBackground: {fileID: 5191232035587799699}
+  toggleHandler: {fileID: 0}
   hideDialmenuOBJ: {fileID: 8047641480010736103}
   showDialmenuOBJ: {fileID: 8047641480531033123}
   showDialmenuIcon: {fileID: 8047641480389617765}
