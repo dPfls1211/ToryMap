@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class setViewTarget : MonoBehaviour
 {
     Vector3 objBasicTransform;
-    cameraMove targetViewSC;
+
     //mousewheelView targetWheelViewSC;
 
     //MainCamera_Action targetMainCameraActionSC;
@@ -112,7 +112,11 @@ public class setViewTarget : MonoBehaviour
                 targetMainCameraActionSC.checkedCamReset = false;
                 // targetMainCameraActionSC.distanceRidance = 2.44f; //카메라와 객체와의 거리 조절
                 //targetMainCameraActionSC.zoomMax = 60f;
-                GameObject.Find("Main Camera").GetComponent<Camera>().fieldOfView = 26f;
+                Camera Mcam = GameObject.Find("Main Camera").GetComponent<Camera>();
+                Mcam.fieldOfView = 26f;
+                Mcam.nearClipPlane = 1.25f;
+                Mcam.farClipPlane = 50;
+
 
                 //Debug.Log(gameObject.name);
                 // targetViewSC.TargetViewAsset.transform.position = gameObject.transform.position;

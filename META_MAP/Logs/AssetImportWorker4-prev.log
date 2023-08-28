@@ -15,7 +15,7 @@ C:/Users/pksoy/Desktop/unity/meta0825/metamap.v.5/META_MAP
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-59434
+61200
 Successfully changed project path to: C:/Users/pksoy/Desktop/unity/meta0825/metamap.v.5/META_MAP
 C:/Users/pksoy/Desktop/unity/meta0825/metamap.v.5/META_MAP
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/pksoy/Desktop/unity/meta0825/metamap.v.5/META_MAP
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24940] Host "[IP] 192.168.1.99 [Port] 0 [Flags] 2 [Guid] 2027067555 [EditorId] 2027067555 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M7KDN41) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [19620] Host "[IP] 192.168.1.99 [Port] 0 [Flags] 2 [Guid] 3369039973 [EditorId] 3369039973 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M7KDN41) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [24940] Host "[IP] 192.168.1.99 [Port] 0 [Flags] 2 [Guid] 2027067555 [EditorId] 2027067555 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M7KDN41) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19620] Host "[IP] 192.168.1.99 [Port] 0 [Flags] 2 [Guid] 3369039973 [EditorId] 3369039973 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M7KDN41) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 72.39 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 68.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -67,52 +67,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56684
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.006250 seconds.
+Registered in 0.005248 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 240 ms
+Android Extension - Scanning For ADB Devices 190 ms
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 70.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 59.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.857 seconds
+- Completed reload, in  1.372 seconds
 Domain Reload Profiling:
-	ReloadAssembly (858ms)
-		BeginReloadAssembly (88ms)
+	ReloadAssembly (1372ms)
+		BeginReloadAssembly (57ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (664ms)
-			LoadAssemblies (88ms)
+		EndReloadAssembly (907ms)
+			LoadAssemblies (56ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (121ms)
+			SetupTypeCache (448ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (475ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (397ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (300ms)
+				InitializePlatformSupportModulesInManaged (242ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (71ms)
+				RefreshPlugins (59ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (70ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
+				ProcessInitializeOnLoadAttributes (58ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003541 seconds.
+Registered in 0.003745 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\pksoy\Desktop\unity\meta0825\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\pksoy\Desktop\unity\meta0825\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -120,46 +120,46 @@ Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.959 seconds
+- Completed reload, in  1.369 seconds
 Domain Reload Profiling:
-	ReloadAssembly (960ms)
-		BeginReloadAssembly (95ms)
+	ReloadAssembly (1370ms)
+		BeginReloadAssembly (79ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (795ms)
-			LoadAssemblies (72ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (1221ms)
+			LoadAssemblies (62ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (314ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (325ms)
+			SetupTypeCache (407ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (684ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
+				InitializePlatformSupportModulesInManaged (25ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (65ms)
-				ProcessInitializeOnLoadAttributes (221ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (572ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4272 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 30 unused Assets / (344.9 KB). Loaded Objects now: 4736.
-Memory consumption went from 171.7 MB to 171.4 MB.
-Total: 4.821700 ms (FindLiveObjects: 0.340100 ms CreateObjectMapping: 0.259400 ms MarkObjects: 4.040500 ms  DeleteObjects: 0.179700 ms)
+Unloading 30 unused Assets / (344.8 KB). Loaded Objects now: 4737.
+Memory consumption went from 171.7 MB to 171.3 MB.
+Total: 3.957800 ms (FindLiveObjects: 0.334500 ms CreateObjectMapping: 0.276500 ms MarkObjects: 3.179000 ms  DeleteObjects: 0.166700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -171,3 +171,642 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1523677.505905 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b99d05b396feae7891ea87ff738b6d0') in 0.244040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.355434 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a050e78d7ccb6a38b56ae1e12f2066b0') in 0.211309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.446454 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7602c594a72d46af8f496122c0858da7') in 0.202545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.026485 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bcef7916a6e85ca47ab5e46d8dfddc1') in 0.202630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.188611 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae797cd9776aafb7b7486f08d66dd677') in 0.209314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.201071 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c9bb6520019b2d7240925b3303264a0') in 0.205586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.681180 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a802385878feeee24bf47d541679fe8') in 0.247992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.519955 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0feb75a08e869483a1cf89ad3f198e24') in 0.189232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.231504 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52f1b2294924e84acdcb0a222dd9ce0e') in 0.190396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.553255 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a82421fc01394cf2cc93f82d62219098') in 0.199865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.183933 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd571e0f54dafb14e5443a29f1bb6d82f') in 0.193206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.255790 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e29d9b56a2bdcfb6c5cb7b472ff1a0') in 0.196373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.942447 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16cfb6d2f92f639741dec6579e90d5ca') in 0.219102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.954500 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05dd18a83f9900925aed6031025c6eb4') in 0.188447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.963900 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf93c452fa484adf631eb68e37cb251') in 0.204354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.641360 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7edbcace3c1cf1f84474f9d6b5680ed0') in 0.193141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.150438 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d0c2d466d072cfbbd0850b27a4bdb1') in 0.195289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.677137 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef495ca979d095b8f3669f4c55f032c7') in 0.238287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.152436 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '582de8e538d5f93ea9de7d1cbb911945') in 0.196110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.272283 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '855c0c1d27d606b0204e34c4a4d47440') in 0.193909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.153458 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37f9c60a7162f842aa664a7d8e3675e4') in 0.187603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 78.506082 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48b14c6e7e5c70f25829527be9cd07e') in 0.198813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.879896 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b1a5d68816b522e22020c336f9f1d41') in 0.215022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.204310 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f262bf252511511310c2a45fd310c5') in 0.216358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.866100 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578b9b31f6a1eb08f245526a29b929c2') in 0.198445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.692158 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce9157a4298f374e7adaa42bc3a732d9') in 0.190792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.852675 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61a9fca49df23f23e646dd8f9383eac') in 0.195434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.708214 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e650cfc2854828baf4afb6699754bde7') in 0.266479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.164333 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '331bb92d57376034afabb7738c0d9a4c') in 0.185580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.030151 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22485e351c6020ba9b6ab7ef07a8a778') in 0.198677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.637846 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8b1e60570943a5d8f63e170372de47') in 0.231510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.166974 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee7ac7488d1d827d77d52b499c4ad5e') in 0.203148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.817923 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b35c42eade93525d7d943d178432ae') in 0.203214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.450089 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '761f3cf467ee1d31f43eada25186df9a') in 0.198682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 127.237674 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67bf17dad0d353c710ec2bebed85eac') in 0.193338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.966520 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c4e5159e80fee4dedb41f7774dd057') in 0.192800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.011415 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375c166deea9c942c168a38c35bddc32') in 0.208871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.327180 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6916493d6500e1a480a1a5baab992f') in 0.207840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.641049 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '142d7ba1e9075e8d4afa553c7adbc569') in 0.193176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.996882 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90eb4c6d3faba0d34c317630973d5bd0') in 0.289693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.893407 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c6620535499da113a3c77c42642e63') in 0.198307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.663225 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0923ac54774d8b3d6e4f61854efd72b2') in 0.196731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.033019 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '635b2a9143aecc5eea62f240ce118a99') in 0.194642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.316915 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e606e46340c27f045e4a6cd513092c15') in 0.195362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.488195 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad86c3298060e53d0bf5e69b1ffb602') in 0.194013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.628190 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcff38d03f44da612b33f27f13cff8aa') in 0.192142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.879332 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c540e7eaeda160d698dfbaeb6dad8f94') in 0.233782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67.524265 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca71ed741c35e874bd9d5cae449123e') in 0.197329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.263105 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941a70798498d10f152f20bd3f5b90b1') in 0.197177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.663173 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a91f07e97f57a2fa107d1f2704322df9') in 0.199463 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002865 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\pksoy\Desktop\unity\meta0825\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\pksoy\Desktop\unity\meta0825\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.787 seconds
+Domain Reload Profiling:
+	ReloadAssembly (787ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (624ms)
+			LoadAssemblies (61ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (208ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (249ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (150ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (36ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4196 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (312.1 KB). Loaded Objects now: 4741.
+Memory consumption went from 165.9 MB to 165.6 MB.
+Total: 3.886900 ms (FindLiveObjects: 0.300300 ms CreateObjectMapping: 0.218400 ms MarkObjects: 3.274600 ms  DeleteObjects: 0.092500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 20.506141 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ad9622883effe67af1dc54c9cdd4ef') in 0.260744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.531029 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '319348867bad12d5df49aaa11ad660bf') in 0.200950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.147812 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3f9f48ee5587fdd7bad278b74191d48') in 0.194304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.181250 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c5e376d358baa05b3f70c7da5c55dc') in 0.194172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.251506 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee33284bc38a5efc8a8efb18b494e16') in 0.213078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.790613 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82f3eab144569b0b00aeaea07f6e93b5') in 0.216596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.616984 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034339b6b5e0f9b12862e45a0d3d8b07') in 0.216981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.813091 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ab70fbbba5ee65800ce5390b0f19554') in 0.196729 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002708 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\pksoy\Desktop\unity\meta0825\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\pksoy\Desktop\unity\meta0825\metamap.v.5\META_MAP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.759 seconds
+Domain Reload Profiling:
+	ReloadAssembly (759ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (597ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (197ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (249ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (161ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4196 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (312.1 KB). Loaded Objects now: 4744.
+Memory consumption went from 165.9 MB to 165.6 MB.
+Total: 4.000000 ms (FindLiveObjects: 0.351400 ms CreateObjectMapping: 0.328300 ms MarkObjects: 3.222700 ms  DeleteObjects: 0.096300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 27.582854 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8680028399db664f23ed761e070090df') in 0.236134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.248167 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8afbee0d759ae7523812d1d24d34521') in 0.208607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.502085 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed2d19a6941f1f64027e06dc92194a6') in 0.196455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 118.259743 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e65ec8e9489e050b643c93ef0ff4e0b') in 0.236403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.558438 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0eee1e1a134e0555182c199d134a24') in 0.192794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.071824 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148d0367b04d8437cbfb2e836ca3d238') in 0.197955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.031233 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6133782911d20b690afe901f794d86e') in 0.206224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.657645 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '499c96be3ec3be4f8b989683a8c74f28') in 0.193044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.900855 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48322a1aedc4deeaaf7ee52720a3d0eb') in 0.194184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.721458 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5ac27dccd89c11ae50dc1281ec230dd') in 0.193239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.096212 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd041cb258517a7e0e57a6512682c9e99') in 0.206712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.429136 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b16f9277655fc4ad414532b5ca8f366') in 0.231333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.179228 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '888187d10983565678b0c829d575560a') in 0.223258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.015374 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97c6da7e667ef6f81299b001233a048') in 0.212685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.005496 seconds.
+  path: Assets/Resources/Prefab/ModalUI/recode_modal.prefab
+  artifactKey: Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/ModalUI/recode_modal.prefab using Guid(ac3ef53b2bb16154493d1935724929bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '343e6347139f9a71cebae96952b581f7') in 0.215883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.406841 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/ci_hamburger-md.png
+  artifactKey: Guid(cb7eb5b71069dae478c143508c381913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/ci_hamburger-md.png using Guid(cb7eb5b71069dae478c143508c381913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40a8223405da4c8af59d4ebd71447d13') in 0.113211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/Frame 7351.png
+  artifactKey: Guid(8ad8a12b3de0b8543be425442e1e54db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/Frame 7351.png using Guid(8ad8a12b3de0b8543be425442e1e54db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55298fb85f76de7afa74b890d79cd08c') in 0.033522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/map_grocery-or-supermarket.png
+  artifactKey: Guid(2d3e393232d150f47ae5821c435057cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/map_grocery-or-supermarket.png using Guid(2d3e393232d150f47ae5821c435057cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f23747dd12652047dfb5fb214a27a3') in 0.031544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/Frame 7346.png
+  artifactKey: Guid(8d78471d56a55744da816f82bfbcb1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/Frame 7346.png using Guid(8d78471d56a55744da816f82bfbcb1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e1ffb0b7e9b1ef4fe0f41136dbe21d') in 0.030456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/material-symbols_download-for-offline-rounded.png
+  artifactKey: Guid(56c9749c27f88434498366c878c06000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/material-symbols_download-for-offline-rounded.png using Guid(56c9749c27f88434498366c878c06000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98e4fafed50eafc9b6883f695e330b8') in 0.028293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/Frame 7333.png
+  artifactKey: Guid(f7cce8920f5e97743aa9b317f1431b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/Frame 7333.png using Guid(f7cce8920f5e97743aa9b317f1431b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447c53c14eb6f7cfcd0b5aef5d096ace') in 0.028587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/simple-icons_metrodeparis.png
+  artifactKey: Guid(79d86d7eaa41043469642dfbd6efcfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/simple-icons_metrodeparis.png using Guid(79d86d7eaa41043469642dfbd6efcfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c430526ea03b978b179a4c92531b760b') in 0.028231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/Frame 7348.png
+  artifactKey: Guid(2a6fe57eb0d228a479caeb91418b146c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/Frame 7348.png using Guid(2a6fe57eb0d228a479caeb91418b146c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd413aa080b81802330a43827561d3acc') in 0.029025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/Frame 7345.png
+  artifactKey: Guid(39ea5d70a76a5604a928add09c0e9910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/Frame 7345.png using Guid(39ea5d70a76a5604a928add09c0e9910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c51664c9bb3330d0c278570e021501') in 0.030666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/Frame 7352.png
+  artifactKey: Guid(c0ff972dc64b3bc49a52f0b52bfac8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/Frame 7352.png using Guid(c0ff972dc64b3bc49a52f0b52bfac8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dedd5fdce92e299c47188e0531570a56') in 0.028573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/Rectangle 1.png
+  artifactKey: Guid(d072a4e19f656024aa3439458f40251f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/Rectangle 1.png using Guid(d072a4e19f656024aa3439458f40251f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcbda03058b17a489860c844c51f3a05') in 0.037896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/tabler_x.png
+  artifactKey: Guid(6b0119eca723085489d67a7957d8ea94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/tabler_x.png using Guid(6b0119eca723085489d67a7957d8ea94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dfbcdf66ef27ff7c325ce7e909be854') in 0.020974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Icon/Sidebar_icon/Frame 7347.png
+  artifactKey: Guid(dd92950cdfa13b74cb62f336385b598b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Icon/Sidebar_icon/Frame 7347.png using Guid(dd92950cdfa13b74cb62f336385b598b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b2de1b9a797cad4b03bcef37e5a661') in 0.033437 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

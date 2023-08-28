@@ -1422,14 +1422,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913364156}
-  m_LocalRotation: {x: -0.007796146, y: 0.7118548, z: 0.005451424, w: 0.7022623}
-  m_LocalPosition: {x: -9.093, y: 1.85, z: 0.104}
-  m_LocalScale: {x: 100.00001, y: 99.99999, z: 100}
+  m_LocalRotation: {x: 0.030298587, y: 0.70472634, z: -0.031638578, w: 0.7081256}
+  m_LocalPosition: {x: -6.8, y: 1.28, z: 0.08}
+  m_LocalScale: {x: 100.00001, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5.02, y: 89.719, z: -0.121}
 --- !u!114 &913364160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1445,6 +1445,8 @@ MonoBehaviour:
   canvasClickedCheck: 0
   touchcheck: 1
   speed: 1
+  perspectiveZoomSpeed: 0.5
+  orthoZoomSpeed: 0.5
 --- !u!1 &1292345274 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6874496028573163430, guid: ac3ef53b2bb16154493d1935724929bb, type: 3}

@@ -270,6 +270,8 @@ public class camera_Event : MonoBehaviour
     public void resetZoom()
     {
         gameObject.GetComponent<Camera>().fieldOfView = 12;
+        gameObject.GetComponent<Camera>().nearClipPlane = 10;
+        gameObject.GetComponent<Camera>().farClipPlane = 1000;
 
         TargetObject = gameObject.transform.parent.gameObject;
         checkedCamReset = true;

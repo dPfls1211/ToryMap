@@ -27,8 +27,18 @@ public class dialmenuBtn : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log(0);
-        LoadingSceneManager.LoadScene(nextSceneName);
+        //Debug.Log(0);
+        StartCoroutine(DelayNextScene());
+        //LoadingSceneManager.LoadScene(nextSceneName);
         dialActiveAni.rotationAngle = rotateAngle;
+        //  Debug.Log("sdsfasdf" + dialActiveAni.rotationAngle);
+    }
+
+    IEnumerator DelayNextScene()
+    {
+        // Debug.Log(0);
+        yield return new WaitForSeconds(0.4f);
+        //fadeinout
+        LoadingSceneManager.LoadScene(nextSceneName);
     }
 }
