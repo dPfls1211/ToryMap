@@ -17,10 +17,19 @@ public class cam360 : MonoBehaviour
 
     Camera camera;
 
+    private void Awake()
+    {
+
+        GameObject.Find("blur").GetComponent<Canvas>().worldCamera = gameObject.GetComponent<Camera>();
+
+        touchcheck = DontDestioryObj.instance.touch_check;
+
+    }
     private void Start()
     {
         originEulerAnglesY = transform.eulerAngles.x;
         camera = transform.GetComponent<Camera>();
+
     }
     // Update is called once per frame
     void Update()

@@ -15964,7 +15964,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadsceneOBJ: {fileID: 8565154456324769538, guid: f75a3066a941958408e2eb34c8d7ae3a, type: 3}
+  blurdialBack: {fileID: 0}
   image_mainBackground: {fileID: 0}
+  touch_check: 1
+  camera_main: {fileID: 0}
 --- !u!1 &2396035191038832950
 GameObject:
   m_ObjectHideFlags: 0
@@ -41674,6 +41677,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 5208594406716476487}
+    - target: {fileID: 5484426930605893463, guid: a41b08dcb723b894cb5fea33019aa8d9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5484426930659568893, guid: a41b08dcb723b894cb5fea33019aa8d9, type: 3}
       propertyPath: m_Name
       value: dial-Menu0828-1
@@ -41721,6 +41728,18 @@ PrefabInstance:
     - target: {fileID: 5484426930659568894, guid: a41b08dcb723b894cb5fea33019aa8d9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5484426930659568895, guid: a41b08dcb723b894cb5fea33019aa8d9, type: 3}
+      propertyPath: touch_check
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762121623488714196, guid: a41b08dcb723b894cb5fea33019aa8d9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762121623488714201, guid: a41b08dcb723b894cb5fea33019aa8d9, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 17156241658470400
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41b08dcb723b894cb5fea33019aa8d9, type: 3}

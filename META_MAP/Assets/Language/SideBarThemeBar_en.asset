@@ -132,6 +132,14 @@ MonoBehaviour:
     m_Localized: Service Info
     m_Metadata:
       m_Items: []
+  - m_Id: 17156241658470400
+    m_Localized: <size=115>Underground</size><br>Mall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17156397866934272
+    m_Localized: <size=115>Service</size><br>Info
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

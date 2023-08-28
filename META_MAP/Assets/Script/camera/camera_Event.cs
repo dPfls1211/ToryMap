@@ -46,6 +46,11 @@ public class camera_Event : MonoBehaviour
     float xAngleTemp;
     float yAngleTemp;
 
+    private void Awake()
+    {
+
+        DontDestioryObj.instance.camera_main = GameObject.Find("Main Camera");
+    }
     private void Start()
     {
         TargetObject = gameObject.transform.parent.gameObject;
@@ -62,6 +67,8 @@ public class camera_Event : MonoBehaviour
 
         Screen.orientation = ScreenOrientation.Portrait;
         camera = gameObject.GetComponent<Camera>();
+
+        TouchCheck = DontDestioryObj.instance.touch_check;
     }
     private void Update()
     {

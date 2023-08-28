@@ -7,6 +7,7 @@ using TMPro;
 
 public class dialmenuBtn : MonoBehaviour, IPointerClickHandler
 {
+    public bool nextScene = true;
     public float rotateAngle = 0;
     public string nextSceneName;
     public string stageName;
@@ -27,11 +28,16 @@ public class dialmenuBtn : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        //Debug.Log(0);
-        StartCoroutine(DelayNextScene());
-        //LoadingSceneManager.LoadScene(nextSceneName);
-        dialActiveAni.rotationAngle = rotateAngle;
-        //  Debug.Log("sdsfasdf" + dialActiveAni.rotationAngle);
+        if (nextScene)
+        {
+            StartCoroutine(DelayNextScene());
+            dialActiveAni.rotationAngle = rotateAngle;
+        }
+        else
+        {
+            //모달 띄우기
+        }
+
     }
 
     IEnumerator DelayNextScene()
