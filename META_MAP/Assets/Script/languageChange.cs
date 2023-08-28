@@ -11,19 +11,29 @@ public class languageChange : MonoBehaviour
     UIName uIName;
     SelectLang select;
     bool noUIName = false;
-    private void Awake()
+
+    private void Start()
     {
-        Debug.Log("호출");
         select = GetComponent<SelectLang>();
-        firstcheck();
-        onClick_KOR();
-    }
-    private void OnEnable()
-    {
         set_UI_background.oneeng = true;
         set_UI_background.onekor = true;
         firstcheck();
+        if (langsetting == 0)
+        {
+            StartCoroutine("onclick_ENG");
+        }
+        else if (langsetting == 1)
+        {
+            StartCoroutine("onclick_KOR");
+        }
     }
+    // private void OnEnable()
+    // {
+    //     Debug.Log("호출2");
+    //     set_UI_background.oneeng = true;
+    //     set_UI_background.onekor = true;
+    //     firstcheck();
+    // }
     void firstcheck()
     {
         noUIName = false;
@@ -35,7 +45,6 @@ public class languageChange : MonoBehaviour
         {
             noUIName = true;
         }
-        Debug.Log(noUIName);
     }
 
 
@@ -72,7 +81,7 @@ public class languageChange : MonoBehaviour
         }
         if (!noUIName)
         {
-            uIName.changeUI(0);
+            firstcheck();
         }
 
     }
@@ -91,7 +100,7 @@ public class languageChange : MonoBehaviour
         }
         if (!noUIName)
         {
-            uIName.changeUI(1);
+            firstcheck();
         }
     }
 }

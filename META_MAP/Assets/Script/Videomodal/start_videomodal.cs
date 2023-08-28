@@ -10,6 +10,9 @@ public class start_videomodal : MonoBehaviour
     video_info videomodal;
     RenderTexture video_source_background_1;
     GameObject Tex_videoPlayer;
+
+    public GameObject maintitle;
+    public GameObject videodescription;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -55,14 +58,16 @@ public class start_videomodal : MonoBehaviour
         this.GetComponent<VideoPlayer>().clip = videomodal.clickclip;
 
         this.GetComponent<RawImage>().texture = video_source_background_1;
+        maintitle.GetComponentInChildren<TextMeshProUGUI>().text = videomodal.clickclip.name;
+        videodescription.GetComponentInChildren<TextMeshProUGUI>().text = videomodal.clickclip.name;
+
+
         GetComponent<VideoPlayer>().Play();
     }
-
     public void newcontentclick()
     {
         if (open_videomodal.videomodalon)
         {
-            Debug.Log("!!");
             makerender();
         }
     }

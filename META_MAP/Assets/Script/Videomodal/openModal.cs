@@ -10,17 +10,20 @@ public class openModal : MonoBehaviour
     // Start is called before the first frame update
     public static GameObject recodemodal;
     public static GameObject recodevideomodal;
+    public static GameObject postermodal;
     public bool one = true;
 
     video_info videomodal;
     RenderTexture video_source_background_1;
     GameObject Tex_videoPlayer;
     GameObject newvideo;
+
     private void Awake()
     {
         videomodal = GameObject.Find("GameObject").GetComponent<video_info>();
         recodemodal = GameObject.Find("recode_modal").transform.GetChild(0).transform.gameObject;
         recodevideomodal = GameObject.Find("recodeplay_modal1").transform.GetChild(0).transform.gameObject;
+        postermodal = GameObject.Find("poster_modal").transform.GetChild(0).transform.gameObject;
     }
 
     // Update is called once per frame
@@ -34,13 +37,18 @@ public class openModal : MonoBehaviour
             if (hit.collider != null)
             {
                 GameObject click_obj = hit.transform.gameObject;
-                //recodemodal.SetActive(true);
-                recodevideomodal.SetActive(true);
-                if (one)
+                Debug.Log(click_obj.name);
+                if (click_obj.name == "Cylinder.001")
                 {
                     //첫번째 설정 모달사용할시
-                    //recodemodal.GetComponent<SetmodalContents>().makerender();
+                    recodemodal.SetActive(true);
+                    recodemodal.GetComponent<SetmodalContents>().makerender();
+                    // recodevideomodal.SetActive(true);
                     //recodevideomodal.GetComponent<SetmodalContents>().makerender();
+                }
+                else if (click_obj.name == "poster1" || click_obj.name == "poster2")
+                {
+                    postermodal.SetActive(true);
                 }
 
                 one = false;

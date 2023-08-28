@@ -45,7 +45,6 @@ public class open_videomodal : MonoBehaviour
 
     public void updatevideo()
     {
-        Debug.Log((videomodalon));
         if (videomodalon)
         {
             newvideo.newcontentclick();

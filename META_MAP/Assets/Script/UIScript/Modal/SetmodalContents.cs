@@ -10,7 +10,7 @@ public class SetmodalContents : MonoBehaviour
 {
     public string modalTitle = "교육/회의 관련 정보";
     public GameObject contentsPrefab;
-    public static int contentsCount = 5;
+    public static int contentsCount = 8;
     public GameObject contentsBox;
 
     public bool darkmode = false;
@@ -19,12 +19,16 @@ public class SetmodalContents : MonoBehaviour
     public List<GameObject> Tex_videoPlayerlist;
     public VideoClip[] _video_;
     private List<RenderTexture> VideoRenderTex = new List<RenderTexture>();
+
+    GameObject Tex_videoPlayer;
     open_videomodal checkbool;
     // Start is called before the first frame update
     void Awake()  //나중에 JSON정보 읽어와서 foreach해서 생성되도록.
     {
         _video_ = GameObject.Find("GameObject").GetComponent<video_info>().video;
         contentlist = new GameObject[contentsCount];
+        Tex_videoPlayer = new GameObject();
+        Tex_videoPlayer.name = "makenew";
         for (int i = 0; i < contentsCount; i++)
         {
             contentlist[i] = Instantiate(contentsPrefab);
@@ -63,7 +67,7 @@ public class SetmodalContents : MonoBehaviour
             RenderTexture video_source_background = new RenderTexture(1920, 1080, 16, RenderTextureFormat.ARGB32);
             video_source_background.Create();
             video_source_background.Release();
-            GameObject Tex_videoPlayer = new GameObject();
+            Tex_videoPlayer = new GameObject();
             video_source_background.name = "rendertexture";
             Tex_videoPlayer.AddComponent<VideoPlayer>().targetTexture = video_source_background;
             Tex_videoPlayer.GetComponent<VideoPlayer>().source = VideoSource.VideoClip;
@@ -110,6 +114,19 @@ public class SetmodalContents : MonoBehaviour
             contentlist[i].transform.GetChild(1).transform.gameObject.GetComponent<TextMeshProUGUI>().text = _video_[i].name;
         }
     }
+    public void removeall()
+    {
+        foreach (var li in Tex_videoPlayerlist)
+        {
+            Destroy(li);
+        }
+        Tex_videoPlayerlist.Clear();
+        GameObject make = GameObject.Find("makenew");
+        if (make != null)
+        {
+            Destroy(make);
+        }
 
+    }
 
 }

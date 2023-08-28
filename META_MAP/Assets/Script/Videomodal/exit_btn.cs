@@ -19,8 +19,12 @@ public class exit_btn : MonoBehaviour
     }
     IEnumerator waittwo()
     {
-        yield return new WaitForSeconds(0.3f);
         open_videomodal.videomodalon = false;
+        yield return new WaitForSeconds(0.3f);
         gameObject.SetActive(false);
+    }
+    public void click()
+    {
+        Debug.Log("click");
     }
 }

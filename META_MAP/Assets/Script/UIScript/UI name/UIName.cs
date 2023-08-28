@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.Localization.Components;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
-
+using Unity.VisualScripting;
 
 public class UIName : MonoBehaviour
 {
@@ -42,14 +42,12 @@ public class UIName : MonoBehaviour
     }
     void CreateNamePanel()
     {
-        Debug.Log(languageChange.langsetting);
         for (int i = 0; i < objlen; i++)
         {
             GameObject ins = Instantiate(UI_Name);
             ins.transform.SetParent(UI_NameCanvas, true);
             localizeStringEvent = ins.transform.GetChild(1).GetComponent<LocalizeStringEvent>();
             localizeStringEvent.StringReference.TableEntryReference = Obj_List_child_transform[i].name + "_key";
-
             ins.name = Obj_List_child_transform[i].name;
             ins.transform.position = new Vector3(Obj_List_child_transform[i].position.x, Obj_List_child_transform[i].position.y + 2.0f, Obj_List_child_transform[i].position.z);
             UI_child_list.Add(ins);
@@ -60,9 +58,14 @@ public class UIName : MonoBehaviour
 
     public void changeUI(int num)
     {
-        Debug.Log(UI_child_list[0]);
         for (int i = 0; i < objlen; i++)
         {
+
+            if (UI_child_list[i] == null)
+            {
+                Debug.Log("비엇음");
+                break;
+            }
             UI_child_list[i].transform.GetChild(0).GetComponent<set_UI_background>().resizeUI();
         }
         if (num == 0)
