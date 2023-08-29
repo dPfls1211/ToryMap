@@ -23,6 +23,7 @@ public class dialmenuBtn : MonoBehaviour, IPointerClickHandler
         stageIcon.texture = iconImage;
 
         stageIcon.SetNativeSize();
+        stageIcon.transform.localScale = new Vector3(0.28f, 0.28f, 0.28f);
         stageText.text = stageName;
     }
 

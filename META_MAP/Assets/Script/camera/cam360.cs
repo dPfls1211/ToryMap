@@ -14,16 +14,25 @@ public class cam360 : MonoBehaviour
     public float perspectiveZoomSpeed = 0.5f;  //줌인,줌아웃할때 속도(perspective모드 용)      
     public float orthoZoomSpeed = 0.5f;      //줌인,줌아웃할때 속도(OrthoGraphic모드 용) 
 
+    public static bool iszoom = false;
 
+    GameObject targetpos;
+    public Transform original;
     Camera camera;
+    GameObject kioskclosebtn;
+
+    GameObject originkiosk;
+    GameObject openkiosk;
 
     private void Awake()
     {
 
-        GameObject.Find("blur").GetComponent<Canvas>().worldCamera = gameObject.GetComponent<Camera>();
-
+        GameObject.Find("blur-dial").GetComponent<Canvas>().worldCamera = gameObject.GetComponent<Camera>();
         touchcheck = DontDestioryObj.instance.touch_check;
-
+        targetpos = GameObject.Find("targetpos");
+        kioskclosebtn = GameObject.Find("kioskbtnCanvas").transform.GetChild(0).transform.gameObject;
+        originkiosk = GameObject.Find("BODY.001").transform.GetChild(0).transform.gameObject;
+        openkiosk = GameObject.Find("BODY.001").transform.GetChild(1).transform.gameObject;
     }
     private void Start()
     {
@@ -42,6 +51,14 @@ public class cam360 : MonoBehaviour
                 mouseclickedRotation();
 
         }
+        if (iszoom)
+        {
+            movepos();
+        }
+        if (!iszoom)
+        {
+            goorigin();
+        }
     }
 
 
@@ -51,22 +68,21 @@ public class cam360 : MonoBehaviour
         {
             xmove = Input.GetAxis("Mouse X");
             ymove += Input.GetAxis("Mouse Y");
+            //original.eulerAngles = original.eulerAngles + new Vector3(0, xmove * speed, 0);
             transform.eulerAngles = transform.eulerAngles + new Vector3(0, xmove * speed, 0);
 
             if (transform.eulerAngles.y < 40)
+                // original.eulerAngles = new Vector3(transform.eulerAngles.x, 40, transform.eulerAngles.z);
                 transform.eulerAngles = new Vector3(transform.eulerAngles.x, 40, transform.eulerAngles.z);
             if (transform.eulerAngles.y > 140)
+                //original.eulerAngles = new Vector3(transform.eulerAngles.x, 140, transform.eulerAngles.z);
                 transform.eulerAngles = new Vector3(transform.eulerAngles.x, 140, transform.eulerAngles.z);
             if (ymove > 15)
                 ymove = 15;
             if (ymove < -15)
                 ymove = -15;
+            //original.eulerAngles = new Vector3(originEulerAnglesY - ymove, transform.eulerAngles.y, transform.eulerAngles.z);
             transform.eulerAngles = new Vector3(originEulerAnglesY - ymove, transform.eulerAngles.y, transform.eulerAngles.z);
-            // if (transform.eulerAngles.x > 25 && transform.eulerAngles.x <= 350)
-
-            //     transform.eulerAngles = new Vector3(-10, transform.eulerAngles.y, transform.eulerAngles.z);
-            // if (transform.eulerAngles.x > 25 && transform.eulerAngles.x < 350)
-            //     transform.eulerAngles = new Vector3(25, transform.eulerAngles.y, transform.eulerAngles.z);
 
         }
     }
@@ -145,6 +161,25 @@ public class cam360 : MonoBehaviour
 
         }
     }
+    public void movepos()
+    {
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetpos.transform.rotation, Time.deltaTime * 2f);
+        transform.position = Vector3.Lerp(transform.position, targetpos.transform.position, Time.deltaTime * 3f);
 
+        float dis = Vector3.Distance(transform.position, targetpos.transform.position);
+        ymove = 0;
 
+    }
+    public void goorigin()
+    {
+        //transform.rotation = Quaternion.Slerp(transform.rotation, original.transform.rotation, Time.deltaTime * 2f);
+        transform.position = Vector3.Lerp(transform.position, original.transform.position, Time.deltaTime * 3f);
+    }
+    public void goout()
+    {
+        iszoom = false;
+        kioskclosebtn.SetActive(false);
+        originkiosk.SetActive(true);
+        openkiosk.SetActive(false);
+    }
 }

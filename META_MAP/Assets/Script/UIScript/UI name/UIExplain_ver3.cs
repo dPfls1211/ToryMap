@@ -29,8 +29,6 @@ public class UIExplain_ver3 : MonoBehaviour
 
     public void click(GameObject obj)
     {
-        // UIExplain3.SetActive(true);
-        //Ui_info_toolkit.SetActive(true);
         clickobj = obj;
 
         findNameui();

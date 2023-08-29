@@ -50,6 +50,8 @@ public class camera_Event : MonoBehaviour
     {
 
         DontDestioryObj.instance.camera_main = GameObject.Find("Main Camera");
+
+        GameObject.Find("blur-dial").GetComponent<Canvas>().worldCamera = gameObject.GetComponent<Camera>();
     }
     private void Start()
     {

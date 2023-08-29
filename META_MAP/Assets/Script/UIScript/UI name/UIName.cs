@@ -49,6 +49,7 @@ public class UIName : MonoBehaviour
             localizeStringEvent = ins.transform.GetChild(1).GetComponent<LocalizeStringEvent>();
             localizeStringEvent.StringReference.TableEntryReference = Obj_List_child_transform[i].name + "_key";
             ins.name = Obj_List_child_transform[i].name;
+            ins.GetComponent<UIName_clickedNextScene>().basicObj = Obj_List_child_transform[i].gameObject;
             ins.transform.position = new Vector3(Obj_List_child_transform[i].position.x, Obj_List_child_transform[i].position.y + 2.0f, Obj_List_child_transform[i].position.z);
             UI_child_list.Add(ins);
             ins.GetComponentInChildren<TMP_Text>().text = Obj_List_child_transform[i].name;
@@ -58,7 +59,6 @@ public class UIName : MonoBehaviour
 
     public void changeUI(int num)
     {
-        Debug.Log("changeui");
         for (int i = 0; i < objlen; i++)
         {
 

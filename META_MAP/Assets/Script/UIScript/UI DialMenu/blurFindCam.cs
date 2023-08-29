@@ -8,6 +8,6 @@ public class blurFindCam : MonoBehaviour
     {
 
         transform.GetComponent<Canvas>().worldCamera = DontDestioryObj.instance.camera_main.GetComponent<Camera>();
-        transform.GetComponent<Canvas>().planeDistance = 100;
+        transform.GetComponent<Canvas>().planeDistance = 500;
     }
 }

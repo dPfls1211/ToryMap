@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: name
+  m_text: "\uBA54\uC778 \uB85C\uBE44"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b95627fd2668bcc4fad2988b35412620, type: 2}
   m_sharedMaterial: {fileID: -226171637889969098, guid: b95627fd2668bcc4fad2988b35412620, type: 2}
@@ -201,6 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2345098247257657556}
   - component: {fileID: 2345098247257657558}
+  - component: {fileID: 6914451463696496409}
   m_Layer: 5
   m_Name: UI_Name
   m_TagString: Untagged
@@ -243,6 +244,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uitype: 0
+--- !u!114 &6914451463696496409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345098247257657557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f66dfad6432d364988a6653beefd554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneNameUI: 
 --- !u!1 &2345098247392164559
 GameObject:
   m_ObjectHideFlags: 0

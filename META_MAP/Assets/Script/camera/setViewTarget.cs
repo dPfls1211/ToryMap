@@ -6,10 +6,6 @@ using UnityEngine.EventSystems;
 public class setViewTarget : MonoBehaviour
 {
     Vector3 objBasicTransform;
-
-    //mousewheelView targetWheelViewSC;
-
-    //MainCamera_Action targetMainCameraActionSC;
     camera_Event targetMainCameraActionSC;
 
     ObjSetUi setUIcontents;
@@ -26,16 +22,11 @@ public class setViewTarget : MonoBehaviour
 
     void Start()
     {
-        //targetViewSC = GameObject.Find("Main Camera").GetComponent<cameraRotation>();
-        //targetViewSC = GameObject.Find("Main Camera").GetComponent<cameraMove>();
         setUIcontents = gameObject.GetComponent<ObjSetUi>();
         objBasicTransform = gameObject.transform.localScale;
-        //targetMainCameraActionSC = GameObject.Find("Main Camera").GetComponent<MainCamera_Action>();
         targetMainCameraActionSC = GameObject.Find("Main Camera").GetComponent<camera_Event>();
         localUIControlCs = GameObject.Find("UI_NAME_Canvas").GetComponent<UIexplain>();
         explain3 = GameObject.Find("info_toolkit").GetComponent<UIExplain_ver3>();
-
-
     }
 
     // Update is called once per frame
@@ -83,7 +74,7 @@ public class setViewTarget : MonoBehaviour
         if (!EventSystem.current.IsPointerOverGameObject())
         {
 
-            //StartCoroutine(zoomInViewOBJ());
+            StartCoroutine(zoomInViewOBJ());
             if (myOBJ == gameObject)
             {
                 explain3.click(myOBJ);
@@ -92,44 +83,22 @@ public class setViewTarget : MonoBehaviour
             {
                 if (myOBJ != null)
                 {
-                    // localUIControlCs.objON = false;
-                    //localUIControlCs.canvasOff();
                     explain3.infoOff();
                 }
 
                 myOBJ = gameObject;
-                // localUIControlCs.clickObj(myOBJ);
-                // localUIControlCs.followOn = true;
                 explain3.click(myOBJ);
 
             }
             if (!EventSystem.current.IsPointerOverGameObject())
             {
                 targetMainCameraActionSC.TargetObject = gameObject;
-                // targetMainCameraActionSC.offsetX = 8;
-                // targetMainCameraActionSC.offsetY = 0.26f;
-                // targetMainCameraActionSC.offsetZ = 0.33f;
                 targetMainCameraActionSC.checkedCamReset = false;
-                // targetMainCameraActionSC.distanceRidance = 2.44f; //카메라와 객체와의 거리 조절
-                //targetMainCameraActionSC.zoomMax = 60f;
                 Camera Mcam = GameObject.Find("Main Camera").GetComponent<Camera>();
                 Mcam.fieldOfView = 26f;
                 Mcam.nearClipPlane = 1.25f;
                 Mcam.farClipPlane = 50;
 
-
-                //Debug.Log(gameObject.name);
-                // targetViewSC.TargetViewAsset.transform.position = gameObject.transform.position;
-                // targetViewSC.TargetViewAssets = gameObject;
-                // targetViewSC.TargetViewAsset.transform.position += new Vector3(1.5f, 0.5f, 0);
-
-                //targetWheelViewSC.cameraTarget = gameObject.transform;
-                //뷰이동 Quaternion.slerp?써서 자연스럽게 확대되도록
-
-                //targetViewSC.MoveCamlerp();
-                // ShowExplaneUI();
-
-                //StartCoroutine(zoomInView());
                 zoomCheck = true;
             }
         }
@@ -137,6 +106,7 @@ public class setViewTarget : MonoBehaviour
 
 
     }
+
 
     private void OnTouchFuc()
     {
@@ -153,40 +123,19 @@ public class setViewTarget : MonoBehaviour
             {
                 if (myOBJ != null)
                 {
-                    // localUIControlCs.objON = false;
-                    //localUIControlCs.canvasOff();
                     explain3.infoOff();
                 }
 
                 myOBJ = gameObject;
-                // localUIControlCs.clickObj(myOBJ);
-                // localUIControlCs.followOn = true;
                 explain3.click(myOBJ);
 
             }
             if (!EventSystem.current.IsPointerOverGameObject())
             {
                 targetMainCameraActionSC.TargetObject = gameObject;
-                // targetMainCameraActionSC.offsetX = 8;
-                // targetMainCameraActionSC.offsetY = 0.26f;
-                // targetMainCameraActionSC.offsetZ = 0.33f;
                 targetMainCameraActionSC.checkedCamReset = false;
-                // targetMainCameraActionSC.distanceRidance = 2.44f; //카메라와 객체와의 거리 조절
-                //targetMainCameraActionSC.zoomMax = 60f;
                 GameObject.Find("Main Camera").GetComponent<Camera>().fieldOfView = 26f;
 
-                //Debug.Log(gameObject.name);
-                // targetViewSC.TargetViewAsset.transform.position = gameObject.transform.position;
-                // targetViewSC.TargetViewAssets = gameObject;
-                // targetViewSC.TargetViewAsset.transform.position += new Vector3(1.5f, 0.5f, 0);
-
-                //targetWheelViewSC.cameraTarget = gameObject.transform;
-                //뷰이동 Quaternion.slerp?써서 자연스럽게 확대되도록
-
-                //targetViewSC.MoveCamlerp();
-                // ShowExplaneUI();
-
-                //StartCoroutine(zoomInView());
                 zoomCheck = true;
             }
         }
@@ -215,22 +164,6 @@ public class setViewTarget : MonoBehaviour
         // uiExplaneCanvas.GetComponent<UIVisible>().SetUICan();
     }
 
-    // IEnumerator zoomInView()
-    // {
-
-    //     // Debug.Log(targetViewSC.distance);
-    //     if (targetViewSC.distance < 5)
-    //     {
-    //         //ShowExplaneUI();
-    //         targetViewSC.zoomin = true;
-    //         yield break;
-    //     }
-    //     yield return new WaitForSeconds(0.01f);
-
-    //     targetViewSC.distance *= 0.83f;
-    //     // Debug.Log(targetViewSC.distance);
-    //     StartCoroutine(zoomInView());
-    // }
 
     IEnumerator zoomInViewOBJ()
     {

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Video;
 using UnityEngine.UI;
+using TMPro;
 
 public class openModal : MonoBehaviour
 {
@@ -19,13 +20,19 @@ public class openModal : MonoBehaviour
     GameObject Tex_videoPlayer;
     GameObject newvideo;
 
+    public static GameObject clickobj;
+    GameObject kioskclosebtn;
+    Camera maincam;
+    GameObject DialMenu;
     private void Awake()
     {
+        maincam = Camera.main;
         videomodal = GameObject.Find("GameObject").GetComponent<video_info>();
         recodemodal = GameObject.Find("recode_modal").transform.GetChild(0).transform.gameObject;
         recodevideomodal = GameObject.Find("recodeplay_modal1").transform.GetChild(0).transform.gameObject;
         postermodal = GameObject.Find("poster_modal").transform.GetChild(0).transform.gameObject;
-
+        kioskclosebtn = GameObject.Find("kioskbtnCanvas").transform.GetChild(0).transform.gameObject;
+        DialMenu = GameObject.Find("DialMenu");
     }
 
     // Update is called once per frame
@@ -39,7 +46,6 @@ public class openModal : MonoBehaviour
             if (hit.collider != null)
             {
                 GameObject click_obj = hit.transform.gameObject;
-                Debug.Log(click_obj.name);
                 if (click_obj.name == "Cylinder.001")
                 {
                     //첫번째 설정 모달사용할시
@@ -53,7 +59,16 @@ public class openModal : MonoBehaviour
                     postermodal.SetActive(true);
                     getposter(click_obj);
                 }
-
+                else if (click_obj.name == "Kiosk")
+                {
+                    DialMenu.GetComponent<dialmenuAni>().showDialmenu = false;
+                    cam360.iszoom = true;
+                    GameObject parent = click_obj.transform.parent.gameObject;
+                    parent.transform.GetChild(1).gameObject.SetActive(true);
+                    kioskclosebtn.SetActive(true);
+                    click_obj.SetActive(false);
+                }
+                clickobj = click_obj;
                 one = false;
             }
         }
@@ -84,4 +99,6 @@ public class openModal : MonoBehaviour
         Texture tex = gam.GetComponent<RawImage>().texture;
         posterimg.GetComponent<RawImage>().texture = tex;
     }
+
+
 }

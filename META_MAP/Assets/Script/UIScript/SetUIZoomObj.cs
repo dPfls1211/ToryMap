@@ -26,9 +26,9 @@ public class SetUIZoomObj : MonoBehaviour
 
         GameObject TargetModel = Instantiate(zoomInTargetObj, new Vector3(0, -1.5f, 0), new Quaternion(-90, 0, -90, 0));
 
-        TargetModel.transform.SetParent(gameObject.transform, false);
-        //Debug.Log(TargetModel.transform.localEulerAngles + " " + TargetModel.name);
-        TargetModel.transform.localScale = new Vector3(400f, 400f, 400f);
+        // TargetModel.transform.SetParent(gameObject.transform, false);
+        // //Debug.Log(TargetModel.transform.localEulerAngles + " " + TargetModel.name);
+        // TargetModel.transform.localScale = new Vector3(400f, 400f, 400f);
         //자식객체에도 layer추가해주기
         for (int i = 0; i < TargetModel.transform.childCount; i++)
         {
@@ -39,7 +39,7 @@ public class SetUIZoomObj : MonoBehaviour
 
         TargetModel.AddComponent<zoomObjRotation>();
         //        Debug.Log(zoomInUIname.transform.GetChild(0).name);
-        zoomInUIname.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = zoomInTargetObj.name;
+        //zoomInUIname.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = zoomInTargetObj.name;
         //zoomInUIname.GetComponent<set_UI_background>().text.text = zoomInTargetObj.name;
         //zoomInUIname.GetComponent<set_UI_background>().name();
 

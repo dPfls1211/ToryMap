@@ -8,20 +8,20 @@ public class UIExplain1 : MonoBehaviour
     VisualElement root;
     private Button enter_btn;
     private Button exit_btn;
-    private Label text_label;
+    private Label text_label_content;
+    private Label text_label_title;
     private IMGUIContainer imgcontainer;
 
 
     void OnEnable()
     {
-        Debug.Log(8);
         root = GetComponent<UIDocument>().rootVisualElement;
         enter_btn = root.Q<Button>("enter_btn");
         exit_btn = root.Q<Button>("exit_btn");
-        enter_btn.clicked += enterclick;
-        exit_btn.clicked += exitclick;
+        enter_btn.RegisterCallback<ClickEvent>(enterclick);
         exit_btn.RegisterCallback<ClickEvent>(exitclick);
-        text_label = root.Q<Label>("Text_label");
+        text_label_content = root.Q<Label>("Text_label-contents");
+        text_label_title = root.Q<Label>("Text_label-title");
         setexplain();
     }
 
@@ -29,15 +29,21 @@ public class UIExplain1 : MonoBehaviour
     {
         GameObject click = GameObject.Find(SetUIZoomObj.zoomInTargetObj.name);
         string explain = click.GetComponent<ObjSetUi>().objExplane;
-        text_label.text = explain;
+        text_label_content.text = explain;
+        text_label_title.text = click.GetComponent<ObjSetUi>().objName;
 
     }
-    private void enterclick()
+    // private void enterclick()
+    // {
+    //     GetComponent<EnterBtnLoadScene>().onClickToURL();
+    // }
+    private void enterclick(ClickEvent ev)
     {
+        Debug.Log(9);
         GetComponent<EnterBtnLoadScene>().onClickToURL();
     }
 
-    private void exitclick()
+    public void exitclick()
     {
         Debug.Log(9);
         GetComponentInParent<UIExplain_ver3>().infoOff();
