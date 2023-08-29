@@ -40,7 +40,7 @@ public class UIExplain_ver3 : MonoBehaviour
         Ui_info_toolkit.SetActive(false);
         Color color;
         ColorUtility.TryParseHtmlString(UnClickedUIColor, out color);
-        color.a = 0.4f;
+        color.a = 0.7803922f;
         clickChildobj.GetComponentInChildren<Image>().color = color;
         //        clickChildobj.transform.GetChild(0).transform.GetChild(0).transform.gameObject.SetActive(false);
         //       clickChildobj.transform.GetChild(0).transform.GetChild(1).transform.gameObject.SetActive(false);

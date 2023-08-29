@@ -41,6 +41,7 @@ public class UIExplain1 : MonoBehaviour
     {
         Debug.Log(9);
         GetComponent<EnterBtnLoadScene>().onClickToURL();
+
     }
 
     public void exitclick()
@@ -48,6 +49,7 @@ public class UIExplain1 : MonoBehaviour
         Debug.Log(9);
         GetComponentInParent<UIExplain_ver3>().infoOff();
         GameObject.Find("objImage_zoomExplane").GetComponent<SetUIZoomObj>().hiddenOBJView();
+
     }
     public void exitclick(ClickEvent ev)
     {

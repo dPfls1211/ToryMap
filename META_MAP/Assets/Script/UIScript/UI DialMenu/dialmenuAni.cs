@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class dialmenuAni : MonoBehaviour
 {
+    public float moveDis = 280;
     public bool showDialmenu = false;
     public GameObject blurBackground;
     public GameObject toggleHandler;
@@ -43,11 +44,11 @@ public class dialmenuAni : MonoBehaviour
         orign_position = gameObject.GetComponent<RectTransform>().anchoredPosition;
         blurorign_position = blurBackground.GetComponent<RectTransform>().anchoredPosition;
         toggleorigin_position = toggleHandler.GetComponent<RectTransform>().anchoredPosition;
-        Target_position = new Vector2(orign_position.x, orign_position.y - 280);
+        Target_position = new Vector2(orign_position.x, orign_position.y - moveDis);
 
-        toggleTarget_position = new Vector2(toggleorigin_position.x, toggleorigin_position.y - 280);
+        toggleTarget_position = new Vector2(toggleorigin_position.x, toggleorigin_position.y - moveDis);
 
-        blurTarget_position = new Vector2(blurorign_position.x, blurorign_position.y - 280);
+        blurTarget_position = new Vector2(blurorign_position.x, blurorign_position.y - moveDis);
         if (!showDialmenu)
         {
             gameObject.GetComponent<RectTransform>().anchoredPosition = Target_position;

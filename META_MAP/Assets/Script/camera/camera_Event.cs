@@ -74,21 +74,18 @@ public class camera_Event : MonoBehaviour
     }
     private void Update()
     {
-        if (!EventSystem.current.IsPointerOverGameObject() && iscanMove)
-        {
-            if (TouchCheck)
-                mapTouch();
-            else
-                roationMapArround();
+        if (TouchCheck)
+            mapTouch();
+        else
+            roationMapArround();
 
-            // #if (UNITY_ANDROID || UNITY_IPHONE) && !UNITY_EDITOR
+        // #if (UNITY_ANDROID || UNITY_IPHONE) && !UNITY_EDITOR
 
-            //                 mapTouch();
-            // #else
-            //             roationMapArround();
-            // #endif
+        //                 mapTouch();
+        // #else
+        //             roationMapArround();
+        // #endif
 
-        }
     }
 
     private void LateUpdate()

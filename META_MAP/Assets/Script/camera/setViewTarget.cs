@@ -18,6 +18,8 @@ public class setViewTarget : MonoBehaviour
     public static UIExplain_ver3 explain3;
 
     public static GameObject myOBJ = null;
+
+    public float dialAngle = 0;
     // Start is called before the first frame update
 
     void Start()
@@ -71,6 +73,7 @@ public class setViewTarget : MonoBehaviour
     private void OnMouseDown()
     {
         EnterBtnLoadScene.LoadScenename = gameObject.transform.GetComponent<ObjSetUi>().nextScene;
+        EnterBtnLoadScene.angle = dialAngle;
         if (!EventSystem.current.IsPointerOverGameObject())
         {
 
@@ -111,6 +114,8 @@ public class setViewTarget : MonoBehaviour
     private void OnTouchFuc()
     {
         EnterBtnLoadScene.LoadScenename = gameObject.transform.GetComponent<ObjSetUi>().nextScene;
+        EnterBtnLoadScene.angle = dialAngle;
+
         if (!EventSystem.current.IsPointerOverGameObject())
         {
 
