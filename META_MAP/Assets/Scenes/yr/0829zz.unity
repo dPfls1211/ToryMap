@@ -453,6 +453,10 @@ PrefabInstance:
       propertyPath: iconImage
       value: 
       objectReference: {fileID: 2800000, guid: 3aa155628f71adf40b64ba8a89d8ea81, type: 3}
+    - target: {fileID: 5442560179525109821, guid: 3886d02cc10b1314ca5179e451520095, type: 3}
+      propertyPath: nextSceneName
+      value: demoroom
+      objectReference: {fileID: 0}
     - target: {fileID: 5442560180228214353, guid: 3886d02cc10b1314ca5179e451520095, type: 3}
       propertyPath: nextSceneName
       value: 0829zz
